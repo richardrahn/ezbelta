@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezbelta A3 Writer - AI-Powered A3 Problem Solving for Manufacturing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Navigation */
+        nav {
+            background: white;
+            border-bottom: 1px solid #e5e7eb;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .logo-img {
+            width: 120px;
+            height: 120px;
+        }
+
+        .brand-text h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .brand-text p {
+            font-size: 0.75rem;
+            color: #6b7280;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .nav-links a {
+            color: #4b5563;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #1f2937;
+        }
+
+        .btn {
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #2563eb;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1d4ed8;
+        }
+
+        .btn-large {
+            padding: 1rem 2rem;
+            font-size: 1.125rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 50%, #f3e8ff 100%);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.75rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero .highlight {
+            color: #2563eb;
+            display: block;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            color: #4b5563;
+            max-width: 50rem;
+            margin: 0 auto 2rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .btn-hero-primary {
+            background: #2563eb;
+            color: white;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-hero-secondary {
+            background: white;
+            color: #2563eb;
+            border: 2px solid #2563eb;
+        }
+
+        /* Problem/Solution Section */
+        .problem-solution {
+            padding: 4rem 0;
+            background: #f9fafb;
+        }
+
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .section-title {
+            font-size: 2.25rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        .problem-item, .solution-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.25rem;
+        }
+
+        .icon {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+
+        .icon-red { color: #ef4444; }
+        .icon-green { color: #10b981; }
+
+        .problem-item p, .solution-item p {
+            font-size: 1.125rem;
+        }
+
+        /* Feature Sections */
+        .feature-section {
+            padding: 4rem 0;
+        }
+
+        .feature-section:nth-child(odd) {
+            background: #ffffff;
+        }
+
+        .feature-section:nth-child(even) {
+            background: #f0f9ff;
+        }
+
+        .feature-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .feature-content.reverse {
+            direction: rtl;
+        }
+
+        .feature-content.reverse > * {
+            direction: ltr;
+        }
+
+        .feature-image {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #4338ca;
+            font-weight: 600;
+            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-text h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+
+        .feature-text .tagline {
+            font-size: 1.25rem;
+            color: #2563eb;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-text p {
+            font-size: 1.125rem;
+            color: #4b5563;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .feature-benefits {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+
+        .feature-benefits li {
+            margin-bottom: 1rem;
+            font-size: 1.125rem;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .feature-benefits li::before {
+            content: "✓";
+            color: #16a34a;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-right: 0.75rem;
+            flex-shrink: 0;
+        }
+
+        .stat-highlight {
+            background: #dcfce7;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            border-left: 4px solid #16a34a;
+            margin-top: 1.5rem;
+        }
+
+        .stat-highlight .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #15803d;
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-highlight .stat-text {
+            color: #166534;
+            font-size: 1.125rem;
+        }
+
+        /* AI Feature - Special Styling */
+        .ai-features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .ai-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 2px solid #e0e7ff;
+        }
+
+        .ai-card h4 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+            color: #2563eb;
+        }
+
+        .ai-card p {
+            font-size: 0.95rem;
+            color: #4b5563;
+            margin: 0;
+        }
+
+        /* Final CTA Section */
+        .final-cta {
+            background: linear-gradient(90deg, #2563eb 0%, #9333ea 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        .final-cta p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            max-width: 50rem;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.95;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-cta-white {
+            background: white;
+            color: #2563eb;
+            padding: 1rem 2rem;
+            font-size: 1.125rem;
+        }
+
+        .btn-cta-outline {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 1rem 2rem;
+            font-size: 1.125rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #1f2937;
+            color: white;
+            padding: 2rem 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #60a5fa;
+            margin-bottom: 1rem;
+        }
+
+        .footer-description {
+            color: #9ca3af;
+            margin-bottom: 1rem;
+            font-size: 0.875rem;
+        }
+
+        .footer h4 {
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer a {
+            color: #9ca3af;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #374151;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            text-align: center;
+            color: #9ca3af;
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 768px) {
+            .two-col, .feature-content, .ai-features {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .feature-text h2 {
+                font-size: 2rem;
+            }
+
+            .feature-content.reverse {
+                direction: ltr;
+            }
+
+            .final-cta h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <a href="index.html" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+                        <img src="Ezbelta3.svg" alt="Ezbelta Logo" class="logo-img">
+                        <div class="brand-text">
+                            <h1>Ezbelta A3 Writer</h1>
+                            <p>AI-Powered A3 Problem Solving</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="https://buy.stripe.com/test_PLACEHOLDER" class="btn btn-primary">Start Free Trial</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>
+                Stop Wrestling With Incomplete A3s
+                <span class="highlight">Get AI-Powered Problem Solving</span>
+            </h1>
+            <p>
+                The only A3 platform built specifically for manufacturing teams.
+                Intelligent coaching, seamless collaboration, and automated action tracking—all in one place.
+            </p>
+            <div class="hero-buttons">
+                <a href="https://buy.stripe.com/test_PLACEHOLDER" class="btn btn-large btn-hero-primary">Start Free Trial - No Credit Card</a>
+                <a href="https://calendly.com/rrahn/30min" target="_blank" class="btn btn-large btn-hero-secondary">See It In Action</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem/Solution Section -->
+    <section class="problem-solution">
+        <div class="container">
+            <div class="two-col">
+                <div>
+                    <h2 class="section-title">Paper A3s Are Holding You Back</h2>
+                    <div class="problem-item">
+                        <span class="icon icon-red">❌</span>
+                        <p>Lost or damaged A3s mean lost institutional knowledge</p>
+                    </div>
+                    <div class="problem-item">
+                        <span class="icon icon-red">❌</span>
+                        <p>Weak root cause analysis leads to countermeasures that don't stick</p>
+                    </div>
+                    <div class="problem-item">
+                        <span class="icon icon-red">❌</span>
+                        <p>Action items buried in email chains and spreadsheets</p>
+                    </div>
+                    <div class="problem-item">
+                        <span class="icon icon-red">❌</span>
+                        <p>Teams waste hours trying to collaborate on static documents</p>
+                    </div>
+                    <div class="problem-item">
+                        <span class="icon icon-red">❌</span>
+                        <p>70% of improvements fade away within 6 months</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="section-title" style="color: #2563eb;">Digital A3s That Actually Drive Results</h3>
+                    <div class="solution-item">
+                        <span class="icon icon-green">✅</span>
+                        <p><strong>Cloud-based</strong> with auto-save—never lose an A3 again</p>
+                    </div>
+                    <div class="solution-item">
+                        <span class="icon icon-green">✅</span>
+                        <p><strong>AI validates</strong> your root cause analysis in real-time</p>
+                    </div>
+                    <div class="solution-item">
+                        <span class="icon icon-green">✅</span>
+                        <p><strong>Kanban boards</strong> track every action item to completion</p>
+                    </div>
+                    <div class="solution-item">
+                        <span class="icon icon-green">✅</span>
+                        <p><strong>Live collaboration</strong>—entire team works on the same A3</p>
+                    </div>
+                    <div class="solution-item">
+                        <span class="icon icon-green">✅</span>
+                        <p><strong>90% sustainment rate</strong> for implemented improvements</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 1: Classic A3 Methodology -->
+    <section class="feature-section">
+        <div class="container">
+            <div class="feature-content">
+                <div class="feature-image">
+                    [Classic A3 Interface Screenshot]
+                </div>
+                <div class="feature-text">
+                    <h2>The A3 You Know, Digitally Perfected</h2>
+                    <p class="tagline">Classic 8-Section Format Meets Modern Technology</p>
+                    <p>
+                        We didn't reinvent the A3—we made it better. Our digital platform preserves the proven
+                        8-section methodology that's been driving continuous improvement for decades, but removes
+                        all the friction of paper-based problem solving.
+                    </p>
+                    <ul class="feature-benefits">
+                        <li>All 8 standard sections: Background, Problem, Current State, Root Cause, Target, Countermeasures, Implementation, KPIs</li>
+                        <li>Character limits enforce the discipline of concise, focused thinking</li>
+                        <li>Visual progress tracking shows completion across all sections at a glance</li>
+                        <li>Built-in lean manufacturing guidance and best practices</li>
+                    </ul>
+                    <div class="stat-highlight">
+                        <div class="stat-number">85%</div>
+                        <div class="stat-text">of A3s rated "good" or "excellent" by lean coaches</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 2: AI-Powered Intelligence -->
+    <section class="feature-section">
+        <div class="container">
+            <div class="feature-content reverse">
+                <div class="feature-image">
+                    [AI Assistant Interface Screenshot]
+                </div>
+                <div class="feature-text">
+                    <h2>Your 24/7 Lean Manufacturing Coach</h2>
+                    <p class="tagline">AI That Actually Understands Continuous Improvement</p>
+                    <p>
+                        Stop waiting for your lean coach to be available. Our AI has been trained on thousands of
+                        successful A3s and provides instant, expert-level guidance exactly when you need it. It's
+                        like having a Six Sigma Black Belt looking over your shoulder—but faster and always available.
+                    </p>
+
+                    <div class="ai-features">
+                        <div class="ai-card">
+                            <h4>🎯 AI Coach</h4>
+                            <p>Real-time feedback identifies gaps in your root cause analysis, validates problem statements, and ensures proper 5-Why methodology</p>
+                        </div>
+                        <div class="ai-card">
+                            <h4>✍️ AI Writer</h4>
+                            <p>Transforms rough notes into professional A3 content while maintaining your voice and respecting character limits</p>
+                        </div>
+                        <div class="ai-card">
+                            <h4>📊 AI Insights</h4>
+                            <p>Analyzes patterns across multiple A3s to identify recurring problems and suggest preventive measures</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-highlight">
+                        <div class="stat-number">50% Faster</div>
+                        <div class="stat-text">A3 creation time with AI Writer assistance</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 3: Visual Action Plan Management -->
+    <section class="feature-section">
+        <div class="container">
+            <div class="feature-content">
+                <div class="feature-image">
+                    [Kanban Board Screenshot]
+                </div>
+                <div class="feature-text">
+                    <h2>Action Items That Actually Get Done</h2>
+                    <p class="tagline">From Countermeasures to Completion—Visually Tracked</p>
+                    <p>
+                        The best A3 in the world is worthless if countermeasures don't get implemented. Our visual
+                        action plan system transforms your implementation plan into a dynamic Kanban board that your
+                        team actually uses. See exactly what's pending, in progress, blocked, or completed at a glance.
+                    </p>
+                    <ul class="feature-benefits">
+                        <li>Drag-and-drop Kanban board makes task management intuitive and visual</li>
+                        <li>Assign tasks to specific team members with automatic notifications</li>
+                        <li>Track due dates and get alerts before tasks become overdue</li>
+                        <li>Priority levels (Critical, High, Medium, Low) ensure focus on what matters</li>
+                        <li>Timeline view shows dependencies and helps prevent scheduling conflicts</li>
+                        <li>Real-time analytics: completion rates, overdue tasks, team workload</li>
+                    </ul>
+                    <div class="stat-highlight">
+                        <div class="stat-number">75%</div>
+                        <div class="stat-text">of action items completed on time with automated tracking</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 4: Team Collaboration -->
+    <section class="feature-section">
+        <div class="container">
+            <div class="feature-content reverse">
+                <div class="feature-image">
+                    [Team Collaboration Screenshot]
+                </div>
+                <div class="feature-text">
+                    <h2>Your Entire Team, On The Same Page</h2>
+                    <p class="tagline">Real-Time Collaboration Without The Email Chaos</p>
+                    <p>
+                        Manufacturing problems don't respect department boundaries—and neither should your A3 platform.
+                        Our multi-user workspace lets quality, engineering, production, and maintenance work together
+                        seamlessly. No more "Who has the latest version?" or endless email threads trying to coordinate changes.
+                    </p>
+                    <ul class="feature-benefits">
+                        <li>Organization-level access means everyone sees the same A3 simultaneously</li>
+                        <li>Real-time auto-save prevents lost work and version conflicts</li>
+                        <li>Comment threads on specific sections enable focused discussions</li>
+                        <li>Task assignment with @mentions brings the right people into the conversation</li>
+                        <li>Activity history shows who changed what and when</li>
+                        <li>Role-based permissions keep sensitive information secure</li>
+                    </ul>
+                    <div class="stat-highlight">
+                        <div class="stat-number">90%</div>
+                        <div class="stat-text">user adoption rate within first 30 days</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 5: Professional PDF Export -->
+    <section class="feature-section">
+        <div class="container">
+            <div class="feature-content">
+                <div class="feature-image">
+                    [PDF Export Example]
+                </div>
+                <div class="feature-text">
+                    <h2>From Digital Workspace To Boardroom Ready</h2>
+                    <p class="tagline">Print-Perfect A3s In One Click</p>
+                    <p>
+                        Work digitally, present professionally. When it's time to share your A3 with leadership or
+                        post it on the gemba board, our one-click PDF export generates a beautifully formatted,
+                        print-ready document that maintains the classic A3 landscape layout everyone expects.
+                    </p>
+                    <ul class="feature-benefits">
+                        <li>Classic one-page A3 landscape format honors lean tradition</li>
+                        <li>Optimized for A3 paper size (11x17") for large-format printing</li>
+                        <li>Professional styling suitable for executive presentations</li>
+                        <li>Includes complete action plan table with current status</li>
+                        <li>Header shows project metadata: type, owner, sponsor, dates</li>
+                        <li>Preview before printing ensures everything looks perfect</li>
+                    </ul>
+                    <div class="stat-highlight">
+                        <div class="stat-number">3 Seconds</div>
+                        <div class="stat-text">to generate a presentation-ready PDF export</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 6: Multilingual Support -->
+    <section class="feature-section">
+        <div class="container">
+            <div class="feature-content reverse">
+                <div class="feature-image">
+                    [Language Selection Screenshot]
+                </div>
+                <div class="feature-text">
+                    <h2>Speak Your Team's Language</h2>
+                    <p class="tagline">Full Platform Support In English, Spanish, And German</p>
+                    <p>
+                        Manufacturing is a global business, and your shop floor probably speaks multiple languages.
+                        Our platform doesn't just translate labels—it provides a complete, professionally localized
+                        experience so every team member can participate fully in continuous improvement, regardless
+                        of their native language.
+                    </p>
+                    <ul class="feature-benefits">
+                        <li>Complete UI translation in English, Spanish, and German</li>
+                        <li>User-selectable language preferences persist across sessions</li>
+                        <li>All section labels, buttons, and instructions translated by native speakers</li>
+                        <li>Date and number formats automatically localized</li>
+                        <li>AI assistance available in all supported languages</li>
+                        <li>Team members can work in different languages on the same A3</li>
+                    </ul>
+                    <div class="stat-highlight">
+                        <div class="stat-number">3 Languages</div>
+                        <div class="stat-text">English, Spanish, German—with more coming soon</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Ready To Transform Your A3 Process?</h2>
+            <p>
+                Join manufacturing teams worldwide who've accelerated continuous improvement with
+                AI-powered A3s. Start your free 14-day trial today—no credit card required.
+            </p>
+            <div class="cta-buttons">
+                <a href="https://buy.stripe.com/test_PLACEHOLDER" class="btn btn-cta-white">Start Your Free Trial</a>
+                <a href="https://calendly.com/rrahn/30min" target="_blank" class="btn btn-cta-outline">Schedule a Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">Ezbelta</div>
+                    <p class="footer-description">AI-powered A3 problem-solving platform for manufacturing teams and continuous improvement professionals.</p>
+                    <div>
+                        <a href="https://linkedin.com/in/richarddrahn" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="index.html">All Products</a></li>
+                        <li><a href="digital-twin.html">Digital Twin</a></li>
+                        <li><a href="video-analyzer.html">Video Analyzer</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="https://calendly.com/rrahn/30min" target="_blank">Schedule Demo</a></li>
+                        <li><a href="mailto:support@ezbelta.com">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fairview Development LLC. Boulder, Colorado 80303 USA.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
