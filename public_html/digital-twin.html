@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezbelta Digital Twin - Easy Digital Twins for Lean Operations</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Navigation */
+        nav {
+            background: white;
+            border-bottom: 1px solid #e5e7eb;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .logo-img {
+            width: 180px;
+            height: 180px;
+        }
+
+        .brand-text h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .brand-text p {
+            font-size: 0.75rem;
+            color: #6b7280;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .nav-links a {
+            color: #4b5563;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #1f2937;
+        }
+
+        .btn {
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #2563eb;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1d4ed8;
+        }
+
+        .btn-secondary {
+            background: #16a34a;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #15803d;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 50%, #f3e8ff 100%);
+            padding: 2.5rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.75rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero .highlight {
+            color: #2563eb;
+            display: block;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #4b5563;
+            max-width: 48rem;
+            margin: 0 auto 2rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-hero {
+            padding: 1rem 2rem;
+            font-size: 1.125rem;
+            border-radius: 0.5rem;
+        }
+
+        .btn-hero-primary {
+            background: #2563eb;
+            color: white;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-hero-secondary {
+            background: white;
+            color: #2563eb;
+            border: 2px solid #2563eb;
+        }
+
+        /* Problem/Solution Section */
+        .problem-solution {
+            padding: 2.5rem 0;
+            background: #f9fafb;
+        }
+
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .section-title {
+            font-size: 1.875rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        .problem-item, .solution-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .icon {
+            font-size: 1.25rem;
+            margin-right: 0.75rem;
+            flex-shrink: 0;
+        }
+
+        .icon-red { color: #ef4444; }
+        .icon-green { color: #10b981; }
+
+        /* Features Section */
+        .features {
+            padding: 2.5rem 0;
+            background: #fef3c7;
+        }
+
+        .features-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .features-header h2 {
+            font-size: 2.25rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .features-header p {
+            font-size: 1.25rem;
+            color: #4b5563;
+            max-width: 48rem;
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e5e7eb;
+            transition: box-shadow 0.3s;
+        }
+
+        .feature-card:hover {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card p {
+            color: #4b5563;
+            margin-bottom: 1rem;
+        }
+
+        .feature-list {
+            list-style: none;
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+
+        .feature-list li {
+            margin-bottom: 0.25rem;
+        }
+
+        /* How It Works Section */
+        .how-it-works {
+            padding: 2.5rem 0;
+            background: #dfe9f3;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .step {
+            text-align: center;
+        }
+
+        .step-number {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.875rem;
+            font-weight: bold;
+            color: white;
+            margin: 0 auto 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-1 { background: #2563eb; }
+        .step-2 { background: #16a34a; }
+        .step-3 { background: #eab308; }
+        .step-4 { background: #9333ea; }
+
+        .step h3 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .step p {
+            color: #4b5563;
+        }
+
+        /* Final CTA Section */
+        .final-cta {
+            background: linear-gradient(90deg, #2563eb 0%, #9333ea 100%);
+            color: white;
+            padding: 2.5rem 0;
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            font-size: 2.25rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        .final-cta p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            max-width: 48rem;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-cta {
+            padding: 1rem 2rem;
+            font-size: 1.125rem;
+            border-radius: 0.5rem;
+        }
+
+        .btn-cta-white {
+            background: white;
+            color: #2563eb;
+        }
+
+        .btn-cta-outline {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        /* Footer */
+        footer {
+            background: #1f2937;
+            color: white;
+            padding: 1.5rem 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #60a5fa;
+            margin-bottom: 1rem;
+        }
+
+        .footer-description {
+            color: #9ca3af;
+            margin-bottom: 1rem;
+            font-size: 0.875rem;
+        }
+
+        .footer h4 {
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer a {
+            color: #9ca3af;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #374151;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            text-align: center;
+            color: #9ca3af;
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 768px) {
+            .two-col {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .features-grid,
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <a href="index.html">
+                        <img src="images/Ezbelta3.svg" alt="Ezbelta Logo" class="logo-img">
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How it Works</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>
+                Build Your Simple
+                <span class="highlight">Digital Twin</span>
+            </h1>
+            <p>
+                The complete manufacturing simulation platform: design with Mixed Model Line Design,
+                visualize with Visual Flow diagrams, and simulate with proven discrete-event technology.
+                Transform static designs into dynamic digital twins in minutes.
+            </p>
+        </div>
+    </section>
+
+    <!-- Problem/Solution Section -->
+    <section class="problem-solution">
+        <div class="container">
+            <div class="two-col">
+                <div>
+                    <h2 class="section-title">Stop Guessing About Your Production Performance</h2>
+                    <div class="problem-item">
+                        <span class="icon icon-red">❌</span>
+                        <p>Bottlenecks hidden until production is already impacted</p>
+                    </div>
+                    <div class="problem-item">
+                        <span class="icon icon-red">❌</span>
+                        <p>Resource planning based on gut feelings rather than data</p>
+                    </div>
+                    <div class="problem-item">
+                        <span class="icon icon-red">❌</span>
+                        <p>Expensive changes made without understanding true impact</p>
+                    </div>
+                    <div class="problem-item">
+                        <span class="icon icon-red">❌</span>
+                        <p>Waste patterns invisible until they're costing millions</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="section-title" style="color: #2563eb;">Get Predictive Insights Before Problems Happen</h3>
+                    <div class="solution-item">
+                        <span class="icon icon-green">✅</span>
+                        <p><strong>Identify bottlenecks</strong> with 99%+ accuracy using proven discrete-event simulation</p>
+                    </div>
+                    <div class="solution-item">
+                        <span class="icon icon-green">✅</span>
+                        <p><strong>Optimize resource allocation</strong> with advanced blocking/waiting state analysis</p>
+                    </div>
+                    <div class="solution-item">
+                        <span class="icon icon-green">✅</span>
+                        <p><strong>Test changes risk-free</strong> in virtual environment before implementation</p>
+                    </div>
+                    <div class="solution-item">
+                        <span class="icon icon-green">✅</span>
+                        <p><strong>Detect waste patterns</strong> with AI-powered lean manufacturing insights</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="features-header">
+                <h2>Enterprise-Grade Manufacturing Simulation</h2>
+                <p>Built on 15+ years of proven SimJS technology, trusted by Fortune 500 manufacturers worldwide</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📐</div>
+                    <h3>Mixed Model Line Design (MMLD)</h3>
+                    <p>Complete static line design tool with guided workflow: products, flows, processes, times, and resource calculations with automatic simulation model generation.</p>
+                    <ul class="feature-list">
+                        <li>• Product mix definition and volume planning</li>
+                        <li>• Process flow design with subassembly support</li>
+                        <li>• Takt time and resource calculations</li>
+                        <li>• One-click simulation model generation</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Battle-Tested Simulation Engine</h3>
+                    <p>Powered by proven SimJS technology with 15+ years of discrete-event simulation refinement.</p>
+                    <ul class="feature-list">
+                        <li>• Sub-second simulation execution</li>
+                        <li>• Real-time state tracking (BUSY/BLOCKED/WAITING/IDLE)</li>
+                        <li>• Statistical warmup period handling</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h3>AI-Powered Lean Insights</h3>
+                    <p>Automated waste detection and lean manufacturing recommendations powered by advanced pattern recognition.</p>
+                    <ul class="feature-list">
+                        <li>• Bottleneck identification with 99%+ accuracy</li>
+                        <li>• Waste pattern detection (7 types of waste)</li>
+                        <li>• Resource optimization recommendations</li>
+                        <li>• Flow efficiency scoring</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Visual Flow Diagrams</h3>
+                    <p>Interactive process flow visualization with real-time simulation status, drag-and-drop editing, and live resource state monitoring.</p>
+                    <ul class="feature-list">
+                        <li>• Real-time status colors (Working/Idle/Blocked/Waiting)</li>
+                        <li>• Drag-and-drop flow layout editor</li>
+                        <li>• Live simulation playback visualization</li>
+                        <li>• Automatic flow routing and connections</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Complete Analytics Suite</h3>
+                    <p>Comprehensive performance analytics with Yamazumi charts, utilization heatmaps, step-by-step debug mode, and statistical analysis.</p>
+                    <ul class="feature-list">
+                        <li>• Event-by-event simulation stepping</li>
+                        <li>• Resource utilization and queue analysis</li>
+                        <li>• Throughput & cycle time tracking</li>
+                        <li>• Export to Excel/CSV/PDF reports</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🏢</div>
+                    <h3>Enterprise Integration</h3>
+                    <p>Built for enterprise scale with secure multi-user support, version control, and API access.</p>
+                    <ul class="feature-list">
+                        <li>• Multi-tenant security (Supabase)</li>
+                        <li>• Model versioning & cloning</li>
+                        <li>• REST API for integration</li>
+                        <li>• Cloud-native architecture</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="features-header">
+                <h2>From Static Design to Digital Twin in Minutes</h2>
+                <p>Our integrated MMLD-to-Simulation workflow transforms your line design into a running digital twin</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-number step-1">1</div>
+                    <h3>Design with MMLD</h3>
+                    <p>Use Mixed Model Line Design to define products, flows, processes, and times. Follow the guided workflow with automatic resource calculations.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number step-2">2</div>
+                    <h3>Generate Simulation</h3>
+                    <p>One-click transformation from MMLD static design to complete simulation model with all resources, flows, and routing automatically created.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number step-3">3</div>
+                    <h3>Visualize & Run</h3>
+                    <p>Use Visual Flow diagrams to see your process layout, then run discrete-event simulation with real-time status visualization.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number step-4">4</div>
+                    <h3>Analyze & Optimize</h3>
+                    <p>Get comprehensive analytics with utilization reports, bottleneck identification, and performance insights to optimize your digital twin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Ready to Revolutionize Your Manufacturing?</h2>
+            <p>Eliminate waste, optimize flow, and increase profits with our proven simulation platform. <a href="contact.html" style="color: white; text-decoration: underline;">Contact us</a> to learn more.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">Ezbelta</div>
+                    <p class="footer-description">The most advanced manufacturing simulation platform, powered by proven discrete-event simulation technology.</p>
+                    <div>
+                        <a href="https://linkedin.com/in/richarddrahn" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="index.html">All Products</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="https://calendly.com/rrahn/30min" target="_blank">Schedule Demo</a></li>
+                        <li><a href="mailto:support@ezbelta.com">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fairview Development LLC. Boulder, Colorado 80303 USA.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
