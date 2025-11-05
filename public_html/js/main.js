@@ -59,33 +59,28 @@ async function handleContactFormSubmit(e) {
     submitButton.innerHTML = '<span class="inline-block spinner mr-2"></span> Sending...';
     
     try {
-        // TODO: Replace this with your actual form submission endpoint
-        // For now, we'll simulate a successful submission
-        
-        // Option 1: Use a form service like Formspree, Basin, or similar
-        // const response = await fetch('YOUR_FORM_ENDPOINT', {
-        //     method: 'POST',
-        //     headers: { 'Content-Type': 'application/json' },
-        //     body: JSON.stringify(formData)
-        // });
-        
-        // Option 2: Send to your own API endpoint
-        // const response = await fetch('/api/contact', {
-        //     method: 'POST',
-        //     headers: { 'Content-Type': 'application/json' },
-        //     body: JSON.stringify(formData)
-        // });
-        
-        // Simulate API call (remove this in production)
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        
-        // For now, just log the data and show success
-        console.log('Form submission:', formData);
-        
-        // Show success message
-        successMessage.classList.remove('hidden');
-        form.reset();
-        
+        // Send form data to PHP handler
+        const response = await fetch('contact-form.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData)
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+            // Show success message
+            successMessage.classList.remove('hidden');
+            form.reset();
+        } else {
+            // Show error with message from server
+            errorMessage.classList.remove('hidden');
+            const errorText = errorMessage.querySelector('p');
+            if (errorText && result.message) {
+                errorText.textContent = result.message;
+            }
+        }
+
     } catch (error) {
         console.error('Form submission error:', error);
         errorMessage.classList.remove('hidden');
