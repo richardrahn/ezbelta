@@ -1,0 +1,710 @@
+{
+  "navigation": {
+    "brand": "Ezbelta",
+    "tagline": "Einfache Digitale Zwillinge für Lean-Betrieb",
+    "features": "Funktionen",
+    "howItWorks": "Wie es funktioniert", 
+    "pricing": "Preise",
+    "admin": "Admin",
+    "signIn": "Anmelden",
+    "getStarted": "Jetzt starten"
+  },
+  "hero": {
+    "title": "Erstelle Deinen Einfachen",
+    "titleHighlight": "Digitalen Zwilling",
+    "description": "Die vollständige Fertigungssimulations-Plattform: Entwerfe mit Mixed Model Line Design, visualisiere mit Visual Flow Diagrammen und simuliere mit bewährter Diskrete-Ereignis-Technologie. Verwandle statische Entwürfe in wenigen Minuten in dynamische digitale Zwillinge.",
+    "getStarted": "Jetzt starten",
+    "startFreeTrial": "Kostenlose Testversion starten",
+    "watchDemo": "Demo ansehen",
+    "benefits": "✅ Keine Kreditkarte erforderlich • ✅ 14-tägige kostenlose Testversion • ✅ Jederzeit kündbar"
+  },
+  "problemSolution": {
+    "problemTitle": "Hören Sie auf zu raten bei Ihrer Produktionsleistung",
+    "problems": [
+      "Engpässe bleiben verborgen bis die Produktion bereits beeinträchtigt ist",
+      "Ressourcenplanung basiert auf Bauchgefühl statt auf Daten", 
+      "Teure Änderungen werden gemacht ohne die wahren Auswirkungen zu verstehen",
+      "Verschwendungsmuster bleiben unsichtbar bis sie Millionen kosten"
+    ],
+    "solutionTitle": "Erhalten Sie prädiktive Einblicke bevor Probleme auftreten",
+    "solutions": [
+      "**Identifizieren Sie Engpässe** mit 99%+ Genauigkeit durch bewährte Diskrete-Ereignis-Simulation",
+      "**Optimieren Sie die Ressourcenzuteilung** mit fortgeschrittener Blockierung/Wartezustand-Analyse",
+      "**Testen Sie Änderungen risikofrei** in virtueller Umgebung vor der Implementierung",
+      "**Erkennen Sie Verschwendungsmuster** mit KI-gestützten Lean Manufacturing Einblicken"
+    ]
+  },
+  "features": {
+    "title": "Fertigungssimulation auf Unternehmensebene",
+    "subtitle": "Basierend auf 15+ Jahren bewährter SimJS-Technologie, vertraut von Fortune-500-Herstellern weltweit",
+    "mmld": {
+      "title": "Mixed Model Line Design (MMLD)",
+      "description": "Vollständiges statisches Liniendesign-Tool mit geführtem Workflow: Produkte, Flüsse, Prozesse, Zeiten und Ressourcenberechnungen mit automatischer Simulationsmodell-Generierung.",
+      "features": [
+        "• Produktmix-Definition und Volumenplanung",
+        "• Prozessfluss-Design mit Unterbaugruppen-Support", 
+        "• Takt-Zeit- und Ressourcenberechnungen",
+        "• Ein-Klick Simulationsmodell-Generierung"
+      ]
+    },
+    "simulation": {
+      "title": "Kampferprobte Simulations-Engine",
+      "description": "Angetrieben von bewährter Kaplan-Simulator-Technologie mit 15+ Jahren Diskrete-Ereignis-Simulations-Verfeinerung.",
+      "features": [
+        "• Sub-Sekunden Simulationsausführung",
+        "• Monte-Carlo-Analyse mit Konfidenzintervallen",
+        "• Echtzeit-Zustandsverfolgung (BESCHÄFTIGT/BLOCKIERT/WARTEND/UNTÄTIG)",
+        "• Statistische Aufwärmperioden-Behandlung"
+      ]
+    },
+    "ai": {
+      "title": "KI-gestützte Lean-Einblicke", 
+      "description": "Automatische Verschwendungserkennung und Lean Manufacturing Empfehlungen powered by fortgeschrittene Mustererkennung.",
+      "features": [
+        "• Engpass-Identifizierung mit 99%+ Genauigkeit",
+        "• Verschwendungsmuster-Erkennung (7 Verschwendungsarten)",
+        "• Ressourcenoptimierung-Empfehlungen",
+        "• Flusseffizienz-Bewertung"
+      ]
+    },
+    "visual": {
+      "title": "Visual Flow Diagramme",
+      "description": "Interaktive Prozessfluss-Visualisierung mit Echtzeit-Simulationsstatus, Drag-and-Drop-Bearbeitung und Live-Ressourcenzustand-Überwachung.",
+      "features": [
+        "• Echtzeit-Statusfarben (Arbeitet/Untätig/Blockiert/Wartend)",
+        "• Drag-and-Drop Flusslayout-Editor",
+        "• Live Simulations-Wiedergabe-Visualisierung", 
+        "• Automatische Flussrouting und -verbindungen"
+      ]
+    },
+    "analytics": {
+      "title": "Vollständige Analytics Suite",
+      "description": "Umfassende Leistungsanalyse mit Yamazumi-Diagrammen, Auslastungs-Heatmaps, Schritt-für-Schritt Debug-Modus und statistischer Analyse.",
+      "features": [
+        "• Ereignis-für-Ereignis Simulationsschritt",
+        "• Ressourcenauslastung und Warteschlangen-Analyse",
+        "• Durchsatz & Zykluszeit-Verfolgung",
+        "• Export zu Excel/CSV/PDF-Berichten"
+      ]
+    },
+    "videoAnalyzer": {
+      "title": "KI Video-Analysator",
+      "description": "KI-gestützte automatische Bewegungserkennung, Zykluszeit-Analyse und Arbeitseffizienz-Messung mit OpenCV Computer Vision Technologie.",
+      "features": [
+        "• Automatische Bewegungserkennung und -verfolgung",
+        "• KI-gestützte Zykluszeit-Messung",
+        "• Arbeitseffizienz-Analyse",
+        "• Computer Vision Einblicke"
+      ]
+    },
+    "enterprise": {
+      "title": "Unternehmens-Integration",
+      "description": "Für Unternehmensmaßstab mit sicherem Multi-User-Support, Versionskontrolle und API-Zugang gebaut.",
+      "features": [
+        "• Multi-Tenant-Sicherheit (Supabase)",
+        "• Modellversionierung & Klonen",
+        "• REST API für Integration",
+        "• Cloud-native Architektur"
+      ]
+    }
+  },
+  "howItWorks": {
+    "title": "Von statischem Design zu digitalem Zwilling in Minuten",
+    "subtitle": "Unser integrierter MMLD-zu-Simulation-Workflow verwandelt Ihr Liniendesign in einen funktionierenden digitalen Zwilling",
+    "steps": [
+      {
+        "title": "Entwerfen mit MMLD",
+        "description": "Verwenden Sie Mixed Model Line Design um Produkte, Flüsse, Prozesse und Zeiten zu definieren. Folgen Sie dem geführten Workflow mit automatischen Ressourcenberechnungen."
+      },
+      {
+        "title": "Simulation generieren", 
+        "description": "Ein-Klick-Transformation vom statischen MMLD-Design zu vollständigem Simulationsmodell mit allen Ressourcen, Flüssen und Routing automatisch erstellt."
+      },
+      {
+        "title": "Visualisieren & Ausführen",
+        "description": "Verwenden Sie Visual Flow Diagramme um Ihr Prozesslayout zu sehen, dann führen Sie Diskrete-Ereignis-Simulation mit Echtzeit-Status-Visualisierung aus."
+      },
+      {
+        "title": "Analysieren & Optimieren",
+        "description": "Erhalten Sie umfassende Analysen mit Auslastungsberichten, Engpass-Identifizierung und Leistungseinblicken um Ihren digitalen Zwilling zu optimieren."
+      }
+    ]
+  },
+  "socialProof": {
+    "title": "Vertraut von Fertigungsführern",
+    "subtitle": "Von Automotive bis Aerospace, Elektronik bis Pharmazie",
+    "testimonials": [
+      {
+        "industry": "Automotive Fertigung",
+        "quote": "Reduzierte Linienwechselzeit um 35% und identifizierte $2M in Verschwendungseliminierungsmöglichkeiten.",
+        "company": "Fortune 500 OEM"
+      },
+      {
+        "industry": "Pharmazeutische Produktion",
+        "quote": "Optimierte Batch-Verarbeitung um Durchsatz um 28% zu erhöhen bei gleichzeitiger Qualitätscompliance.",
+        "company": "Globales Pharma-Unternehmen"
+      },
+      {
+        "industry": "Luft- und Raumfahrt Montage",
+        "quote": "Simulation enthüllte versteckten Engpass der 15% Kapazität kostete. Behoben vor Produktionsauswirkung.",
+        "company": "Verteidigungs-Auftragnehmer"
+      }
+    ]
+  },
+  "shopfloorModules": {
+    "title": "Leistungsstarke Shopfloor Management Module",
+    "subtitle": "Umfassende Werkzeuge für operative Exzellenz und kontinuierliche Verbesserung",
+    "modules": [
+      {
+        "name": "Prozessanalyse",
+        "description": "Tiefgehende Prozessleistungsanalyse mit detaillierten Metriken, Engpassidentifizierung und Effizienzanalyse zur Optimierung Ihrer Abläufe.",
+        "benefit": "Echtzeit-Leistungseinblicke"
+      },
+      {
+        "name": "Personaloptimierung",
+        "description": "Intelligente Personalplanung mit Kompetenzabgleich, Kapazitätsanalyse und dynamischer Terminplanung zur Maximierung der Produktivität.",
+        "benefit": "Intelligente Ressourcenzuteilung"
+      },
+      {
+        "name": "A3 Management",
+        "description": "Strukturierte Problemlösungsmethodik mit A3-Berichtsvorlagen, Ursachenanalyse und kontinuierliche Verbesserungsverfolgung.",
+        "benefit": "Lean-Methodik Integration"
+      },
+      {
+        "name": "Sequenzoptimierung",
+        "description": "Fortgeschrittene Algorithmen für Produktionsreihenfolge, Auftragspriorisierung und Flussoptimierung zur Minimierung von Umrüstzeiten und Maximierung des Durchsatzes.",
+        "benefit": "KI-gestützte Terminplanung"
+      },
+      {
+        "name": "Video-Analysator",
+        "description": "Analysieren Sie Fertigungsprozess-Videos mit zeitgestempelten Anmerkungen, Aktivitätsverfolgung und Zeit-Bewegungs-Studien für Lean-Verbesserungseinblicke.",
+        "benefit": "Prozess-Video-Einblicke"
+      },
+      {
+        "name": "KI Video-Analysator",
+        "description": "KI-gestützte automatische Bewegungserkennung, Zykluszeit-Analyse und Arbeitseffizienz-Messung mit OpenCV Computer Vision Technologie.",
+        "benefit": "Automatisierte KI-Analyse"
+      },
+      {
+        "name": "Sensitivitätsanalyse",
+        "description": "Automatisierte Parametertests zur Analyse der Auswirkungen von Volumen, Mix, Zykluszeiten und Ressourcenvariationen mit vollständiger Simulationsgenauigkeit.",
+        "benefit": "Datengetriebene Entscheidungen"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Einfache, transparente Preise",
+    "subtitle": "Kostenlos starten, skalieren während Sie wachsen",
+    "starter": {
+      "title": "Starter",
+      "price": "Kostenlos",
+      "description": "Perfekt zum Lernen und für kleine Value Streams",
+      "features": [
+        "Bis zu 3 Simulationsmodelle",
+        "Grundlegende Ressourcenmodellierung", 
+        "Standard Simulationsläufe",
+        "Community Support"
+      ],
+      "cta": "Kostenlos starten"
+    },
+    "professional": {
+      "title": "Professional",
+      "price": "99€",
+      "period": "/Monat",
+      "description": "Für wachsende Fertigungsteams",
+      "badge": "Am beliebtesten",
+      "features": [
+        "Unbegrenzte Simulationsmodelle",
+        "Erweiterte Ressourcenmodellierung",
+        "KI-gestützte Einblicke",
+        "Debug-Modus & Schritt-durch",
+        "Export-Funktionen", 
+        "Prioritäts-Support"
+      ],
+      "cta": "14-tägige kostenlose Testversion starten"
+    },
+    "enterprise": {
+      "title": "Enterprise",
+      "price": "Individuell",
+      "description": "Für große Organisationen",
+      "features": [
+        "Alles aus Professional",
+        "SSO & erweiterte Sicherheit",
+        "API-Zugang & Integrationen", 
+        "Individuelle Deployment-Optionen",
+        "Dedizierter Success Manager",
+        "SLA-Garantie"
+      ],
+      "cta": "Vertrieb kontaktieren"
+    }
+  },
+  "finalCta": {
+    "title": "Bereit Ihre Fertigung zu revolutionieren?",
+    "description": "Schließen Sie sich Tausenden von Herstellern an, die Verschwendung eliminiert, Fluss optimiert und Gewinne mit unserer bewährten Simulationsplattform gesteigert haben.",
+    "getStarted": "Jetzt starten",
+    "startTrial": "Starten Sie Ihre kostenlose Testversion",
+    "scheduleDemo": "Demo vereinbaren",
+    "benefits": "🚀 Setup in unter 5 Minuten • 📊 Ergebnisse sofort sehen • 💰 ROI im ersten Monat"
+  },
+  "dashboard": {
+    "loading": "Dashboard wird geladen...",
+    "welcomeBack": "Willkommen zurück",
+    "yourProjects": "Ihre Value Streams",
+    "newProject": "Neuer Value Stream",
+    "noProjects": "Noch keine Value Streams",
+    "getStarted": "Starten Sie mit der Erstellung Ihres ersten Lean Design Value Streams.",
+    "createFirstProject": "Erstellen Sie Ihren ersten Value Stream",
+    "openProject": "Value Stream öffnen",
+    "editProject": "Value Stream bearbeiten",
+    "created": "Erstellt",
+    "noDescription": "Keine Beschreibung",
+    "adminTools": "Admin-Tools",
+    "adminDashboard": "Admin-Dashboard",
+    "helpDocs": "Hilfe & Docs",
+    "signOut": "Abmelden"
+  },
+  "footer": {
+    "brand": "Ezbelta",
+    "description": "Die fortschrittlichste Fertigungssimulations-Plattform, angetrieben von bewährter Diskrete-Ereignis-Simulations-Technologie.",
+    "social": {
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter", 
+      "github": "GitHub"
+    },
+    "product": {
+      "title": "Produkt",
+      "features": "Funktionen",
+      "pricing": "Preise",
+      "documentation": "Dokumentation",
+      "apiReference": "API-Referenz"
+    },
+    "languages": {
+      "title": "Sprachen",
+      "english": "Englisch",
+      "spanish": "Spanisch",
+      "norwegian": "Norwegisch",
+      "german": "Deutsch"
+    },
+    "solutions": {
+      "title": "Lösungen",
+      "automotive": "Automotive",
+      "aerospace": "Luft- und Raumfahrt",
+      "pharmaceuticals": "Pharmazie",
+      "electronics": "Elektronik"
+    },
+    "support": {
+      "title": "Support",
+      "helpCenter": "Hilfe-Center",
+      "contactUs": "Kontaktieren Sie uns",
+      "training": "Schulung",
+      "community": "Community"
+    },
+    "copyright": "© 2025 Ezbelta. Erstellt mit Next.js 14, Supabase und bewährter SimJS-Technologie."
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "subtitle": "Haben Sie Fragen zu unserer Fertigungssimulationsplattform? Wir würden gerne von Ihnen hören.",
+    "backToHome": "← Zurück zur Startseite",
+    "getInTouch": "Kontakt aufnehmen",
+    "email": "E-Mail",
+    "location": "Standort",
+    "responseTime": "Reaktionszeit",
+    "responseTimeText": "Wir antworten in der Regel innerhalb von 24 Stunden",
+    "quickActions": "Schnellaktionen",
+    "scheduleDemo": "Demo vereinbaren",
+    "sendMessage": "Senden Sie uns eine Nachricht",
+    "form": {
+      "name": "Name",
+      "nameRequired": "Name *",
+      "email": "E-Mail",
+      "emailRequired": "E-Mail *",
+      "company": "Unternehmen",
+      "subject": "Betreff",
+      "subjectRequired": "Betreff *",
+      "subjectPlaceholder": "Wählen Sie einen Betreff",
+      "subjectOptions": {
+        "general": "Allgemeine Anfrage",
+        "demo": "Demo anfordern",
+        "pricing": "Preisinformationen",
+        "support": "Technischer Support",
+        "partnership": "Partnerschaften",
+        "other": "Sonstiges"
+      },
+      "message": "Nachricht",
+      "messageRequired": "Nachricht *",
+      "messagePlaceholder": "Erzählen Sie uns von Ihren Fertigungssimulationsanforderungen...",
+      "sending": "Wird gesendet...",
+      "sendMessage": "Nachricht senden"
+    },
+    "success": {
+      "title": "Nachricht gesendet!",
+      "message": "Vielen Dank, dass Sie uns kontaktiert haben. Wir melden uns innerhalb von 24 Stunden bei Ihnen.",
+      "sendAnother": "Weitere Nachricht senden"
+    }
+  },
+  "mmld": {
+    "overview": {
+      "title": "Mixed Model Line Design (MMLD)",
+      "description": "Das Flaggschiff-Feature von Ezbelta, das Herstellern ermöglicht, Produktionslinien für mehrere Produktvarianten zu entwerfen und zu optimieren. Im Gegensatz zum traditionellen Einprodukt-Liniendesign berechnet MMLD die exakten Ressourcenanforderungen beim Herstellen verschiedener Produkte auf derselben Produktionslinie.",
+      "whatMakesItPowerful": "Was macht MMLD so mächtig",
+      "traditionalProblems": "Probleme des traditionellen Ansatzes",
+      "mmldAdvantages": "MMLD-Vorteile",
+      "problemsList": [
+        "Raten bei Ressourcenanforderungen basierend auf Einzelprodukten",
+        "Verwendung von Durchschnittsprozesszeiten, die die Realität nicht widerspiegeln",
+        "Über- oder Unterdimensionierung von Produktionslinien",
+        "Unfähigkeit Produktmix-Änderungen zu handhaben"
+      ],
+      "advantagesList": [
+        "Präzise Berechnungen mit tatsächlichen Produktvolumen",
+        "Prozessspezifische Bedarfsberechnungen",
+        "Exakte Ressourcenanforderungen für gemischte Produktion",
+        "Optimiert für variable Produktmixes"
+      ],
+      "fiveStepProcess": "5-Schritte MMLD-Prozess",
+      "stepTitles": [
+        "Produktmix",
+        "Fluss-Design", 
+        "Prozessliste",
+        "Prozesszeiten",
+        "Berechnungen & Ergebnisse"
+      ],
+      "stepDescriptions": [
+        "Definieren Sie Ihre Produktvarianten und Zielvolumen",
+        "Kartieren Sie den Fertigungsfluss und Prozessverbindungen",
+        "Listen Sie alle Prozesse mit ihren Anforderungen auf",
+        "Setzen Sie Prozesszeiten und Variabilität für jedes Produkt",
+        "Generieren Sie Ressourcenanforderungen und Optimierungs-Einblicke"
+      ],
+      "getStarted": "Mit MMLD starten",
+      "startButton": "Schritt 1 starten: Produktmix →"
+    },
+    "productMix": {
+      "title": "Produktmix-Definition",
+      "subtitle": "Schritt 1 von 5 im MMLD-Prozess",
+      "description": "Die Grundlage von MMLD ist die Definition Ihres Produktportfolios mit genauen Volumenziele. Dieser Schritt bestimmt die Nachfragemuster, die alle nachgelagerten Berechnungen antreiben.",
+      "keyInputs": "Erforderliche Schlüsseleingaben",
+      "partNumber": "Teilenummer",
+      "productDescription": "Produktbeschreibung",
+      "targetVolume": "Zielvolumen",
+      "inputsList": [
+        "**Teilenummer**: Eindeutige Kennung für jede Produktvariante",
+        "**Produktbeschreibung**: Klare Beschreibung was diese Variante repräsentiert",
+        "**Zielvolumen**: Erwartete Produktionsmenge über Ihren Planungshorizont"
+      ],
+      "whyItMatters": "Warum dieser Schritt wichtig ist",
+      "importanceList": [
+        "**Bedarfsgenauigkeit**: Falsche Volumen führen zu falscher Ressourcendimensionierung",
+        "**Prozessbelastung**: Höhervolumige Produkte treiben Ressourcenanforderungen",
+        "**Mix-Sensitivität**: Kleine Änderungen im Mix können große Ressourcenauswirkungen haben"
+      ],
+      "bestPractices": "Best Practices",
+      "practicesList": [
+        "Verwenden Sie realistische Volumenprognosen, keine Wunschziele",
+        "Beziehen Sie saisonale Schwankungen in Ihre Planung ein",
+        "Berücksichtigen Sie Anlaufphasen für neue Produkte",
+        "Validieren Sie Volumen mit Vertriebs- und Bedarfsplanungsteams"
+      ],
+      "nextStep": "Weiter: Schritt 2 - Fluss-Design →"
+    },
+    "flowDesign": {
+      "title": "Fluss-Design & Montage-Verbindungen",
+      "subtitle": "Schritt 3 von 5 im MMLD-Prozess",
+      "description": "Verbinden Sie Unterbaugruppen-Flüsse mit Hauptmontage-Prozessen und definieren Sie Materialfluss-Beziehungen. Dieser Schritt bestimmt, wie unabhängige Flüsse konvergieren um das Endprodukt zu schaffen.",
+      "understandingConnections": "Verstehen von Montage-Verbindungen",
+      "whatAreConnections": "Was sind Montage-Verbindungen?",
+      "connectionsDescription": "Montage-Verbindungen definieren wo und wie Unterbaugruppen in Hauptproduktionsflüsse einfließen. Sie repräsentieren die physischen Konvergenzpunkte wo mehrere Fertigungsströme zusammenkommen.",
+      "typesOfConnections": "Arten von Verbindungen",
+      "connectionTypes": [
+        "**Direkte Montage**: Unterbaugruppe fließt direkt in Hauptprozess",
+        "**Gestufte Montage**: Unterbaugruppen sammeln sich bevor sie die Hauptlinie speisen",
+        "**Just-in-Time**: Unterbaugruppen werden auf Abruf für die Hauptlinie produziert"
+      ],
+      "keyConsiderations": "Wichtige Design-Überlegungen",
+      "considerations": [
+        "**Synchronisation**: Stellen Sie Zeitabstimmung zwischen Unterbaugruppe und Hauptlinie sicher",
+        "**Puffer-Management**: Dimensionieren Sie Puffer angemessen für Flussglättung",
+        "**Qualitätskontrolle**: Positionieren Sie Inspektionspunkte an Verbindungsschnittstellen",
+        "**Materialfluss**: Entwerfen Sie physische Pfade für effizienten Materialtransport"
+      ],
+      "bestPractices": "Fluss-Design Best Practices",
+      "practices": [
+        "Kartieren Sie alle Materialabhängigkeiten vor dem Entwerfen von Verbindungen",
+        "Berücksichtigen Sie Takt-Zeit-Unterschiede zwischen Flüssen",
+        "Entwerfen Sie für Flexibilität bei Produktmix-Änderungen",
+        "Planen Sie für Qualitätsstopps und Nacharbeit-Szenarien"
+      ],
+      "nextStep": "Weiter: Schritt 4 - Prozesszeiten →"
+    },
+    "processList": {
+      "title": "Prozesslisten-Erstellung",
+      "subtitle": "Schritt 2 von 5 im MMLD-Prozess",
+      "description": "Definieren Sie jeden Fertigungsprozess in Ihrer Wertstromkette mit ordnungsgemäßen Ressourcenzuweisungen. Dieser Schritt schafft die Grundlage für das Verständnis, wie Ihre Produkte durch die Produktion fließen.",
+      "howToAccess": "Wie Sie auf Prozessdefinition zugreifen",
+      "keyInputs": "Wichtige Prozess-Eingaben",
+      "processName": "Prozessname",
+      "resourceType": "Ressourcentyp",
+      "resourceCount": "Ressourcenanzahl",
+      "inputsList": [
+        "**Prozessname**: Klarer, beschreibender Name für jeden Fertigungsschritt",
+        "**Ressourcentyp**: Primär (P), Operator (O), Sekundär (S), oder IPK-Puffer",
+        "**Ressourcenanzahl**: Anzahl der für diesen Prozess erforderlichen Ressourcen"
+      ],
+      "resourceTypes": "Verstehen von Ressourcentypen",
+      "primaryResources": "Primäre (P) Ressourcen",
+      "primaryDescription": "Hauptverarbeitungsausrüstung wie Maschinen, Arbeitsplätze oder automatisierte Systeme",
+      "operatorResources": "Operator (O) Ressourcen", 
+      "operatorDescription": "Menschliche Ressourcen erforderlich für manuelle Operationen",
+      "secondaryResources": "Sekundäre (S) Ressourcen",
+      "secondaryDescription": "Unterstützende Ausrüstung wie Werkzeuge, Vorrichtungen oder Prüfausrüstung",
+      "ipkBuffers": "IPK-Puffer",
+      "ipkDescription": "In-Process-Kit Lagerbereiche zwischen Fertigungsschritten",
+      "bestPractices": "Prozessdefinitions Best Practices",
+      "practices": [
+        "Verwenden Sie konsistente Namenskonventionen über alle Prozesse hinweg",
+        "Definieren Sie Prozesse auf angemessener Detailebene",
+        "Berücksichtigen Sie sowohl direkte als auch indirekte Ressourcenanforderungen",
+        "Planen Sie für Qualitätskontrolle und Inspektionspunkte"
+      ],
+      "nextStep": "Weiter: Schritt 3 - Fluss-Design →"
+    },
+    "calculations": {
+      "title": "Liniendesign-Berechnungen & Ergebnisse",
+      "subtitle": "Schritt 5 von 5 im MMLD-Prozess",
+      "description": "Der Höhepunkt von MMLD, wo Ihre Daten sich in umsetzbare Ressourcenanforderungen und Optimierungs-Einblicke verwandeln. Hier liefert die mathematische Präzision von MMLD greifbaren Geschäftswert.",
+      "engineOverview": "Berechnungsmaschinen-Übersicht",
+      "engineDescription": "MMLD führt ausgeklügelte Berechnungen durch mit prozessspezifischem Bedarf statt einfacher Durchschnitte. Diese Präzision macht das System mächtig für Mischmodell-Fertigung.",
+      "calculationSequence": "Berechnungssequenz",
+      "stepByStep": "Schritt-für-Schritt Berechnungen",
+      "step1Title": "Schritt 1: Prozessbedarf-Berechnung",
+      "step1Formula": "Prozessbedarf = Σ(Produktvolumen × Prozess-Multiplikator × Prozess-Anwendbarkeit)",
+      "step2Title": "Schritt 2: Prozessspezifische Takt-Zeit", 
+      "step2Formula": "Takt-Zeit = Verfügbare Arbeitszeit ÷ Prozessbedarf",
+      "step3Title": "Schritt 3: Gewichtete durchschnittliche Prozesszeit",
+      "step3Formula": "Gewichtete Durchschnittszeit = Σ(Volumen × Prozesszeit × Multiplikator × Anwendbarkeit) ÷ Prozessbedarf",
+      "backButton": "← Zurück: Schritt 4 - Prozesszeiten",
+      "completeMessage": "🎉 MMLD Abgeschlossen!",
+      "nextButton": "Mixed Model Simulation erkunden →",
+      "formula": "Formel",
+      "sequences": [
+        "Prozessbedarf-Berechnung (pro Prozess)",
+        "Prozessspezifische Takt-Zeit (pro Prozess)", 
+        "Gewichtete durchschnittliche Prozesszeit (pro Prozess)",
+        "Erforderliche Ressourcen (theoretisch)",
+        "Tatsächlich benötigte Ressourcen (praktisch, aufgerundet)"
+      ]
+    }
+  },
+  "docs": {
+    "navigation": {
+      "title": "Dokumentation",
+      "backToDashboard": "Zurück zum Dashboard",
+      "gettingStarted": "Erste Schritte",
+      "overview": "Übersicht",
+      "introduction": "Einführung",
+      "quickStart": "Schnellstart",
+      "accountSetup": "Konto einrichten",
+      "mmld": "Mixed Model Line Design",
+      "mmldOverview": "MMLD-Übersicht",
+      "productMix": "Produktmix-Definition",
+      "processList": "Prozessliste erstellen",
+      "flowDesign": "Flow-Design & Verbindungen",
+      "processTimes": "Prozesszeiten eingeben",
+      "calculations": "Liniendesign-Berechnungen",
+      "simulation": "Mixed Model Simulation",
+      "modelBuilding": "Modell erstellen",
+      "resourceManagement": "Ressourcenverwaltung",
+      "runningSimulations": "Simulationen ausführen",
+      "analyzingResults": "Ergebnisse analysieren",
+      "advanced": "Erweiterte Funktionen",
+      "debugMode": "Debug-Modus",
+      "variabilitySettings": "Variabilitäts-Einstellungen",
+      "testConnection": "Verbindung testen"
+    },
+    "home": {
+      "title": "Ezbelta Dokumentation",
+      "description": "Willkommen zum umfassenden Leitfaden für Ezbelta, die fortschrittlichste diskrete Ereignissimulations-Plattform für Lean Manufacturing. Diese Dokumentation hilft Ihnen beim Modellieren komplexer Produktionssysteme, Optimieren von Abläufen und Eliminieren von Verschwendung.",
+      "mmldCard": {
+        "title": "Mixed Model Line Design",
+        "description": "Unser Flaggschiff-Feature für Design und Optimierung von Produktionslinien für mehrere Produktvarianten. Starten Sie hier für maximale Wirkung.",
+        "cta": "Loslegen →"
+      },
+      "simulationCard": {
+        "title": "Mixed Model Simulation",
+        "description": "Erstellen Sie detaillierte diskrete Ereignissimulations-Modelle für komplexe Fertigungsszenarien und Was-wäre-wenn-Analysen.",
+        "cta": "Mehr erfahren →"
+      },
+      "whatYouLearn": {
+        "title": "Was Sie lernen werden",
+        "processCalculations": {
+          "title": "Prozessspezifische Berechnungen",
+          "description": "Erfahren Sie, wie MMLD Taktzeit und Ressourcenbedarf für jeden Prozess basierend auf der tatsächlichen Produktnachfrage berechnet."
+        },
+        "advancedSimulation": {
+          "title": "Erweiterte Simulation",
+          "description": "Meistern Sie diskrete Ereignissimulation mit Blockierungs-/Wartezuständen, Ressourcenkonflikten und statistischer Analyse."
+        },
+        "optimizationInsights": {
+          "title": "Optimierungs-Einblicke",
+          "description": "Entdecken Sie Engpässe, eliminieren Sie Verschwendung und optimieren Sie Ressourcenzuteilung mit KI-gestützten Lean Manufacturing Einblicken."
+        }
+      },
+      "gettingStarted": {
+        "title": "Erste Schritte",
+        "newUserCard": {
+          "title": "Neu bei Ezbelta?",
+          "description": "Beginnen Sie mit unserer umfassenden Einführung, um die Plattform-Architektur und Fähigkeiten zu verstehen.",
+          "cta": "Plattform-Einführung lesen →"
+        },
+        "step1": {
+          "title": "Ihr Konto einrichten",
+          "description": "Erstellen Sie Value Streams, konfigurieren Sie Benutzereinstellungen und machen Sie sich mit dem Dashboard vertraut."
+        },
+        "step2": {
+          "title": "Ihren Ansatz wählen",
+          "description": "Starten Sie mit Mixed Model Line Design für sofortigen ROI oder tauchen Sie in Mixed Model Simulation für komplexe Szenarien ein."
+        },
+        "step3": {
+          "title": "Erstellen und Optimieren",
+          "description": "Modellieren Sie Ihre Prozesse, führen Sie Simulationen aus und implementieren Sie Optimierungsempfehlungen."
+        }
+      },
+      "platformFeatures": {
+        "title": "Plattform-Features",
+        "coreCapabilities": {
+          "title": "Kernfunktionen",
+          "features": [
+            "Prozessspezifische Taktzeit-Berechnungen",
+            "Gewichtete Durchschnitts-Prozesszeit-Analyse",
+            "Diskrete-Ereignis-Simulations-Engine",
+            "Ressourcen-Blockierungs-/Wartezustand-Verfolgung",
+            "Monte Carlo statistische Analyse"
+          ]
+        },
+        "advancedFeatures": {
+          "title": "Erweiterte Features",
+          "features": [
+            "Schritt-für-Schritt Debug-Modus",
+            "Prozesszeit-Variabilitäts-Modellierung",
+            "Multi-Flow-Assembly-Verbindungen",
+            "Interaktive Visualisierungs-Dashboards",
+            "Export- und Berichtsfunktionen"
+          ]
+        }
+      },
+      "helpSupport": {
+        "title": "Brauchen Sie Hilfe?",
+        "description": "Können Sie nicht finden, wonach Sie suchen? Probieren Sie diese Ressourcen:",
+        "testConnection": "Datenbankverbindung testen",
+        "debugGuide": "Debug-Modus Anleitung",
+        "backToDashboard": "Zurück zum Dashboard"
+      }
+    },
+    "docs": {
+      "home": {
+        "title": "Ezbelta Dokumentation",
+        "description": "Willkommen zum umfassenden Leitfaden für Ezbelta, die fortschrittlichste Diskrete-Ereignis-Simulationsplattform für Lean Manufacturing. Diese Dokumentation hilft Ihnen bei der Modellierung komplexer Produktionssysteme, der Optimierung von Abläufen und der Eliminierung von Verschwendung.",
+        "mmldCard": {
+          "title": "Mixed Model Line Design",
+          "description": "Unser Flaggschiff-Feature für das Design und die Optimierung von Produktionslinien für mehrere Produktvarianten. Starten Sie hier für maximale Wirkung.",
+          "cta": "Jetzt starten →"
+        },
+        "simulationCard": {
+          "title": "Mixed Model Simulation",
+          "description": "Erstellen Sie detaillierte Diskrete-Ereignis-Simulationsmodelle für komplexe Fertigungsszenarien und Was-wäre-wenn-Analysen.",
+          "cta": "Mehr erfahren →"
+        },
+        "whatYouLearn": {
+          "title": "Was Sie lernen werden",
+          "processCalculations": {
+            "title": "Prozessspezifische Berechnungen",
+            "description": "Erfahren Sie, wie MMLD Taktzeit und Ressourcenbedarf für jeden Prozess basierend auf der tatsächlichen Produktnachfrage berechnet."
+          },
+          "advancedSimulation": {
+            "title": "Erweiterte Simulation",
+            "description": "Meistern Sie Diskrete-Ereignis-Simulation mit Blockierungs-/Wartezuständen, Ressourcenkonflikten und statistischer Analyse."
+          },
+          "optimizationInsights": {
+            "title": "Optimierungseinblicke",
+            "description": "Entdecken Sie Engpässe, eliminieren Sie Verschwendung und optimieren Sie die Ressourcenzuteilung mit KI-gestützten Lean Manufacturing-Einblicken."
+          }
+        },
+        "gettingStarted": {
+          "title": "Erste Schritte",
+          "newUserCard": {
+            "title": "Neu bei Ezbelta?",
+            "description": "Beginnen Sie mit unserer umfassenden Einführung, um die Plattform-Architektur und -Funktionen zu verstehen.",
+            "cta": "Plattform-Einführung lesen →"
+          },
+          "step1": {
+            "title": "Richten Sie Ihr Konto ein",
+            "description": "Erstellen Sie Value Streams, konfigurieren Sie Benutzereinstellungen und machen Sie sich mit dem Dashboard vertraut."
+          },
+          "step2": {
+            "title": "Wählen Sie Ihren Ansatz",
+            "description": "Beginnen Sie mit Mixed Model Line Design für sofortigen ROI oder tauchen Sie in gemischte Modellsimulation für komplexe Szenarien ein."
+          },
+          "step3": {
+            "title": "Erstellen und Optimieren",
+            "description": "Modellieren Sie Ihre Prozesse, führen Sie Simulationen aus und implementieren Sie Optimierungsempfehlungen."
+          }
+        },
+        "platformFeatures": {
+          "title": "Plattform-Features",
+          "coreCapabilities": {
+            "title": "Kernfunktionen",
+            "features": [
+              "Prozessspezifische Taktzeit-Berechnungen",
+              "Gewichtete durchschnittliche Prozesszeit-Analyse",
+              "Diskrete-Ereignis-Simulations-Engine",
+              "Ressourcen-Blockierungs-/Wartezustand-Tracking",
+              "Monte-Carlo-Statistikanalyse"
+            ]
+          },
+          "advancedFeatures": {
+            "title": "Erweiterte Features",
+            "features": [
+              "Schritt-für-Schritt Debug-Modus",
+              "Prozesszeit-Variabilitäts-Modellierung",
+              "Multi-Flow-Assembly-Verbindungen",
+              "Interaktive Visualisierungs-Dashboards",
+              "Export- und Berichtsfunktionen"
+            ]
+          }
+        },
+        "helpSupport": {
+          "title": "Brauchen Sie Hilfe?",
+          "description": "Können Sie nicht finden, wonach Sie suchen? Probieren Sie diese Ressourcen:",
+          "testConnection": "Datenbankverbindung testen",
+          "debugGuide": "Debug-Modus-Leitfaden",
+          "backToDashboard": "Zurück zum Dashboard"
+        }
+      },
+      "navigation": {
+        "title": "Dokumentation",
+        "backToDashboard": "Zurück zum Dashboard",
+        "gettingStarted": "Erste Schritte",
+        "overview": "Überblick",
+        "introduction": "Einführung",
+        "quickStart": "Schnellstart",
+        "accountSetup": "Konto-Einrichtung",
+        "mmld": "Mixed Model Line Design",
+        "mmldOverview": "MMLD Überblick",
+        "productMix": "Produktmix-Definition",
+        "processList": "Prozesslisten-Erstellung",
+        "flowDesign": "Flow-Design & Verbindungen",
+        "processTimes": "Prozesszeiten-Eingabe",
+        "calculations": "Liniendesign-Berechnungen",
+        "simulation": "Mixed Model Simulation",
+        "modelBuilding": "Modell-Erstellung",
+        "resourceManagement": "Ressourcen-Management",
+        "runningSimulations": "Simulationen ausführen",
+        "analyzingResults": "Ergebnisse analysieren",
+        "advanced": "Erweiterte Features",
+        "debugMode": "Debug-Modus",
+        "variabilitySettings": "Variabilitäts-Einstellungen",
+        "testConnection": "Verbindung testen"
+      }
+    }
+  }
+}

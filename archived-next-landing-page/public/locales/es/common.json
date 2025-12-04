@@ -1,0 +1,723 @@
+{
+  "navigation": {
+    "brand": "Ezbelta",
+    "tagline": "Gemelos Digitales Fáciles para Operaciones Lean",
+    "features": "Características",
+    "howItWorks": "Cómo Funciona",
+    "pricing": "Precios",
+    "admin": "Admin",
+    "signIn": "Iniciar Sesión",
+    "getStarted": "Comenzar"
+  },
+  "hero": {
+    "title": "Construye Tu",
+    "titleHighlight": "Gemelo Digital Simple",
+    "description": "La plataforma completa de simulación de manufactura: diseña con Mixed Model Line Design, visualiza con diagramas de Flujo Visual, y simula con tecnología de eventos discretos probada. Transforma diseños estáticos en gemelos digitales dinámicos en minutos.",
+    "getStarted": "Comenzar",
+    "startFreeTrial": "Iniciar Prueba Gratuita",
+    "watchDemo": "Ver Demo",
+    "benefits": "✅ Sin tarjeta de crédito requerida • ✅ 14 días de prueba gratuita • ✅ Cancela en cualquier momento"
+  },
+  "problemSolution": {
+    "problemTitle": "Deja de Adivinar el Rendimiento de Tu Producción",
+    "problems": [
+      "Cuellos de botella ocultos hasta que la producción ya está impactada",
+      "Planificación de recursos basada en intuición en lugar de datos",
+      "Cambios costosos realizados sin entender el verdadero impacto",
+      "Patrones de desperdicio invisibles hasta que cuestan millones"
+    ],
+    "solutionTitle": "Obtén Insights Predictivos Antes de que Ocurran los Problemas",
+    "solutions": [
+      "**Identifica cuellos de botella** con 99%+ de precisión usando simulación de eventos discretos probada",
+      "**Optimiza la asignación de recursos** con análisis avanzado de estados de bloqueo/espera",
+      "**Prueba cambios sin riesgo** en entorno virtual antes de implementar",
+      "**Detecta patrones de desperdicio** con insights de manufactura lean potenciados por IA"
+    ]
+  },
+  "features": {
+    "title": "Simulación de Manufactura de Grado Empresarial",
+    "subtitle": "Construido sobre 15+ años de tecnología SimJS probada, confiado por fabricantes Fortune 500 mundialmente",
+    "mmld": {
+      "title": "Diseño de Línea de Modelo Mixto (MMLD)",
+      "description": "Herramienta completa de diseño de línea estática con flujo de trabajo guiado: productos, flujos, procesos, tiempos, y cálculos de recursos con generación automática de modelos de simulación.",
+      "features": [
+        "• Definición de mezcla de productos y planificación de volumen",
+        "• Diseño de flujo de procesos con soporte de subensambles",
+        "• Cálculos de tiempo takt y recursos",
+        "• Generación de modelos de simulación con un clic"
+      ]
+    },
+    "simulation": {
+      "title": "Motor de Simulación Probado en Batalla",
+      "description": "Potenciado por tecnología Kaplan-Simulator probada con 15+ años de refinamiento de simulación de eventos discretos.",
+      "features": [
+        "• Ejecución de simulación sub-segundo",
+        "• Análisis Monte Carlo con intervalos de confianza",
+        "• Seguimiento de estado en tiempo real (OCUPADO/BLOQUEADO/ESPERANDO/INACTIVO)",
+        "• Manejo de período de calentamiento estadístico"
+      ]
+    },
+    "ai": {
+      "title": "Insights Lean Potenciados por IA",
+      "description": "Detección automática de desperdicio y recomendaciones de manufactura lean potenciadas por reconocimiento avanzado de patrones.",
+      "features": [
+        "• Identificación de cuellos de botella con 99%+ de precisión",
+        "• Detección de patrones de desperdicio (7 tipos de desperdicio)",
+        "• Recomendaciones de optimización de recursos",
+        "• Puntuación de eficiencia de flujo"
+      ]
+    },
+    "visual": {
+      "title": "Diagramas de Flujo Visual",
+      "description": "Visualización interactiva de flujo de procesos con estado de simulación en tiempo real, edición de arrastrar y soltar, y monitoreo en vivo del estado de recursos.",
+      "features": [
+        "• Colores de estado en tiempo real (Trabajando/Inactivo/Bloqueado/Esperando)",
+        "• Editor de diseño de flujo arrastrar y soltar",
+        "• Visualización de reproducción de simulación en vivo",
+        "• Enrutamiento y conexiones de flujo automáticas"
+      ]
+    },
+    "analytics": {
+      "title": "Suite Completa de Analíticas",
+      "description": "Analíticas de rendimiento integrales con gráficos Yamazumi, mapas de calor de utilización, modo debug paso a paso, y análisis estadístico.",
+      "features": [
+        "• Paso de simulación evento por evento",
+        "• Análisis de utilización de recursos y colas",
+        "• Seguimiento de rendimiento y tiempo de ciclo",
+        "• Exportar a reportes Excel/CSV/PDF"
+      ]
+    },
+    "videoAnalyzer": {
+      "title": "Analizador de Video IA",
+      "description": "Detección automática de movimiento potenciada por IA, análisis de tiempo de ciclo y medición de eficiencia del trabajo usando tecnología de visión por computadora OpenCV.",
+      "features": [
+        "• Detección y seguimiento automático de movimiento",
+        "• Medición de tiempo de ciclo potenciada por IA",
+        "• Análisis de eficiencia del trabajo",
+        "• Insights de visión por computadora"
+      ]
+    },
+    "enterprise": {
+      "title": "Integración Empresarial",
+      "description": "Construido para escala empresarial con soporte multi-usuario seguro, control de versiones, y acceso API.",
+      "features": [
+        "• Seguridad multi-inquilino (Supabase)",
+        "• Versionado de modelos y clonación",
+        "• API REST para integración",
+        "• Arquitectura nativa en la nube"
+      ]
+    }
+  },
+  "howItWorks": {
+    "title": "De Diseño Estático a Gemelo Digital en Minutos",
+    "subtitle": "Nuestro flujo de trabajo integrado MMLD-a-Simulación transforma tu diseño de línea en un gemelo digital funcionando",
+    "steps": [
+      {
+        "title": "Diseña con MMLD",
+        "description": "Usa Mixed Model Line Design para definir productos, flujos, procesos, y tiempos. Sigue el flujo de trabajo guiado con cálculos automáticos de recursos."
+      },
+      {
+        "title": "Genera Simulación",
+        "description": "Transformación con un clic de diseño estático MMLD a modelo de simulación completo con todos los recursos, flujos, y enrutamiento creados automáticamente."
+      },
+      {
+        "title": "Visualiza y Ejecuta",
+        "description": "Usa diagramas de Flujo Visual para ver tu diseño de proceso, luego ejecuta simulación de eventos discretos con visualización de estado en tiempo real."
+      },
+      {
+        "title": "Analiza y Optimiza",
+        "description": "Obtén analíticas integrales con reportes de utilización, identificación de cuellos de botella, e insights de rendimiento para optimizar tu gemelo digital."
+      }
+    ]
+  },
+  "socialProof": {
+    "title": "Confiado por Líderes de Manufactura",
+    "subtitle": "Desde automotriz hasta aeroespacial, electrónicos hasta farmacéuticos",
+    "testimonials": [
+      {
+        "industry": "Manufactura Automotriz",
+        "quote": "Redujo el tiempo de cambio de línea en 35% e identificó $2M en oportunidades de eliminación de desperdicios.",
+        "company": "OEM Fortune 500"
+      },
+      {
+        "industry": "Producción Farmacéutica",
+        "quote": "Optimizó el procesamiento por lotes para aumentar el rendimiento 28% manteniendo el cumplimiento de calidad.",
+        "company": "Compañía Farmacéutica Global"
+      },
+      {
+        "industry": "Ensamble Aeroespacial",
+        "quote": "La simulación reveló cuello de botella oculto costando 15% de capacidad. Solucionado antes del impacto en producción.",
+        "company": "Contratista de Defensa"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Precios Simples y Transparentes",
+    "subtitle": "Comienza gratis, escala mientras creces",
+    "starter": {
+      "title": "Iniciador",
+      "price": "Gratis",
+      "description": "Perfecto para aprender y value streams pequeños",
+      "features": [
+        "Hasta 3 modelos de simulación",
+        "Modelado básico de recursos",
+        "Ejecuciones estándar de simulación",
+        "Soporte de comunidad"
+      ],
+      "cta": "Comenzar Gratis"
+    },
+    "professional": {
+      "title": "Profesional",
+      "price": "$99",
+      "period": "/mes",
+      "description": "Para equipos de manufactura en crecimiento",
+      "badge": "Más Popular",
+      "features": [
+        "Modelos de simulación ilimitados",
+        "Modelado avanzado de recursos",
+        "Insights potenciados por IA",
+        "Modo debug y paso a paso",
+        "Capacidades de exportación",
+        "Soporte prioritario"
+      ],
+      "cta": "Iniciar Prueba Gratuita de 14 Días"
+    },
+    "enterprise": {
+      "title": "Empresarial",
+      "price": "Personalizado",
+      "description": "Para organizaciones grandes",
+      "features": [
+        "Todo en Profesional",
+        "SSO y seguridad avanzada",
+        "Acceso API e integraciones",
+        "Opciones de despliegue personalizado",
+        "Gerente de éxito dedicado",
+        "Garantía SLA"
+      ],
+      "cta": "Contactar Ventas"
+    }
+  },
+  "finalCta": {
+    "title": "¿Listo para Revolucionar Tu Manufactura?",
+    "description": "Únete a miles de fabricantes que han eliminado desperdicios, optimizado flujos, y aumentado ganancias con nuestra plataforma de simulación probada.",
+    "startTrial": "Iniciar Tu Prueba Gratuita",
+    "scheduleDemo": "Programar Demo",
+    "benefits": "🚀 Configuración en menos de 5 minutos • 📊 Ver resultados inmediatamente • 💰 ROI dentro del primer mes",
+    "getStarted": "Comenzar"
+  },
+  "dashboard": {
+    "loading": "Cargando panel...",
+    "welcomeBack": "Bienvenido de nuevo",
+    "yourProjects": "Tus Value Streams",
+    "newProject": "Nuevo Value Stream",
+    "noProjects": "Aún no hay value streams",
+    "getStarted": "Comienza creando tu primer value stream de diseño lean.",
+    "createFirstProject": "Crear Tu Primer Value Stream",
+    "openProject": "Abrir Value Stream",
+    "editProject": "Editar Value Stream",
+    "created": "Creado",
+    "noDescription": "Sin descripción",
+    "adminTools": "Herramientas de Admin",
+    "adminDashboard": "Panel de Admin",
+    "helpDocs": "Ayuda y Documentos",
+    "signOut": "Cerrar Sesión"
+  },
+  "footer": {
+    "brand": "Simulador de Diseño Lean Pro",
+    "description": "La plataforma de simulación de manufactura más avanzada, potenciada por tecnología de simulación de eventos discretos probada.",
+    "social": {
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "github": "GitHub"
+    },
+    "product": {
+      "title": "Producto",
+      "features": "Características",
+      "pricing": "Precios",
+      "documentation": "Documentación",
+      "apiReference": "Referencia API"
+    },
+    "solutions": {
+      "title": "Soluciones",
+      "automotive": "Automotriz",
+      "aerospace": "Aeroespacial",
+      "pharmaceuticals": "Farmacéuticos",
+      "electronics": "Electrónicos"
+    },
+    "support": {
+      "title": "Soporte",
+      "helpCenter": "Centro de Ayuda",
+      "contactUs": "Contáctanos",
+      "training": "Entrenamiento",
+      "community": "Comunidad"
+    },
+    "copyright": "© 2025 Simulador de Diseño Lean Pro. Construido con Next.js 14, Supabase, y tecnología SimJS probada.",
+    "languages": {
+      "title": "Idiomas",
+      "english": "Inglés",
+      "spanish": "Español",
+      "norwegian": "Noruego",
+      "german": "Alemán"
+    }
+  },
+  "mmld": {
+    "overview": {
+      "title": "Diseño de Línea de Modelo Mixto (MMLD)",
+      "description": "La característica principal de Ezbelta que permite a los fabricantes diseñar y optimizar líneas de producción para múltiples variantes de productos. A diferencia del diseño tradicional de línea de un solo producto, MMLD calcula los requisitos exactos de recursos al fabricar diferentes productos en la misma línea de producción.",
+      "whatMakesItPowerful": "Lo que Hace Poderoso al MMLD",
+      "traditionalProblems": "Problemas del Enfoque Tradicional",
+      "mmldAdvantages": "Ventajas del MMLD",
+      "problemsList": [
+        "Adivinar los requisitos de recursos basándose en productos únicos",
+        "Usar tiempos de proceso promedio que no reflejan la realidad",
+        "Sobredimensionar o subdimensionar las líneas de producción",
+        "Incapacidad para manejar cambios en la mezcla de productos"
+      ],
+      "advantagesList": [
+        "Cálculos precisos usando volúmenes reales de productos",
+        "Cálculos de demanda específicos del proceso",
+        "Requisitos exactos de recursos para producción mixta",
+        "Optimizado para mezclas variables de productos"
+      ],
+      "fiveStepProcess": "Proceso MMLD de 5 Pasos",
+      "stepTitles": [
+        "Mezcla de Productos",
+        "Diseño de Flujo",
+        "Lista de Procesos",
+        "Tiempos de Proceso",
+        "Cálculos y Resultados"
+      ],
+      "stepDescriptions": [
+        "Define las variantes de tu producto y volúmenes objetivo",
+        "Mapea el flujo de manufactura y conexiones de procesos",
+        "Lista todos los procesos con sus requisitos",
+        "Establece tiempos de proceso y variabilidad para cada producto",
+        "Genera requisitos de recursos y perspectivas de optimización"
+      ],
+      "getStarted": "Comenzar con MMLD",
+      "startButton": "Comenzar Paso 1: Mezcla de Productos →"
+    },
+    "productMix": {
+      "title": "Definición de Mezcla de Productos",
+      "subtitle": "Paso 1 de 5 en el Proceso MMLD",
+      "description": "La base del MMLD es definir tu portafolio de productos con objetivos de volumen precisos. Este paso determina los patrones de demanda que impulsan todos los cálculos posteriores.",
+      "keyInputs": "Entradas Clave Requeridas",
+      "partNumber": "Número de Parte",
+      "productDescription": "Descripción del Producto",
+      "targetVolume": "Volumen Objetivo",
+      "nextStep": "Siguiente: Paso 2 - Diseño de Flujo →"
+    },
+    "flowDesign": {
+      "title": "Diseño de Flujo y Conexiones de Ensamblaje",
+      "subtitle": "Paso 3 de 5 en el Proceso MMLD",
+      "description": "Conecta flujos de subensamblajes a procesos de ensamblaje principal y define relaciones de flujo de materiales. Este paso determina cómo los flujos independientes convergen para crear el producto final.",
+      "understandingConnections": "Entendiendo las Conexiones de Ensamblaje",
+      "whatAreConnections": "¿Qué son las Conexiones de Ensamblaje?",
+      "connectionsDescription": "Las conexiones de ensamblaje definen dónde y cómo los subensamblajes alimentan los flujos de producción principales. Representan los puntos de convergencia física donde múltiples corrientes de manufactura se combinan.",
+      "nextStep": "Siguiente: Paso 4 - Tiempos de Proceso →"
+    },
+    "processList": {
+      "title": "Creación de Lista de Procesos",
+      "subtitle": "Paso 2 de 5 en el Proceso MMLD",
+      "description": "Define cada proceso de manufactura en tu cadena de valor con asignaciones de recursos apropiadas. Este paso crea la base para entender cómo tus productos fluyen a través de la producción.",
+      "nextStep": "Siguiente: Paso 3 - Diseño de Flujo →"
+    },
+    "processTimes": {
+      "title": "Entrada de Tiempos de Proceso",
+      "subtitle": "Paso 4 de 5 en el Proceso MMLD",
+      "description": "Define los tiempos reales de manufactura para cada producto en cada proceso. Este paso transforma la matriz de procesos en valores de tiempo precisos que impulsan todos los cálculos MMLD.",
+      "matrixInterfaceTitle": "Interfaz de Matriz de Tiempos de Proceso",
+      "howMatrixWorks": "Cómo Funciona la Matriz",
+      "matrixDescription": "La matriz de tiempos de proceso muestra todos tus productos como filas y todos tus procesos como columnas. Cada celda representa el tiempo (en minutos) que un producto específico pasa en un proceso específico.",
+      "clickToEdit": "📱 Clic para Editar",
+      "clickToEditDesc": "Haz clic en cualquier celda para ingresar tiempo de proceso",
+      "autoSave": "💾 Auto-Guardado",
+      "autoSaveDesc": "Los tiempos se guardan automáticamente cuando terminas de editar",
+      "visualFeedback": "🔵 Retroalimentación Visual",
+      "visualFeedbackDesc": "Edición activa resaltada en azul",
+      "timeUnitsTitle": "Unidades de Tiempo: Minutos",
+      "defaultUnit": "Unidad Predeterminada: Todos los tiempos ingresados en minutos",
+      "commonConversions": "Conversiones Comunes",
+      "precision": "Precisión: El sistema soporta valores decimales",
+      "examples": "Ejemplos",
+      "dataEntryStrategyTitle": "Estrategia de Entrada de Datos",
+      "requiredVsOptionalTitle": "Procesos Requeridos vs. Opcionales",
+      "enterTimeRequired": "✅ Ingresar Tiempo (Proceso Requerido)",
+      "processRequiredDesc": "El proceso es requerido para este producto",
+      "exampleRequired": "Ejemplo: Bicicleta de Montaña Estándar → Soldado de Marco = 15.0 minutos",
+      "leaveBlankOptional": "⚪ Dejar en Blanco/Cero (Proceso No Necesario)",
+      "processNotNeededDesc": "Proceso no necesario para este producto",
+      "exampleOptional": "Ejemplo: Bicicleta Económica → Proceso de Pintura Premium = (en blanco)",
+      "systemLogicTitle": "💡 Lógica del Sistema",
+      "systemLogicDesc": "Solo procesos con tiempo > 0 se incluyen en cálculos MMLD. Valores en blanco o cero significan que el producto omite ese proceso.",
+      "timeValueGuidelinesTitle": "Pautas de Valores de Tiempo",
+      "whatToInclude": "Qué Incluir",
+      "whatToIncludeList": [
+        "**Tiempo Total de Proceso:** Todo el tiempo que el producto pasa en el proceso",
+        "**Labor + Máquina:** Tiempo combinado si ambos son requeridos",
+        "**Tiempo de Configuración:** Incluir si es significativo relativo al tiempo de ciclo",
+        "**Inspección:** Incluir tiempo de verificación de calidad",
+        "**Manejo de Material:** Tiempo para mover dentro/fuera del proceso"
+      ],
+      "whatNotToInclude": "⚠️ Qué NO Incluir",
+      "whatNotToIncludeList": [
+        "Tiempo de cola/espera (MMLD lo calcula)",
+        "Tiempo de configuración por lote (usar tiempo por unidad)",
+        "Transporte entre procesos",
+        "Tiempo de retrabajo (usar tiempo estándar bueno)"
+      ],
+      "processTimeSourcesTitle": "Fuentes de Tiempos de Proceso",
+      "whereToGetTimes": "Dónde Obtener Tiempos",
+      "timeStudies": "Estudios de Tiempo",
+      "timeStudiesDesc": "Mediciones de ingeniería industrial con análisis de cronómetro/video",
+      "historicalData": "Datos Históricos",
+      "historicalDataDesc": "Registros reales de producción de sistemas ERP/MES",
+      "standardTimes": "Tiempos Estándar",
+      "standardTimesDesc": "Estimaciones de ingeniería basadas en medición de tiempo-métodos (MTM)",
+      "pilotRuns": "Pruebas Piloto",
+      "pilotRunsDesc": "Mediciones de producción de prueba con operadores y equipos reales",
+      "timeAccuracyImpactTitle": "Impacto de la Precisión de Tiempo",
+      "underestimateTimes": "Subestimar Tiempos",
+      "underestimateList": [
+        "Crea cuellos de botella falsos",
+        "Recomendaciones de sobredimensionamiento de recursos",
+        "Costos laborales más altos de lo necesario",
+        "Se pierden restricciones reales de capacidad"
+      ],
+      "overestimateTimes": "Sobreestimar Tiempos",
+      "overestimateList": [
+        "Se pierden cuellos de botella reales",
+        "Recomendaciones de subdimensionamiento de recursos",
+        "Déficits de producción",
+        "Errores de planificación de capacidad"
+      ],
+      "bestPractice": "Mejor Práctica",
+      "bestPracticeDesc": "Usar tiempos promedio para planificación. Considerar usar percentil 95 para planificación conservadora de recursos.",
+      "matrixNavigationTitle": "Navegación y Organización de Matriz",
+      "matrixStructure": "Estructura de Matriz",
+      "organizedByFlow": "Organizado por Flujo",
+      "organizedByFlowList": [
+        "**Grupos de Flujo:** Procesos agrupados por asignación de flujo",
+        "**Detalles de Proceso:** Nombre y tipo de recurso mostrados",
+        "**Estructura Visual:** Fácil de escanear y comparar tiempos",
+        "**Agrupación Lógica:** Flujo PRINCIPAL primero, luego subensamblajes"
+      ],
+      "productTotals": "Totales de Producto",
+      "productTotalsList": [
+        "**Auto-Cálculo:** Tiempo total por producto a través de todos los procesos",
+        "**Actualizaciones en Tiempo Real:** Los totales se recalculan mientras ingresas tiempos",
+        "**Herramienta de Verificación:** Ayuda a detectar errores de entrada de datos",
+        "**Ayuda de Comparación:** Comparar tiempos de ciclo total entre productos"
+      ],
+      "exampleMatrixLayout": "Ejemplo de Diseño de Matriz",
+      "timeEntryBestPracticesTitle": "Mejores Prácticas de Entrada de Tiempos",
+      "consistentMethodologyTitle": "Metodología Consistente",
+      "standardConditions": "Condiciones Estándar",
+      "standardConditionsList": [
+        "Usar condiciones normales de operación",
+        "Capacidad promedio del operador",
+        "Rendimiento de equipos bien mantenidos",
+        "Tamaños de lote estándar"
+      ],
+      "timePerUnitTitle": "Tiempo por Unidad",
+      "timePerUnitDesc": "Siempre ingresar tiempo por unidad individual, no por lote:",
+      "timePerUnitExample": "Ejemplo: Si 10 unidades procesadas en 50 minutos → Ingresar 5.0 minutos por unidad",
+      "validationTechniquesTitle": "Técnicas de Validación",
+      "crossReference": "Referencia Cruzada",
+      "crossReferenceDesc": "Comparar procesos similares entre productos",
+      "sanityCheck": "Verificación de Cordura",
+      "sanityCheckDesc": "¿Los totales tienen sentido relativos entre sí?",
+      "expertReview": "Revisión de Expertos",
+      "expertReviewDesc": "Hacer que los dueños de proceso validen tiempos",
+      "pilotValidation": "Validación Piloto",
+      "pilotValidationDesc": "Probar tiempos con pequeñas corridas de producción",
+      "commonScenariosTitle": "Escenarios Comunes de Entrada de Tiempo",
+      "similarProductsTitle": "Productos Similares",
+      "similarProductsDesc": "Productos en la misma familia a menudo tienen tiempos similares:",
+      "efficiencyStrategy": "Estrategia de Eficiencia",
+      "efficiencyStrategyList": [
+        "**Función Copiar:** Ingresar un producto, copiar a productos similares",
+        "**Patrón de Variación:** Entender dónde ocurren las diferencias",
+        "**Documentación:** Notar por qué los tiempos difieren entre productos similares"
+      ],
+      "exampleBikeFamily": "Ejemplo: Familia de Bicicletas",
+      "baseModel": "Modelo Base: Tiempos de Bicicleta de Montaña Estándar",
+      "deluxeModel": "Modelo Deluxe: +20% tiempo (componentes premium)",
+      "economyModel": "Modelo Económico: -25% tiempo (ensamblaje simplificado)",
+      "complexProcessesTitle": "Procesos Complejos",
+      "complexProcessesDesc": "Algunos procesos tienen variación significativa:",
+      "averageApproach": "Enfoque Promedio",
+      "averageApproachDesc": "Usar promedio ponderado a través de variantes de producto",
+      "worstCase": "Peor Caso",
+      "worstCaseDesc": "Usar el tiempo más largo para planificación conservadora",
+      "splitProcesses": "Dividir Procesos",
+      "splitProcessesDesc": "Dividir procesos complejos en sub-procesos",
+      "optionalProcessesTitle": "Procesos Opcionales",
+      "optionalProcessesDesc": "No todos los productos requieren todos los procesos:",
+      "skipPattern": "Patrón de Omisión",
+      "skipPatternDesc": "Dejar celdas en blanco para procesos no aplicables",
+      "zeroValues": "Valores Cero",
+      "zeroValuesDesc": "El sistema trata ceros como no aplicables",
+      "flowLogic": "Lógica de Flujo",
+      "flowLogicDesc": "Afecta cálculos de demanda para esos procesos",
+      "timeDataQualityTitle": "Indicadores de Calidad de Datos de Tiempo",
+      "verificationIndicators": "Indicadores de Verificación",
+      "definedTimes": "Tiempos Definidos",
+      "definedTimesDesc": "Conteo de tiempos ingresados vs. total de combinaciones posibles",
+      "totalProcesses": "Procesos Totales",
+      "totalProcessesDesc": "Número de procesos activos en tu modelo",
+      "coveragePercentage": "Porcentaje de Cobertura",
+      "coveragePercentageDesc": "Porcentaje de matriz completada (no todas las celdas necesitan valores)",
+      "qualityCheckWarnings": "Advertencias de Verificación de Calidad",
+      "outliers": "Valores Atípicos",
+      "outliersDesc": "Tiempos significativamente diferentes de procesos similares",
+      "missingCritical": "Crítico Faltante",
+      "missingCriticalDesc": "Procesos requeridos sin tiempos definidos",
+      "zeroTotals": "Totales Cero",
+      "zeroTotalsDesc": "Productos sin tiempos de proceso definidos",
+      "backButton": "← Atrás: Paso 3 - Diseño de Flujo",
+      "nextButton": "Siguiente: Paso 5 - Cálculos →"
+    },
+    "calculations": {
+      "title": "Cálculos y Resultados de Diseño de Línea",
+      "subtitle": "Paso 5 de 5 en el Proceso MMLD",
+      "description": "La culminación del MMLD donde tus datos se transforman en requisitos de recursos accionables y perspectivas de optimización. Aquí es donde la precisión matemática del MMLD entrega valor comercial tangible.",
+      "engineOverview": "Visión General del Motor de Cálculo",
+      "engineDescription": "MMLD realiza cálculos sofisticados utilizando demanda específica del proceso en lugar de promedios simples. Esta precisión es lo que hace que el sistema sea poderoso para manufactura de modelo mixto.",
+      "calculationSequence": "Secuencia de Cálculo",
+      "stepByStep": "Cálculos Paso a Paso",
+      "step1Title": "Paso 1: Cálculo de Demanda del Proceso",
+      "step1Formula": "Demanda del Proceso = Σ(Volumen del Producto × Multiplicador del Proceso × Aplicabilidad del Proceso)",
+      "step2Title": "Paso 2: Tiempo Takt Específico del Proceso",
+      "step2Formula": "Tiempo Takt = Tiempo de Trabajo Disponible ÷ Demanda del Proceso",
+      "step3Title": "Paso 3: Tiempo Promedio Ponderado del Proceso",
+      "step3Formula": "Tiempo Prom. Ponderado = Σ(Volumen × Tiempo del Proceso × Multiplicador × Aplicabilidad) ÷ Demanda del Proceso",
+      "backButton": "← Atrás: Paso 4 - Tiempos de Proceso",
+      "completeMessage": "🎉 ¡MMLD Completo!",
+      "nextButton": "Explorar Simulación de Modelo Mixto →",
+      "formula": "Fórmula",
+      "sequences": [
+        "Cálculo de Demanda del Proceso (por proceso)",
+        "Tiempo Takt Específico del Proceso (por proceso)",
+        "Tiempo Promedio Ponderado del Proceso (por proceso)",
+        "Recursos Requeridos (teórico)",
+        "Recursos Reales Necesarios (práctico, redondeado hacia arriba)"
+      ]
+    }
+  },
+  "docs": {
+    "navigation": {
+      "title": "Documentación",
+      "backToDashboard": "Volver al Panel",
+      "gettingStarted": "Comenzando",
+      "overview": "Resumen",
+      "introduction": "Introducción",
+      "quickStart": "Inicio Rápido",
+      "accountSetup": "Configurar Cuenta",
+      "mmld": "Mixed Model Line Design",
+      "mmldOverview": "Resumen MMLD",
+      "productMix": "Definición de Mezcla de Productos",
+      "processList": "Creación de Lista de Procesos",
+      "flowDesign": "Diseño de Flujo y Conexiones",
+      "processTimes": "Entrada de Tiempos de Proceso",
+      "calculations": "Cálculos de Diseño de Línea",
+      "simulation": "Simulación Mixed Model",
+      "modelBuilding": "Construcción de Modelos",
+      "resourceManagement": "Gestión de Recursos",
+      "runningSimulations": "Ejecutar Simulaciones",
+      "analyzingResults": "Analizar Resultados",
+      "advanced": "Características Avanzadas",
+      "debugMode": "Modo Debug",
+      "variabilitySettings": "Configuraciones de Variabilidad",
+      "testConnection": "Probar Conexión"
+    },
+    "home": {
+      "title": "Documentación de Ezbelta",
+      "description": "Bienvenido a la guía completa de Ezbelta, la plataforma de simulación de eventos discretos más avanzada para manufactura esbelta. Esta documentación le ayudará a modelar sistemas de producción complejos, optimizar flujos y eliminar desperdicios.",
+      "mmldCard": {
+        "title": "Mixed Model Line Design",
+        "description": "Nuestra característica principal para diseñar y optimizar líneas de producción para múltiples variantes de productos. Comience aquí para máximo impacto.",
+        "cta": "Comenzar →"
+      },
+      "simulationCard": {
+        "title": "Simulación Mixed Model",
+        "description": "Construya modelos detallados de simulación de eventos discretos para escenarios de manufactura complejos y análisis de qué-pasaría-si.",
+        "cta": "Aprender Más →"
+      },
+      "whatYouLearn": {
+        "title": "Lo Que Aprenderá",
+        "processCalculations": {
+          "title": "Cálculos Específicos por Proceso",
+          "description": "Aprenda cómo MMLD calcula el takt time y requerimientos de recursos para cada proceso basado en la demanda real del producto."
+        },
+        "advancedSimulation": {
+          "title": "Simulación Avanzada",
+          "description": "Domine la simulación de eventos discretos con estados de bloqueo/espera, contención de recursos y análisis estadístico."
+        },
+        "optimizationInsights": {
+          "title": "Insights de Optimización",
+          "description": "Descubra cuellos de botella, elimine desperdicios y optimice la asignación de recursos con insights de manufactura esbelta impulsados por IA."
+        }
+      },
+      "gettingStarted": {
+        "title": "Comenzando",
+        "newUserCard": {
+          "title": "¿Nuevo en Ezbelta?",
+          "description": "Comience con nuestra introducción completa para entender la arquitectura de la plataforma y capacidades.",
+          "cta": "Leer Introducción de la Plataforma →"
+        },
+        "step1": {
+          "title": "Configure Su Cuenta",
+          "description": "Cree value streams, configure ajustes de usuario y familiarícese con el panel de control."
+        },
+        "step2": {
+          "title": "Elija Su Enfoque",
+          "description": "Comience con Mixed Model Line Design para ROI inmediato, o sumérjase en simulación mixed model para escenarios complejos."
+        },
+        "step3": {
+          "title": "Construir y Optimizar",
+          "description": "Modele sus procesos, ejecute simulaciones e implemente recomendaciones de optimización."
+        }
+      },
+      "platformFeatures": {
+        "title": "Características de la Plataforma",
+        "coreCapabilities": {
+          "title": "Capacidades Centrales",
+          "features": [
+            "Cálculos de takt time específicos por proceso",
+            "Análisis de tiempo promedio ponderado de proceso",
+            "Motor de simulación de eventos discretos",
+            "Seguimiento de estados de bloqueo/espera de recursos",
+            "Análisis estadístico Monte Carlo"
+          ]
+        },
+        "advancedFeatures": {
+          "title": "Características Avanzadas",
+          "features": [
+            "Modo debug paso a paso",
+            "Modelado de variabilidad de tiempo de proceso",
+            "Conexiones de ensamblaje multi-flujo",
+            "Paneles de visualización interactivos",
+            "Capacidades de exportación e informes"
+          ]
+        }
+      },
+      "helpSupport": {
+        "title": "¿Necesita Ayuda?",
+        "description": "¿No puede encontrar lo que está buscando? Pruebe estos recursos:",
+        "testConnection": "Probar Conexión de Base de Datos",
+        "debugGuide": "Guía de Modo Debug",
+        "backToDashboard": "Volver al Panel"
+      }
+    },
+    "docs": {
+      "navigation": {
+        "title": "Documentación",
+        "backToDashboard": "Volver al Panel",
+        "gettingStarted": "Primeros Pasos",
+        "overview": "Visión General",
+        "introduction": "Introducción",
+        "quickStart": "Inicio Rápido",
+        "accountSetup": "Configuración de Cuenta",
+        "mmld": "Diseño de Línea Multi-Modelo",
+        "mmldOverview": "Visión General MMLD",
+        "productMix": "Definición de Mezcla de Productos",
+        "processList": "Creación de Lista de Procesos",
+        "flowDesign": "Diseño de Flujo y Conexiones",
+        "processTimes": "Entrada de Tiempos de Proceso",
+        "calculations": "Cálculos de Diseño de Línea",
+        "simulation": "Simulación Multi-Modelo",
+        "modelBuilding": "Construcción de Modelos",
+        "resourceManagement": "Gestión de Recursos",
+        "runningSimulations": "Ejecutar Simulaciones",
+        "analyzingResults": "Analizar Resultados",
+        "advanced": "Características Avanzadas",
+        "debugMode": "Modo de Depuración",
+        "variabilitySettings": "Configuración de Variabilidad",
+        "testConnection": "Probar Conexión"
+      }
+    }
+  },
+  "shopfloorModules": {
+    "title": "Potentes Módulos de Gestión de Planta",
+    "subtitle": "Herramientas integrales para excelencia operativa y mejora continua",
+    "modules": [
+      {
+        "name": "Análisis de Procesos",
+        "description": "Análisis profundo del rendimiento de procesos con métricas detalladas, identificación de cuellos de botella y análisis de eficiencia para optimizar sus operaciones.",
+        "benefit": "Insights de Rendimiento en Tiempo Real"
+      },
+      {
+        "name": "Optimización de Personal",
+        "description": "Planificación inteligente de la fuerza laboral con coincidencia de habilidades, análisis de capacidad y programación dinámica para maximizar la productividad.",
+        "benefit": "Asignación Inteligente de Recursos"
+      },
+      {
+        "name": "Gestión A3",
+        "description": "Metodología estructurada de resolución de problemas con plantillas de informes A3, análisis de causa raíz y seguimiento de mejora continua.",
+        "benefit": "Integración de Metodología Lean"
+      },
+      {
+        "name": "Optimización de Secuencia",
+        "description": "Algoritmos avanzados para secuenciación de producción, priorización de pedidos y optimización de flujo para minimizar el tiempo de cambio y maximizar el rendimiento.",
+        "benefit": "Programación Potenciada por IA"
+      },
+      {
+        "name": "Analizador de Video",
+        "description": "Analice videos de procesos de manufactura con anotaciones con marca de tiempo, seguimiento de actividades y estudios de tiempo-movimiento para insights de mejora lean.",
+        "benefit": "Insights de Video de Procesos"
+      },
+      {
+        "name": "Analizador de Video IA",
+        "description": "Detección automática de movimiento potenciada por IA, análisis de tiempo de ciclo y medición de eficiencia del trabajo usando tecnología de visión por computadora OpenCV.",
+        "benefit": "Análisis IA Automatizado"
+      },
+      {
+        "name": "Análisis de Sensibilidad",
+        "description": "Pruebas automatizadas de parámetros para analizar el impacto de variaciones de volumen, mezcla, tiempos de ciclo y recursos con precisión completa de simulación.",
+        "benefit": "Decisiones Basadas en Datos"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "¿Tienes preguntas sobre nuestra plataforma de simulación de manufactura? Nos encantaría saber de ti.",
+    "backToHome": "← Volver al Inicio",
+    "getInTouch": "Ponerse en Contacto",
+    "email": "Correo Electrónico",
+    "location": "Ubicación",
+    "responseTime": "Tiempo de Respuesta",
+    "responseTimeText": "Típicamente respondemos dentro de 24 horas",
+    "quickActions": "Acciones Rápidas",
+    "scheduleDemo": "Programar Demo",
+    "sendMessage": "Envíanos un Mensaje",
+    "form": {
+      "name": "Nombre",
+      "nameRequired": "Nombre *",
+      "email": "Correo Electrónico",
+      "emailRequired": "Correo Electrónico *",
+      "company": "Compañía",
+      "subject": "Asunto",
+      "subjectRequired": "Asunto *",
+      "subjectPlaceholder": "Selecciona un asunto",
+      "subjectOptions": {
+        "general": "Consulta General",
+        "demo": "Solicitar Demo",
+        "pricing": "Información de Precios",
+        "support": "Soporte Técnico",
+        "partnership": "Oportunidades de Asociación",
+        "other": "Otro"
+      },
+      "message": "Mensaje",
+      "messageRequired": "Mensaje *",
+      "messagePlaceholder": "Cuéntanos sobre tus necesidades de simulación de manufactura...",
+      "sending": "Enviando...",
+      "sendMessage": "Enviar Mensaje"
+    },
+    "success": {
+      "title": "¡Mensaje Enviado!",
+      "message": "Gracias por contactarnos. Te responderemos dentro de 24 horas.",
+      "sendAnother": "Enviar Otro Mensaje"
+    }
+  }
+}

@@ -44,19 +44,8 @@
         }
 
         .logo-img {
-            width: 180px;
-            height: 180px;
-        }
-
-        .brand-text h1 {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #2563eb;
-        }
-
-        .brand-text p {
-            font-size: 0.75rem;
-            color: #6b7280;
+            height: 40px;
+            width: auto;
         }
 
         .nav-links {
@@ -75,23 +64,18 @@
             color: #1f2937;
         }
 
-        .btn {
-            padding: 0.5rem 1rem;
-            border-radius: 0.5rem;
-            font-weight: 500;
-            text-decoration: none;
-            transition: all 0.3s;
-            display: inline-block;
+        .language-selector {
+            padding: 6px 10px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            background: white;
+            color: #4b5563;
+            font-size: 0.9rem;
+            cursor: pointer;
+            outline: none;
         }
-
-        .btn-primary {
-            background: #2563eb;
-            color: white;
-        }
-
-        .btn-primary:hover {
-            background: #1d4ed8;
-        }
+        .language-selector:hover { border-color: #2563eb; }
+        .language-selector:focus { border-color: #2563eb; box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2); }
 
         /* Hero Section */
         .hero {
@@ -118,31 +102,6 @@
             margin: 0 auto 2rem;
         }
 
-        .hero-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .btn-hero {
-            padding: 1rem 2rem;
-            font-size: 1.125rem;
-            border-radius: 0.5rem;
-        }
-
-        .btn-hero-primary {
-            background: #2563eb;
-            color: white;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-
-        .btn-hero-secondary {
-            background: white;
-            color: #2563eb;
-            border: 2px solid #2563eb;
-        }
-
         /* Problem/Solution Section */
         .problem-solution {
             padding: 2.5rem 0;
@@ -153,7 +112,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
-            align-items: center;
+            align-items: start;
         }
 
         .section-title {
@@ -162,20 +121,28 @@
             margin-bottom: 1.5rem;
         }
 
-        .problem-item, .solution-item {
+        .problem-list, .solution-list {
+            list-style: none;
+        }
+
+        .problem-list li, .solution-list li {
             display: flex;
             align-items: flex-start;
             margin-bottom: 1rem;
+            font-size: 1rem;
         }
 
-        .icon {
-            font-size: 1.25rem;
+        .problem-list li::before {
+            content: '❌';
             margin-right: 0.75rem;
             flex-shrink: 0;
         }
 
-        .icon-red { color: #ef4444; }
-        .icon-green { color: #10b981; }
+        .solution-list li::before {
+            content: '✅';
+            margin-right: 0.75rem;
+            flex-shrink: 0;
+        }
 
         /* Features Section */
         .features {
@@ -231,7 +198,7 @@
             margin-bottom: 1rem;
         }
 
-        .feature-card p {
+        .feature-card > p {
             color: #4b5563;
             margin-bottom: 1rem;
         }
@@ -244,6 +211,11 @@
 
         .feature-list li {
             margin-bottom: 0.25rem;
+        }
+
+        .feature-list li::before {
+            content: '• ';
+            color: #2563eb;
         }
 
         /* Use Cases Section */
@@ -279,6 +251,10 @@
             margin-bottom: 1rem;
         }
 
+        .use-case-card .description {
+            margin-bottom: 1rem;
+        }
+
         .use-case-card .result {
             background: #dcfce7;
             padding: 1rem;
@@ -309,30 +285,6 @@
             margin-left: auto;
             margin-right: auto;
             opacity: 0.9;
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .btn-cta {
-            padding: 1rem 2rem;
-            font-size: 1.125rem;
-            border-radius: 0.5rem;
-        }
-
-        .btn-cta-white {
-            background: white;
-            color: #2563eb;
-        }
-
-        .btn-cta-outline {
-            background: transparent;
-            color: white;
-            border: 2px solid white;
         }
 
         /* Footer */
@@ -404,13 +356,8 @@
             }
 
             .features-grid,
-            .use-cases-grid,
-            .pricing-grid {
+            .use-cases-grid {
                 grid-template-columns: 1fr;
-            }
-
-            .pricing-card.popular {
-                transform: scale(1);
             }
         }
     </style>
@@ -426,8 +373,14 @@
                     </a>
                 </div>
                 <div class="nav-links">
-                    <a href="#features">Features</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="#features" data-i18n="nav.features">Features</a>
+                    <a href="contact.html" data-i18n="nav.contact">Contact</a>
+                    <select id="languageSelector" class="language-selector" onchange="setLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="de">Deutsch</option>
+                        <option value="pt-BR">Português</option>
+                    </select>
                 </div>
             </div>
         </div>
@@ -437,10 +390,10 @@
     <section class="hero">
         <div class="container">
             <h1>
-                Transform Video into
-                <span class="highlight">Standard Work</span>
+                <span data-i18n="videoAnalyzer.heroTitle">Transform Video into</span>
+                <span class="highlight" data-i18n="videoAnalyzer.heroHighlight">Standard Work</span>
             </h1>
-            <p>
+            <p data-i18n="videoAnalyzer.heroDescription">
                 Combines powerful video annotation tools, AI-powered analysis, and automated Standard Work
                 documentation into one seamless workflow. Save 80% of time on time studies and standardization.
             </p>
@@ -452,42 +405,22 @@
         <div class="container">
             <div class="two-col">
                 <div>
-                    <h2 class="section-title">Traditional Time Studies Are Broken</h2>
-                    <div class="problem-item">
-                        <span class="icon icon-red">❌</span>
-                        <p>Manual video review with stopwatches takes hours or days</p>
-                    </div>
-                    <div class="problem-item">
-                        <span class="icon icon-red">❌</span>
-                        <p>Writing timestamps on paper leads to transcription errors</p>
-                    </div>
-                    <div class="problem-item">
-                        <span class="icon icon-red">❌</span>
-                        <p>Creating Standard Work documents from scratch is tedious</p>
-                    </div>
-                    <div class="problem-item">
-                        <span class="icon icon-red">❌</span>
-                        <p>Identifying waste patterns requires expert lean knowledge</p>
-                    </div>
+                    <h2 class="section-title" data-i18n="videoAnalyzer.problemTitle">Traditional Time Studies Are Broken</h2>
+                    <ul class="problem-list" data-i18n-list="videoAnalyzer.problems">
+                        <li>Manual video review with stopwatches takes hours or days</li>
+                        <li>Writing timestamps on paper leads to transcription errors</li>
+                        <li>Creating Standard Work documents from scratch is tedious</li>
+                        <li>Identifying waste patterns requires expert lean knowledge</li>
+                    </ul>
                 </div>
                 <div>
-                    <h3 class="section-title" style="color: #2563eb;">Automated Video-to-Standard-Work Pipeline</h3>
-                    <div class="solution-item">
-                        <span class="icon icon-green">✅</span>
-                        <p><strong>Frame-precise annotation</strong> - Digital timestamps replace stopwatches</p>
-                    </div>
-                    <div class="solution-item">
-                        <span class="icon icon-green">✅</span>
-                        <p><strong>AI motion detection</strong> - Automatically identify activity patterns</p>
-                    </div>
-                    <div class="solution-item">
-                        <span class="icon icon-green">✅</span>
-                        <p><strong>Auto-generate Standard Work</strong> - From video to shop-floor document</p>
-                    </div>
-                    <div class="solution-item">
-                        <span class="icon icon-green">✅</span>
-                        <p><strong>AI identifies 8 wastes</strong> - Automatic lean manufacturing insights</p>
-                    </div>
+                    <h3 class="section-title" style="color: #2563eb;" data-i18n="videoAnalyzer.solutionTitle">Automated Video-to-Standard-Work Pipeline</h3>
+                    <ul class="solution-list">
+                        <li><strong data-i18n="videoAnalyzer.solutions.0.bold">Frame-precise annotation</strong> <span data-i18n="videoAnalyzer.solutions.0.text">- Digital timestamps replace stopwatches</span></li>
+                        <li><strong data-i18n="videoAnalyzer.solutions.1.bold">AI motion detection</strong> <span data-i18n="videoAnalyzer.solutions.1.text">- Automatically identify activity patterns</span></li>
+                        <li><strong data-i18n="videoAnalyzer.solutions.2.bold">Auto-generate Standard Work</strong> <span data-i18n="videoAnalyzer.solutions.2.text">- From video to shop-floor document</span></li>
+                        <li><strong data-i18n="videoAnalyzer.solutions.3.bold">AI identifies 8 wastes</strong> <span data-i18n="videoAnalyzer.solutions.3.text">- Automatic lean manufacturing insights</span></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -497,87 +430,87 @@
     <section id="features" class="features">
         <div class="container">
             <div class="features-header">
-                <h2>One Platform, Three Powerful Tools</h2>
-                <p>Everything you need from video observation to documented Standard Work</p>
+                <h2 data-i18n="videoAnalyzer.featuresTitle">One Platform, Three Powerful Tools</h2>
+                <p data-i18n="videoAnalyzer.featuresSubtitle">Everything you need from video observation to documented Standard Work</p>
             </div>
 
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">🎬</div>
-                    <h3>Video Annotation Made Simple</h3>
-                    <p>Upload videos of any manufacturing process and annotate with frame-by-frame precision.</p>
-                    <ul class="feature-list">
-                        <li>• Frame-by-frame navigation with keyboard shortcuts</li>
-                        <li>• Split/lap timer for marking work elements</li>
-                        <li>• Custom categories for organizing observations</li>
-                        <li>• Loop regions for detailed observation</li>
-                        <li>• Export annotations to CSV/JSON</li>
+                    <h3 data-i18n="videoAnalyzer.featureCards.annotation.title">Video Annotation Made Simple</h3>
+                    <p data-i18n="videoAnalyzer.featureCards.annotation.description">Upload videos of any manufacturing process and annotate with frame-by-frame precision.</p>
+                    <ul class="feature-list" data-i18n-list="videoAnalyzer.featureCards.annotation.items">
+                        <li>Frame-by-frame navigation with keyboard shortcuts</li>
+                        <li>Split/lap timer for marking work elements</li>
+                        <li>Custom categories for organizing observations</li>
+                        <li>Loop regions for detailed observation</li>
+                        <li>Export annotations to CSV/JSON</li>
                     </ul>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">🤖</div>
-                    <h3>AI-Powered Intelligence</h3>
-                    <p>Advanced computer vision and AI analysis for automatic insights and waste identification.</p>
-                    <ul class="feature-list">
-                        <li>• Motion detection using OpenCV</li>
-                        <li>• Automatic activity pattern recognition</li>
-                        <li>• Cycle time detection and analysis</li>
-                        <li>• 8 wastes identification (TIMWOODS)</li>
-                        <li>• AI-generated improvement recommendations</li>
+                    <h3 data-i18n="videoAnalyzer.featureCards.ai.title">AI-Powered Intelligence</h3>
+                    <p data-i18n="videoAnalyzer.featureCards.ai.description">Advanced computer vision and AI analysis for automatic insights and waste identification.</p>
+                    <ul class="feature-list" data-i18n-list="videoAnalyzer.featureCards.ai.items">
+                        <li>Motion detection using OpenCV</li>
+                        <li>Automatic activity pattern recognition</li>
+                        <li>Cycle time detection and analysis</li>
+                        <li>8 wastes identification (TIMWOODS)</li>
+                        <li>AI-generated improvement recommendations</li>
                     </ul>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">📄</div>
-                    <h3>Standard Work Documentation</h3>
-                    <p>The game changer - automated pipeline from video timestamps to shop-floor-ready documents.</p>
-                    <ul class="feature-list">
-                        <li>• Video-to-Standard-Work automation</li>
-                        <li>• Work element creation from timestamps</li>
-                        <li>• Value-add/waste classification</li>
-                        <li>• Built-in takt time calculator</li>
-                        <li>• Visual timeline showing work balance</li>
-                        <li>• PDF export (11x17" poster or 8.5x11" report)</li>
+                    <h3 data-i18n="videoAnalyzer.featureCards.standardWork.title">Standard Work Documentation</h3>
+                    <p data-i18n="videoAnalyzer.featureCards.standardWork.description">The game changer - automated pipeline from video timestamps to shop-floor-ready documents.</p>
+                    <ul class="feature-list" data-i18n-list="videoAnalyzer.featureCards.standardWork.items">
+                        <li>Video-to-Standard-Work automation</li>
+                        <li>Work element creation from timestamps</li>
+                        <li>Value-add/waste classification</li>
+                        <li>Built-in takt time calculator</li>
+                        <li>Visual timeline showing work balance</li>
+                        <li>PDF export (11x17" poster or 8.5x11" report)</li>
                     </ul>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">📊</div>
-                    <h3>Visual Waste Analysis</h3>
-                    <p>Color-coded timeline shows exactly where time is being lost and improvement potential.</p>
-                    <ul class="feature-list">
-                        <li>• Green = value-add activities</li>
-                        <li>• Red = waste (non-value-add)</li>
-                        <li>• Yellow = necessary waste</li>
-                        <li>• Instant value-add percentage calculation</li>
-                        <li>• Improvement opportunity scoring</li>
+                    <h3 data-i18n="videoAnalyzer.featureCards.wasteAnalysis.title">Visual Waste Analysis</h3>
+                    <p data-i18n="videoAnalyzer.featureCards.wasteAnalysis.description">Color-coded timeline shows exactly where time is being lost and improvement potential.</p>
+                    <ul class="feature-list" data-i18n-list="videoAnalyzer.featureCards.wasteAnalysis.items">
+                        <li>Green = value-add activities</li>
+                        <li>Red = waste (non-value-add)</li>
+                        <li>Yellow = necessary waste</li>
+                        <li>Instant value-add percentage calculation</li>
+                        <li>Improvement opportunity scoring</li>
                     </ul>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">🔄</div>
-                    <h3>Template System for Scale</h3>
-                    <p>Document once, replicate everywhere - save templates and deploy best practices instantly.</p>
-                    <ul class="feature-list">
-                        <li>• Save Standard Work as templates</li>
-                        <li>• Reuse across similar workstations</li>
-                        <li>• Version control and approval workflow</li>
-                        <li>• Multi-site deployment support</li>
-                        <li>• Before/after comparisons</li>
+                    <h3 data-i18n="videoAnalyzer.featureCards.templates.title">Template System for Scale</h3>
+                    <p data-i18n="videoAnalyzer.featureCards.templates.description">Document once, replicate everywhere - save templates and deploy best practices instantly.</p>
+                    <ul class="feature-list" data-i18n-list="videoAnalyzer.featureCards.templates.items">
+                        <li>Save Standard Work as templates</li>
+                        <li>Reuse across similar workstations</li>
+                        <li>Version control and approval workflow</li>
+                        <li>Multi-site deployment support</li>
+                        <li>Before/after comparisons</li>
                     </ul>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">🌍</div>
-                    <h3>Multi-Language Support</h3>
-                    <p>Create Standard Work in English, translate to Spanish (or other languages) with one click.</p>
-                    <ul class="feature-list">
-                        <li>• English and Spanish support</li>
-                        <li>• One-click translation</li>
-                        <li>• Perfect for diverse workforces</li>
-                        <li>• Custom branding options</li>
-                        <li>• Professional shop-floor formatting</li>
+                    <h3 data-i18n="videoAnalyzer.featureCards.multiLang.title">Multi-Language Support</h3>
+                    <p data-i18n="videoAnalyzer.featureCards.multiLang.description">Create Standard Work in English, translate to Spanish (or other languages) with one click.</p>
+                    <ul class="feature-list" data-i18n-list="videoAnalyzer.featureCards.multiLang.items">
+                        <li>English and Spanish support</li>
+                        <li>One-click translation</li>
+                        <li>Perfect for diverse workforces</li>
+                        <li>Custom branding options</li>
+                        <li>Professional shop-floor formatting</li>
                     </ul>
                 </div>
             </div>
@@ -588,37 +521,37 @@
     <section class="use-cases">
         <div class="container">
             <div class="features-header">
-                <h2>Real-World Use Cases</h2>
-                <p>See how manufacturing teams use Ezbelta to transform their operations</p>
+                <h2 data-i18n="videoAnalyzer.useCasesTitle">Real-World Use Cases</h2>
+                <p data-i18n="videoAnalyzer.useCasesSubtitle">See how manufacturing teams use Ezbelta to transform their operations</p>
             </div>
 
             <div class="use-cases-grid">
                 <div class="use-case-card">
-                    <h3>Assembly Standardization</h3>
-                    <p class="scenario">"Document a new assembly process for training new operators"</p>
-                    <p>Record video → Annotate steps → AI identifies waste → Generate Standard Work → Export PDF for training</p>
-                    <div class="result">Result: New operators learn 50% faster with video + Standard Work</div>
+                    <h3 data-i18n="videoAnalyzer.useCases.assembly.title">Assembly Standardization</h3>
+                    <p class="scenario" data-i18n="videoAnalyzer.useCases.assembly.scenario">"Document a new assembly process for training new operators"</p>
+                    <p class="description" data-i18n="videoAnalyzer.useCases.assembly.description">Record video → Annotate steps → AI identifies waste → Generate Standard Work → Export PDF for training</p>
+                    <div class="result" data-i18n="videoAnalyzer.useCases.assembly.result">Result: New operators learn 50% faster with video + Standard Work</div>
                 </div>
 
                 <div class="use-case-card">
-                    <h3>Warehouse Picking Optimization</h3>
-                    <p class="scenario">"Reduce walking time in warehouse picking operations"</p>
-                    <p>Video pickers → AI motion detection → Classify walking as waste → Visualize 60% walking time → Redesign pick path</p>
-                    <div class="result">Result: Reduced walking by 40%, increased picks per hour by 35%</div>
+                    <h3 data-i18n="videoAnalyzer.useCases.warehouse.title">Warehouse Picking Optimization</h3>
+                    <p class="scenario" data-i18n="videoAnalyzer.useCases.warehouse.scenario">"Reduce walking time in warehouse picking operations"</p>
+                    <p class="description" data-i18n="videoAnalyzer.useCases.warehouse.description">Video pickers → AI motion detection → Classify walking as waste → Visualize 60% walking time → Redesign pick path</p>
+                    <div class="result" data-i18n="videoAnalyzer.useCases.warehouse.result">Result: Reduced walking by 40%, increased picks per hour by 35%</div>
                 </div>
 
                 <div class="use-case-card">
-                    <h3>Kaizen Event Documentation</h3>
-                    <p class="scenario">"Document improvements from a week-long kaizen event"</p>
-                    <p>Record before/after → Compare cycle times → Show value-add improvement (32% → 58%) → Export for management</p>
-                    <div class="result">Result: Clear ROI demonstration with data-backed improvements</div>
+                    <h3 data-i18n="videoAnalyzer.useCases.kaizen.title">Kaizen Event Documentation</h3>
+                    <p class="scenario" data-i18n="videoAnalyzer.useCases.kaizen.scenario">"Document improvements from a week-long kaizen event"</p>
+                    <p class="description" data-i18n="videoAnalyzer.useCases.kaizen.description">Record before/after → Compare cycle times → Show value-add improvement (32% → 58%) → Export for management</p>
+                    <div class="result" data-i18n="videoAnalyzer.useCases.kaizen.result">Result: Clear ROI demonstration with data-backed improvements</div>
                 </div>
 
                 <div class="use-case-card">
-                    <h3>Time Study Automation</h3>
-                    <p class="scenario">"Conduct time studies across 20 workstations"</p>
-                    <p>Record all 20 stations (1 hour) → Annotate at desk (2 hours) → AI analysis → Auto-generate 20 Standard Works</p>
-                    <div class="result">Result: Complete in 3 hours vs. 2+ weeks with stopwatch methods</div>
+                    <h3 data-i18n="videoAnalyzer.useCases.timeStudy.title">Time Study Automation</h3>
+                    <p class="scenario" data-i18n="videoAnalyzer.useCases.timeStudy.scenario">"Conduct time studies across 20 workstations"</p>
+                    <p class="description" data-i18n="videoAnalyzer.useCases.timeStudy.description">Record all 20 stations (1 hour) → Annotate at desk (2 hours) → AI analysis → Auto-generate 20 Standard Works</p>
+                    <div class="result" data-i18n="videoAnalyzer.useCases.timeStudy.result">Result: Complete in 3 hours vs. 2+ weeks with stopwatch methods</div>
                 </div>
             </div>
         </div>
@@ -627,8 +560,8 @@
     <!-- Final CTA -->
     <section class="final-cta">
         <div class="container">
-            <h2>Ready to Transform Your Standard Work Process?</h2>
-            <p>Join industrial engineers and continuous improvement teams who've saved 80% of time on standardization. <a href="contact.html" style="color: white; text-decoration: underline;">Contact us</a> to learn more.</p>
+            <h2 data-i18n="videoAnalyzer.ctaTitle">Ready to Transform Your Standard Work Process?</h2>
+            <p><span data-i18n="videoAnalyzer.ctaDescription">Join industrial engineers and continuous improvement teams who've saved 80% of time on standardization.</span> <a href="contact.html" style="color: white; text-decoration: underline;" data-i18n="nav.contact">Contact us</a></p>
         </div>
     </section>
 
@@ -638,30 +571,29 @@
             <div class="footer-grid">
                 <div>
                     <div class="footer-brand">Ezbelta</div>
-                    <p class="footer-description">Transform video observations into documented Standard Work - built by industrial engineers, for industrial engineers.</p>
-                    <div>
-                        <a href="https://linkedin.com/in/richarddrahn" target="_blank">LinkedIn</a>
-                    </div>
+                    <p class="footer-description" data-i18n="videoAnalyzer.footerDescription">Transform video observations into documented Standard Work - built by industrial engineers, for industrial engineers.</p>
                 </div>
                 <div>
-                    <h4>Product</h4>
+                    <h4 data-i18n="videoAnalyzer.footerProduct">Product</h4>
                     <ul>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="index.html">All Products</a></li>
+                        <li><a href="#features" data-i18n="nav.features">Features</a></li>
+                        <li><a href="index.html" data-i18n="digitalTwin.allProducts">All Products</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4>Support</h4>
+                    <h4 data-i18n="videoAnalyzer.footerSupport">Support</h4>
                     <ul>
-                        <li><a href="https://calendly.com/rrahn/30min" target="_blank">Schedule Demo</a></li>
-                        <li><a href="mailto:support@ezbelta.com">Contact Us</a></li>
+                        <li><a href="https://calendly.com/rrahn/30min" target="_blank" data-i18n="videoAnalyzer.scheduleDemo">Schedule Demo</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Fairview Development LLC. Boulder, Colorado 80303 USA.</p>
+                <p>&copy; <span data-i18n="footer.copyright">2025 Ezbelta LLC. Boulder, Colorado USA. All rights reserved.</span></p>
             </div>
         </div>
     </footer>
+
+    <script src="js/i18n.js"></script>
 </body>
 </html>

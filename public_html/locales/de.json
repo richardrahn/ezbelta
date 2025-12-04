@@ -1,0 +1,327 @@
+{
+  "nav": {
+    "products": "Produkte",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "getStarted": "Loslegen",
+    "features": "Funktionen",
+    "howItWorks": "So funktioniert's"
+  },
+  "hero": {
+    "title": "Ezbelta Suite",
+    "tagline": "KI-gestützte Lösungen für Fertigungsexzellenz"
+  },
+  "products": {
+    "a3": {
+      "title": "Ezbelta A3 Writer",
+      "description": "KI-gestützte A3-Problemlösungsplattform mit intelligentem Coaching, Echtzeit-Zusammenarbeit und automatisierter Aktionsverfolgung für Fertigungsteams.",
+      "features": [
+        "Klassische 8-Sektionen A3-Methodik mit strukturiertem Workflow",
+        "KI-Coach bietet Echtzeit-Feedback und Lückenidentifikation",
+        "KI-Schreiber erweitert Notizen sofort zu professionellem Inhalt",
+        "Visuelles Kanban-Board für Aktionsplan-Management",
+        "Echtzeit-Teamzusammenarbeit mit Auto-Speicherung",
+        "Professioneller PDF-Export im klassischen A3-Querformat",
+        "Mehrsprachige Unterstützung (Englisch, Spanisch, Deutsch)"
+      ],
+      "cta": "A3 Starten"
+    },
+    "digitalTwin": {
+      "title": "Ezbelta Digital Twin",
+      "description": "Vollständige Fertigungssimulationsplattform, angetrieben von über 15 Jahren bewährter SimJS-Technologie. Entwerfen, visualisieren und simulieren Sie Produktionslinien mit Enterprise-Genauigkeit.",
+      "features": [
+        "Mixed Model Line Design (MMLD) mit geführtem Workflow",
+        "Kampferprobte Discrete-Event-Simulationsengine",
+        "KI-gestützte Engpassidentifikation (99%+ Genauigkeit)",
+        "Visuelle Flussdiagramme mit Echtzeit-Statusüberwachung",
+        "Vollständige Analytik: Auslastung, Zykluszeit, Durchsatz",
+        "Automatisierte Verschwendungserkennung (7 Arten von Verschwendung)",
+        "Enterprise-Integration mit Multi-Tenant-Sicherheit"
+      ],
+      "cta": "Mehr Erfahren"
+    },
+    "videoAnalyzer": {
+      "title": "Ezbelta Video Analyzer",
+      "description": "Verwandeln Sie Video in Standardarbeits-Dokumentation. Sparen Sie 80% der Zeit bei Zeitstudien mit bildgenauer Annotation, KI-Bewegungserkennung und automatisierter Dokumentengenerierung.",
+      "features": [
+        "Bild-für-Bild Videoannotation mit digitalen Zeitstempeln",
+        "KI-Bewegungserkennung und Aktivitätsmustererkennung",
+        "Automatisierte Standardarbeits-Dokumentengenerierung aus Video",
+        "8 Verschwendungsarten-Identifikation (TIMWOODS) mit KI-Insights",
+        "Visuelle Verschwendungsanalyse mit farbcodierten Zeitleisten",
+        "Vorlagensystem für Multi-Standort-Implementierung",
+        "Mehrsprachige Unterstützung mit Ein-Klick-Übersetzung"
+      ],
+      "cta": "Mehr Erfahren"
+    }
+  },
+  "about": {
+    "title": "Über Ezbelta",
+    "description": "Ezbelta entwickelt intelligente Geschäftslösungen, die Fertigungsorganisationen befähigen, datengestützte Entscheidungen zu treffen und operative Exzellenz zu erreichen. Unsere Suite von KI-gestützten Tools ist darauf ausgelegt, komplexe Prozesse zu vereinfachen und gleichzeitig leistungsstarke Erkenntnisse zu liefern. Mit über 15 Jahren bewährter Technologie und einem Fokus auf Lean-Manufacturing-Prinzipien helfen wir Teams, Probleme schneller zu lösen, Produktionsszenarien zu simulieren und Best Practices effizient zu dokumentieren."
+  },
+  "digitalTwin": {
+    "heroTitle": "Erstellen Sie Ihren Einfachen",
+    "heroHighlight": "Digitalen Zwilling",
+    "heroDescription": "Die vollständige Fertigungssimulationsplattform: Entwerfen Sie mit Mixed Model Line Design, visualisieren Sie mit Visual Flow-Diagrammen und simulieren Sie mit bewährter Discrete-Event-Technologie. Verwandeln Sie statische Designs in Minuten in dynamische digitale Zwillinge.",
+    "problemTitle": "Hören Sie auf, über Ihre Produktionsleistung zu raten",
+    "problems": [
+      "Engpässe bleiben verborgen, bis die Produktion bereits beeinträchtigt ist",
+      "Ressourcenplanung basiert auf Bauchgefühl statt auf Daten",
+      "Teure Änderungen werden ohne Verständnis der wahren Auswirkungen vorgenommen",
+      "Verschwendungsmuster sind unsichtbar, bis sie Millionen kosten"
+    ],
+    "solutionTitle": "Erhalten Sie prädiktive Erkenntnisse bevor Probleme auftreten",
+    "solutions": [
+      { "bold": "Identifizieren Sie Engpässe", "text": "mit 99%+ Genauigkeit durch bewährte Discrete-Event-Simulation" },
+      { "bold": "Optimieren Sie die Ressourcenzuweisung", "text": "mit fortschrittlicher Blocking/Waiting-Zustandsanalyse" },
+      { "bold": "Testen Sie Änderungen risikofrei", "text": "in virtueller Umgebung vor der Implementierung" },
+      { "bold": "Erkennen Sie Verschwendungsmuster", "text": "mit KI-gestützten Lean-Manufacturing-Insights" }
+    ],
+    "featuresTitle": "Enterprise-Grade Fertigungssimulation",
+    "featuresSubtitle": "Basierend auf über 15 Jahren bewährter SimJS-Technologie, vertraut von Fortune-500-Herstellern weltweit",
+    "featureCards": {
+      "mmld": {
+        "title": "Mixed Model Line Design (MMLD)",
+        "description": "Vollständiges statisches Liniendesign-Tool mit geführtem Workflow: Produkte, Flüsse, Prozesse, Zeiten und Ressourcenberechnungen mit automatischer Simulationsmodellgenerierung.",
+        "items": [
+          "Produktmix-Definition und Volumenplanung",
+          "Prozessflussdesign mit Unterbaugruppen-Unterstützung",
+          "Taktzeit- und Ressourcenberechnungen",
+          "Ein-Klick-Simulationsmodellgenerierung"
+        ]
+      },
+      "simulation": {
+        "title": "Kampferprobte Simulationsengine",
+        "description": "Angetrieben von bewährter SimJS-Technologie mit über 15 Jahren Discrete-Event-Simulationsverfeinerung.",
+        "items": [
+          "Simulationsausführung in Sekundenbruchteilen",
+          "Echtzeit-Zustandsverfolgung (BESCHÄFTIGT/BLOCKIERT/WARTEND/INAKTIV)",
+          "Statistische Aufwärmperioden-Handhabung"
+        ]
+      },
+      "ai": {
+        "title": "KI-gestützte Lean-Insights",
+        "description": "Automatisierte Verschwendungserkennung und Lean-Manufacturing-Empfehlungen durch fortschrittliche Mustererkennung.",
+        "items": [
+          "Engpassidentifikation mit 99%+ Genauigkeit",
+          "Verschwendungsmustererkennung (7 Arten von Verschwendung)",
+          "Ressourcenoptimierungsempfehlungen",
+          "Flusseffizienz-Bewertung"
+        ]
+      },
+      "visual": {
+        "title": "Visuelle Flussdiagramme",
+        "description": "Interaktive Prozessflussvisualisierung mit Echtzeit-Simulationsstatus, Drag-and-Drop-Bearbeitung und Live-Ressourcenstatusüberwachung.",
+        "items": [
+          "Echtzeit-Statusfarben (Arbeitend/Inaktiv/Blockiert/Wartend)",
+          "Drag-and-Drop-Flusslayout-Editor",
+          "Live-Simulationswiedergabe-Visualisierung",
+          "Automatisches Flussrouting und Verbindungen"
+        ]
+      },
+      "analytics": {
+        "title": "Vollständige Analyse-Suite",
+        "description": "Umfassende Leistungsanalytik mit Yamazumi-Diagrammen, Auslastungs-Heatmaps, Schritt-für-Schritt-Debug-Modus und statistischer Analyse.",
+        "items": [
+          "Ereignis-für-Ereignis-Simulationsstepping",
+          "Ressourcenauslastungs- und Warteschlangenanalyse",
+          "Durchsatz- und Zykluszeit-Tracking",
+          "Export zu Excel/CSV/PDF-Berichten"
+        ]
+      },
+      "enterprise": {
+        "title": "Enterprise-Integration",
+        "description": "Gebaut für Enterprise-Skalierung mit sicherer Mehrbenutzer-Unterstützung, Versionskontrolle und API-Zugang.",
+        "items": [
+          "Multi-Tenant-Sicherheit (Supabase)",
+          "Modellversionierung und -klonen",
+          "REST-API für Integration",
+          "Cloud-native Architektur"
+        ]
+      }
+    },
+    "howItWorksTitle": "Vom statischen Design zum digitalen Zwilling in Minuten",
+    "howItWorksSubtitle": "Unser integrierter MMLD-zu-Simulation-Workflow transformiert Ihr Liniendesign in einen laufenden digitalen Zwilling",
+    "steps": {
+      "step1": { "title": "Design mit MMLD", "description": "Verwenden Sie Mixed Model Line Design, um Produkte, Flüsse, Prozesse und Zeiten zu definieren. Folgen Sie dem geführten Workflow mit automatischen Ressourcenberechnungen." },
+      "step2": { "title": "Simulation generieren", "description": "Ein-Klick-Transformation vom statischen MMLD-Design zum vollständigen Simulationsmodell mit allen automatisch erstellten Ressourcen, Flüssen und Routing." },
+      "step3": { "title": "Visualisieren & Ausführen", "description": "Verwenden Sie Visual Flow-Diagramme, um Ihr Prozesslayout zu sehen, dann führen Sie Discrete-Event-Simulation mit Echtzeit-Statusvisualisierung aus." },
+      "step4": { "title": "Analysieren & Optimieren", "description": "Erhalten Sie umfassende Analytik mit Auslastungsberichten, Engpassidentifikation und Leistungserkenntnissen zur Optimierung Ihres digitalen Zwillings." }
+    },
+    "ctaTitle": "Bereit, Ihre Fertigung zu revolutionieren?",
+    "ctaDescription": "Eliminieren Sie Verschwendung, optimieren Sie den Fluss und steigern Sie die Gewinne mit unserer bewährten Simulationsplattform.",
+    "footerDescription": "Die fortschrittlichste Fertigungssimulationsplattform, angetrieben von bewährter Discrete-Event-Simulationstechnologie.",
+    "footerProduct": "Produkt",
+    "footerSupport": "Support",
+    "scheduleDemo": "Demo vereinbaren",
+    "allProducts": "Alle Produkte"
+  },
+  "videoAnalyzer": {
+    "heroTitle": "Transformieren Sie Video in",
+    "heroHighlight": "Standardarbeit",
+    "heroDescription": "Kombiniert leistungsstarke Video-Annotationstools, KI-gestützte Analyse und automatisierte Standardarbeits-Dokumentation in einem nahtlosen Workflow. Sparen Sie 80% der Zeit bei Zeitstudien und Standardisierung.",
+    "problemTitle": "Traditionelle Zeitstudien sind veraltet",
+    "problems": [
+      "Manuelle Videoüberprüfung mit Stoppuhren dauert Stunden oder Tage",
+      "Zeitstempel auf Papier schreiben führt zu Übertragungsfehlern",
+      "Standardarbeits-Dokumente von Grund auf zu erstellen ist mühsam",
+      "Das Erkennen von Verschwendungsmustern erfordert Lean-Expertenwissen"
+    ],
+    "solutionTitle": "Automatisierte Video-zu-Standardarbeit-Pipeline",
+    "solutions": [
+      { "bold": "Bildgenaue Annotation", "text": "- Digitale Zeitstempel ersetzen Stoppuhren" },
+      { "bold": "KI-Bewegungserkennung", "text": "- Aktivitätsmuster automatisch identifizieren" },
+      { "bold": "Auto-Generierung von Standardarbeit", "text": "- Vom Video zum Werkstattdokument" },
+      { "bold": "KI identifiziert 8 Verschwendungsarten", "text": "- Automatische Lean-Manufacturing-Insights" }
+    ],
+    "featuresTitle": "Eine Plattform, drei leistungsstarke Tools",
+    "featuresSubtitle": "Alles was Sie brauchen von der Video-Beobachtung bis zur dokumentierten Standardarbeit",
+    "featureCards": {
+      "annotation": {
+        "title": "Videoannotation leicht gemacht",
+        "description": "Laden Sie Videos von jedem Fertigungsprozess hoch und annotieren Sie mit Bild-für-Bild-Präzision.",
+        "items": [
+          "Bild-für-Bild-Navigation mit Tastaturkürzeln",
+          "Split/Runden-Timer zum Markieren von Arbeitselementen",
+          "Benutzerdefinierte Kategorien zur Organisation von Beobachtungen",
+          "Schleifenbereiche für detaillierte Beobachtung",
+          "Annotationen nach CSV/JSON exportieren"
+        ]
+      },
+      "ai": {
+        "title": "KI-gestützte Intelligenz",
+        "description": "Fortschrittliche Computer Vision und KI-Analyse für automatische Insights und Verschwendungsidentifikation.",
+        "items": [
+          "Bewegungserkennung mit OpenCV",
+          "Automatische Aktivitätsmustererkennung",
+          "Zykluszeitenerkennung und -analyse",
+          "8 Verschwendungsarten-Identifikation (TIMWOODS)",
+          "KI-generierte Verbesserungsempfehlungen"
+        ]
+      },
+      "standardWork": {
+        "title": "Standardarbeits-Dokumentation",
+        "description": "Der Game-Changer - automatisierte Pipeline von Video-Zeitstempeln zu werkstattfertigen Dokumenten.",
+        "items": [
+          "Video-zu-Standardarbeit-Automatisierung",
+          "Arbeitselemente aus Zeitstempeln erstellen",
+          "Wertschöpfungs-/Verschwendungsklassifizierung",
+          "Integrierter Taktzeit-Rechner",
+          "Visuelle Zeitleiste mit Arbeitsbalance",
+          "PDF-Export (11x17\" Poster oder 8.5x11\" Bericht)"
+        ]
+      },
+      "wasteAnalysis": {
+        "title": "Visuelle Verschwendungsanalyse",
+        "description": "Farbcodierte Zeitleiste zeigt genau, wo Zeit verloren geht und Verbesserungspotenzial besteht.",
+        "items": [
+          "Grün = wertschöpfende Aktivitäten",
+          "Rot = Verschwendung (nicht wertschöpfend)",
+          "Gelb = notwendige Verschwendung",
+          "Sofortige Wertschöpfungs-Prozentberechnung",
+          "Verbesserungspotenzial-Bewertung"
+        ]
+      },
+      "templates": {
+        "title": "Vorlagensystem für Skalierung",
+        "description": "Einmal dokumentieren, überall replizieren - Vorlagen speichern und Best Practices sofort einsetzen.",
+        "items": [
+          "Standardarbeit als Vorlagen speichern",
+          "An ähnlichen Arbeitsplätzen wiederverwenden",
+          "Versionskontrolle und Genehmigungsworkflow",
+          "Multi-Standort-Implementierungsunterstützung",
+          "Vorher/Nachher-Vergleiche"
+        ]
+      },
+      "multiLang": {
+        "title": "Mehrsprachige Unterstützung",
+        "description": "Erstellen Sie Standardarbeit auf Englisch, übersetzen Sie mit einem Klick ins Spanische (oder andere Sprachen).",
+        "items": [
+          "Englisch- und Spanisch-Unterstützung",
+          "Ein-Klick-Übersetzung",
+          "Perfekt für diverse Belegschaften",
+          "Benutzerdefinierte Branding-Optionen",
+          "Professionelle Werkstattformatierung"
+        ]
+      }
+    },
+    "useCasesTitle": "Praxisnahe Anwendungsfälle",
+    "useCasesSubtitle": "Sehen Sie, wie Fertigungsteams Ezbelta nutzen, um ihre Abläufe zu transformieren",
+    "useCases": {
+      "assembly": {
+        "title": "Montage-Standardisierung",
+        "scenario": "Einen neuen Montageprozess für die Schulung neuer Mitarbeiter dokumentieren",
+        "description": "Video aufnehmen → Schritte annotieren → KI identifiziert Verschwendung → Standardarbeit generieren → PDF für Training exportieren",
+        "result": "Ergebnis: Neue Mitarbeiter lernen 50% schneller mit Video + Standardarbeit"
+      },
+      "warehouse": {
+        "title": "Lager-Picking-Optimierung",
+        "scenario": "Gehzeit bei Lager-Picking-Operationen reduzieren",
+        "description": "Picker filmen → KI-Bewegungserkennung → Gehen als Verschwendung klassifizieren → 60% Gehzeit visualisieren → Picking-Route neu gestalten",
+        "result": "Ergebnis: Gehzeit um 40% reduziert, Picks pro Stunde um 35% erhöht"
+      },
+      "kaizen": {
+        "title": "Kaizen-Event-Dokumentation",
+        "scenario": "Verbesserungen eines einwöchigen Kaizen-Events dokumentieren",
+        "description": "Vorher/Nachher aufnehmen → Zykluszeiten vergleichen → Wertschöpfungsverbesserung zeigen (32% → 58%) → Für Management exportieren",
+        "result": "Ergebnis: Klare ROI-Demonstration mit datengestützten Verbesserungen"
+      },
+      "timeStudy": {
+        "title": "Zeitstudie-Automatisierung",
+        "scenario": "Zeitstudien an 20 Arbeitsplätzen durchführen",
+        "description": "Alle 20 Stationen aufnehmen (1 Std.) → Am Schreibtisch annotieren (2 Std.) → KI-Analyse → 20 Standardarbeiten auto-generieren",
+        "result": "Ergebnis: In 3 Stunden fertig vs. 2+ Wochen mit Stoppuhr-Methoden"
+      }
+    },
+    "ctaTitle": "Bereit, Ihren Standardarbeitsprozess zu transformieren?",
+    "ctaDescription": "Schließen Sie sich Industrieingenieuren und KVP-Teams an, die 80% der Zeit bei der Standardisierung gespart haben.",
+    "footerDescription": "Transformieren Sie Video-Beobachtungen in dokumentierte Standardarbeit - von Industrieingenieuren für Industrieingenieure gebaut.",
+    "footerProduct": "Produkt",
+    "footerSupport": "Support",
+    "scheduleDemo": "Demo vereinbaren"
+  },
+  "contact": {
+    "heroTitle": "Kontaktieren Sie uns",
+    "heroSubtitle": "Haben Sie Fragen? Wir freuen uns von Ihnen zu hören.",
+    "infoTitle": "Kontaktinformationen",
+    "email": "E-Mail",
+    "emailGeneral": "Allgemein:",
+    "emailSupport": "Support:",
+    "website": "Webseite",
+    "responseTime": "Antwortzeit",
+    "responseTimeText": "Wir antworten normalerweise innerhalb von 24-48 Stunden an Werktagen",
+    "supportTitle": "Support",
+    "supportText": "Für produktspezifischen Support besuchen Sie bitte den Support-Bereich in der jeweiligen Produktanwendung.",
+    "supportLink": "Zum A3 Support",
+    "formTitle": "Senden Sie uns eine Nachricht",
+    "labelName": "Name *",
+    "labelEmail": "E-Mail *",
+    "labelCompany": "Unternehmen",
+    "labelSubject": "Betreff *",
+    "labelMessage": "Nachricht *",
+    "placeholderName": "Ihr Name",
+    "placeholderEmail": "ihre@email.com",
+    "placeholderCompany": "Ihr Unternehmen (optional)",
+    "placeholderSubject": "Betreff auswählen",
+    "placeholderMessage": "Erzählen Sie uns, wie wir helfen können...",
+    "subjectGeneral": "Allgemeine Anfrage",
+    "subjectSales": "Vertrieb",
+    "subjectSupport": "Technischer Support",
+    "subjectPartnership": "Partnerschaftsmöglichkeit",
+    "subjectFeedback": "Feedback",
+    "subjectOther": "Sonstiges",
+    "submitButton": "Nachricht senden",
+    "privacyNote": "Mit dem Absenden dieses Formulars stimmen Sie unserer",
+    "successMessage": "Vielen Dank für Ihre Nachricht! Wir werden uns bald bei Ihnen melden.",
+    "errorMessage": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte senden Sie uns direkt eine E-Mail an info@ezbelta.com"
+  },
+  "footer": {
+    "tagline": "KI-gestützte Lösungen für Fertigungsexzellenz",
+    "products": "Produkte",
+    "company": "Unternehmen",
+    "legal": "Rechtliches",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen",
+    "copyright": "2025 Ezbelta LLC. Boulder, Colorado USA. Alle Rechte vorbehalten."
+  }
+}

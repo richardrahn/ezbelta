@@ -1,0 +1,327 @@
+{
+  "nav": {
+    "products": "Produtos",
+    "about": "Sobre",
+    "contact": "Contato",
+    "getStarted": "Começar",
+    "features": "Recursos",
+    "howItWorks": "Como Funciona"
+  },
+  "hero": {
+    "title": "Ezbelta Suite",
+    "tagline": "Soluções Impulsionadas por IA para Excelência em Manufatura"
+  },
+  "products": {
+    "a3": {
+      "title": "Ezbelta A3 Writer",
+      "description": "Plataforma de resolução de problemas A3 impulsionada por IA com coaching inteligente, colaboração em tempo real e rastreamento automatizado de ações para equipes de manufatura.",
+      "features": [
+        "Metodologia A3 clássica de 8 seções com fluxo de trabalho estruturado",
+        "Coach de IA fornece feedback em tempo real e identificação de lacunas",
+        "Escritor de IA expande notas em conteúdo profissional instantaneamente",
+        "Quadro Kanban visual para gestão do plano de ação",
+        "Colaboração em equipe em tempo real com salvamento automático",
+        "Exportação profissional em PDF no formato A3 paisagem clássico",
+        "Suporte multilíngue (Inglês, Espanhol, Alemão)"
+      ],
+      "cta": "Iniciar A3"
+    },
+    "digitalTwin": {
+      "title": "Ezbelta Digital Twin",
+      "description": "Plataforma completa de simulação de manufatura alimentada por mais de 15 anos de tecnologia SimJS comprovada. Projete, visualize e simule linhas de produção com precisão de nível empresarial.",
+      "features": [
+        "Design de Linha de Modelo Misto (MMLD) com fluxo de trabalho guiado",
+        "Motor de simulação de eventos discretos testado em batalha",
+        "Identificação de gargalos impulsionada por IA (99%+ de precisão)",
+        "Diagramas de fluxo visual com monitoramento de status em tempo real",
+        "Análise completa: utilização, tempo de ciclo, throughput",
+        "Detecção automatizada de desperdícios (7 tipos de desperdício)",
+        "Integração empresarial com segurança multi-tenant"
+      ],
+      "cta": "Saiba Mais"
+    },
+    "videoAnalyzer": {
+      "title": "Ezbelta Video Analyzer",
+      "description": "Transforme vídeo em documentação de Trabalho Padrão. Economize 80% do tempo em estudos de tempo com anotação precisa por quadro, detecção de movimento por IA e geração automatizada de documentos.",
+      "features": [
+        "Anotação de vídeo quadro a quadro com timestamps digitais",
+        "Detecção de movimento por IA e reconhecimento de padrões de atividade",
+        "Geração automatizada de documentos de Trabalho Padrão a partir de vídeo",
+        "Identificação de 8 desperdícios (TIMWOODS) com insights de IA",
+        "Análise visual de desperdícios com linhas do tempo codificadas por cor",
+        "Sistema de templates para implantação multi-site",
+        "Suporte multilíngue com tradução em um clique"
+      ],
+      "cta": "Saiba Mais"
+    }
+  },
+  "about": {
+    "title": "Sobre a Ezbelta",
+    "description": "A Ezbelta desenvolve soluções empresariais inteligentes que capacitam organizações de manufatura a tomar decisões baseadas em dados e alcançar excelência operacional. Nossa suíte de ferramentas impulsionadas por IA foi projetada para simplificar processos complexos enquanto entrega insights poderosos. Com mais de 15 anos de tecnologia comprovada e foco em princípios de manufatura enxuta, ajudamos equipes a resolver problemas mais rápido, simular cenários de produção e documentar melhores práticas de forma eficiente."
+  },
+  "digitalTwin": {
+    "heroTitle": "Construa seu Simples",
+    "heroHighlight": "Gêmeo Digital",
+    "heroDescription": "A plataforma completa de simulação de manufatura: projete com Mixed Model Line Design, visualize com diagramas Visual Flow e simule com tecnologia comprovada de eventos discretos. Transforme designs estáticos em gêmeos digitais dinâmicos em minutos.",
+    "problemTitle": "Pare de Adivinhar Sobre o Desempenho da Sua Produção",
+    "problems": [
+      "Gargalos ocultos até que a produção já esteja impactada",
+      "Planejamento de recursos baseado em intuição em vez de dados",
+      "Mudanças caras feitas sem entender o verdadeiro impacto",
+      "Padrões de desperdício invisíveis até custarem milhões"
+    ],
+    "solutionTitle": "Obtenha Insights Preditivos Antes dos Problemas Acontecerem",
+    "solutions": [
+      { "bold": "Identifique gargalos", "text": "com 99%+ de precisão usando simulação de eventos discretos comprovada" },
+      { "bold": "Otimize a alocação de recursos", "text": "com análise avançada de estados de bloqueio/espera" },
+      { "bold": "Teste mudanças sem risco", "text": "em ambiente virtual antes da implementação" },
+      { "bold": "Detecte padrões de desperdício", "text": "com insights de manufatura enxuta impulsionados por IA" }
+    ],
+    "featuresTitle": "Simulação de Manufatura de Nível Empresarial",
+    "featuresSubtitle": "Construído sobre mais de 15 anos de tecnologia SimJS comprovada, confiado por fabricantes Fortune 500 em todo o mundo",
+    "featureCards": {
+      "mmld": {
+        "title": "Design de Linha de Modelo Misto (MMLD)",
+        "description": "Ferramenta completa de design de linha estática com fluxo de trabalho guiado: produtos, fluxos, processos, tempos e cálculos de recursos com geração automática de modelo de simulação.",
+        "items": [
+          "Definição de mix de produtos e planejamento de volume",
+          "Design de fluxo de processo com suporte a submontagem",
+          "Cálculos de tempo takt e recursos",
+          "Geração de modelo de simulação com um clique"
+        ]
+      },
+      "simulation": {
+        "title": "Motor de Simulação Testado em Batalha",
+        "description": "Alimentado por tecnologia SimJS comprovada com mais de 15 anos de refinamento em simulação de eventos discretos.",
+        "items": [
+          "Execução de simulação em menos de um segundo",
+          "Rastreamento de estado em tempo real (OCUPADO/BLOQUEADO/ESPERANDO/OCIOSO)",
+          "Tratamento de período de aquecimento estatístico"
+        ]
+      },
+      "ai": {
+        "title": "Insights Lean Impulsionados por IA",
+        "description": "Detecção automatizada de desperdícios e recomendações de manufatura enxuta alimentadas por reconhecimento avançado de padrões.",
+        "items": [
+          "Identificação de gargalos com 99%+ de precisão",
+          "Detecção de padrões de desperdício (7 tipos de desperdício)",
+          "Recomendações de otimização de recursos",
+          "Pontuação de eficiência de fluxo"
+        ]
+      },
+      "visual": {
+        "title": "Diagramas de Fluxo Visual",
+        "description": "Visualização interativa de fluxo de processo com status de simulação em tempo real, edição arrastar e soltar e monitoramento de estado de recursos ao vivo.",
+        "items": [
+          "Cores de status em tempo real (Trabalhando/Ocioso/Bloqueado/Esperando)",
+          "Editor de layout de fluxo arrastar e soltar",
+          "Visualização de reprodução de simulação ao vivo",
+          "Roteamento e conexões de fluxo automáticos"
+        ]
+      },
+      "analytics": {
+        "title": "Suíte Completa de Análise",
+        "description": "Análise de desempenho abrangente com gráficos Yamazumi, mapas de calor de utilização, modo de depuração passo a passo e análise estatística.",
+        "items": [
+          "Passo a passo de simulação evento por evento",
+          "Análise de utilização de recursos e filas",
+          "Rastreamento de throughput e tempo de ciclo",
+          "Exportação para relatórios Excel/CSV/PDF"
+        ]
+      },
+      "enterprise": {
+        "title": "Integração Empresarial",
+        "description": "Construído para escala empresarial com suporte seguro multi-usuário, controle de versão e acesso API.",
+        "items": [
+          "Segurança multi-tenant (Supabase)",
+          "Versionamento e clonagem de modelos",
+          "API REST para integração",
+          "Arquitetura nativa em nuvem"
+        ]
+      }
+    },
+    "howItWorksTitle": "De Design Estático a Gêmeo Digital em Minutos",
+    "howItWorksSubtitle": "Nosso fluxo de trabalho integrado MMLD-para-Simulação transforma seu design de linha em um gêmeo digital funcional",
+    "steps": {
+      "step1": { "title": "Projete com MMLD", "description": "Use Mixed Model Line Design para definir produtos, fluxos, processos e tempos. Siga o fluxo de trabalho guiado com cálculos automáticos de recursos." },
+      "step2": { "title": "Gere Simulação", "description": "Transformação com um clique de design estático MMLD para modelo de simulação completo com todos os recursos, fluxos e roteamento criados automaticamente." },
+      "step3": { "title": "Visualize e Execute", "description": "Use diagramas Visual Flow para ver o layout do seu processo, depois execute simulação de eventos discretos com visualização de status em tempo real." },
+      "step4": { "title": "Analise e Otimize", "description": "Obtenha análise abrangente com relatórios de utilização, identificação de gargalos e insights de desempenho para otimizar seu gêmeo digital." }
+    },
+    "ctaTitle": "Pronto para Revolucionar sua Manufatura?",
+    "ctaDescription": "Elimine desperdícios, otimize o fluxo e aumente os lucros com nossa plataforma de simulação comprovada.",
+    "footerDescription": "A plataforma de simulação de manufatura mais avançada, alimentada por tecnologia de simulação de eventos discretos comprovada.",
+    "footerProduct": "Produto",
+    "footerSupport": "Suporte",
+    "scheduleDemo": "Agendar Demo",
+    "allProducts": "Todos os Produtos"
+  },
+  "videoAnalyzer": {
+    "heroTitle": "Transforme Vídeo em",
+    "heroHighlight": "Trabalho Padrão",
+    "heroDescription": "Combina poderosas ferramentas de anotação de vídeo, análise impulsionada por IA e documentação automatizada de Trabalho Padrão em um fluxo de trabalho integrado. Economize 80% do tempo em estudos de tempo e padronização.",
+    "problemTitle": "Estudos de Tempo Tradicionais Estão Ultrapassados",
+    "problems": [
+      "Revisão manual de vídeo com cronômetros leva horas ou dias",
+      "Escrever timestamps no papel leva a erros de transcrição",
+      "Criar documentos de Trabalho Padrão do zero é tedioso",
+      "Identificar padrões de desperdício requer conhecimento especializado em lean"
+    ],
+    "solutionTitle": "Pipeline Automatizado de Vídeo para Trabalho Padrão",
+    "solutions": [
+      { "bold": "Anotação precisa por quadro", "text": "- Timestamps digitais substituem cronômetros" },
+      { "bold": "Detecção de movimento por IA", "text": "- Identifica automaticamente padrões de atividade" },
+      { "bold": "Auto-gera Trabalho Padrão", "text": "- De vídeo a documento de chão de fábrica" },
+      { "bold": "IA identifica 8 desperdícios", "text": "- Insights automáticos de manufatura enxuta" }
+    ],
+    "featuresTitle": "Uma Plataforma, Três Ferramentas Poderosas",
+    "featuresSubtitle": "Tudo que você precisa da observação de vídeo ao Trabalho Padrão documentado",
+    "featureCards": {
+      "annotation": {
+        "title": "Anotação de Vídeo Simplificada",
+        "description": "Faça upload de vídeos de qualquer processo de manufatura e anote com precisão quadro a quadro.",
+        "items": [
+          "Navegação quadro a quadro com atalhos de teclado",
+          "Timer de divisão/volta para marcar elementos de trabalho",
+          "Categorias personalizadas para organizar observações",
+          "Regiões de loop para observação detalhada",
+          "Exportar anotações para CSV/JSON"
+        ]
+      },
+      "ai": {
+        "title": "Inteligência Impulsionada por IA",
+        "description": "Visão computacional avançada e análise de IA para insights automáticos e identificação de desperdícios.",
+        "items": [
+          "Detecção de movimento usando OpenCV",
+          "Reconhecimento automático de padrões de atividade",
+          "Detecção e análise de tempo de ciclo",
+          "Identificação de 8 desperdícios (TIMWOODS)",
+          "Recomendações de melhoria geradas por IA"
+        ]
+      },
+      "standardWork": {
+        "title": "Documentação de Trabalho Padrão",
+        "description": "O diferencial - pipeline automatizado de timestamps de vídeo para documentos prontos para o chão de fábrica.",
+        "items": [
+          "Automatização de Vídeo para Trabalho Padrão",
+          "Criação de elementos de trabalho a partir de timestamps",
+          "Classificação de valor agregado/desperdício",
+          "Calculadora de tempo takt integrada",
+          "Linha do tempo visual mostrando balanceamento de trabalho",
+          "Exportação PDF (pôster 11x17\" ou relatório 8.5x11\")"
+        ]
+      },
+      "wasteAnalysis": {
+        "title": "Análise Visual de Desperdícios",
+        "description": "Linha do tempo codificada por cor mostra exatamente onde o tempo está sendo perdido e o potencial de melhoria.",
+        "items": [
+          "Verde = atividades de valor agregado",
+          "Vermelho = desperdício (sem valor agregado)",
+          "Amarelo = desperdício necessário",
+          "Cálculo instantâneo de percentual de valor agregado",
+          "Pontuação de oportunidade de melhoria"
+        ]
+      },
+      "templates": {
+        "title": "Sistema de Templates para Escala",
+        "description": "Documente uma vez, replique em todos os lugares - salve templates e implante melhores práticas instantaneamente.",
+        "items": [
+          "Salve Trabalho Padrão como templates",
+          "Reutilize em estações de trabalho similares",
+          "Controle de versão e fluxo de aprovação",
+          "Suporte a implantação multi-site",
+          "Comparações antes/depois"
+        ]
+      },
+      "multiLang": {
+        "title": "Suporte Multi-Idioma",
+        "description": "Crie Trabalho Padrão em inglês, traduza para espanhol (ou outros idiomas) com um clique.",
+        "items": [
+          "Suporte a inglês e espanhol",
+          "Tradução com um clique",
+          "Perfeito para forças de trabalho diversas",
+          "Opções de marca personalizada",
+          "Formatação profissional de chão de fábrica"
+        ]
+      }
+    },
+    "useCasesTitle": "Casos de Uso Reais",
+    "useCasesSubtitle": "Veja como equipes de manufatura usam Ezbelta para transformar suas operações",
+    "useCases": {
+      "assembly": {
+        "title": "Padronização de Montagem",
+        "scenario": "Documentar um novo processo de montagem para treinar novos operadores",
+        "description": "Gravar vídeo → Anotar passos → IA identifica desperdício → Gerar Trabalho Padrão → Exportar PDF para treinamento",
+        "result": "Resultado: Novos operadores aprendem 50% mais rápido com vídeo + Trabalho Padrão"
+      },
+      "warehouse": {
+        "title": "Otimização de Picking em Armazém",
+        "scenario": "Reduzir tempo de caminhada em operações de picking de armazém",
+        "description": "Filmar pickers → Detecção de movimento IA → Classificar caminhada como desperdício → Visualizar 60% tempo caminhando → Redesenhar rota de picking",
+        "result": "Resultado: Redução de caminhada de 40%, aumento de picks por hora de 35%"
+      },
+      "kaizen": {
+        "title": "Documentação de Evento Kaizen",
+        "scenario": "Documentar melhorias de um evento kaizen de uma semana",
+        "description": "Gravar antes/depois → Comparar tempos de ciclo → Mostrar melhoria de valor agregado (32% → 58%) → Exportar para gestão",
+        "result": "Resultado: Demonstração clara de ROI com melhorias baseadas em dados"
+      },
+      "timeStudy": {
+        "title": "Automatização de Estudo de Tempos",
+        "scenario": "Realizar estudos de tempo em 20 estações de trabalho",
+        "description": "Gravar todas as 20 estações (1 hora) → Anotar na mesa (2 horas) → Análise IA → Auto-gerar 20 Trabalhos Padrão",
+        "result": "Resultado: Completar em 3 horas vs. 2+ semanas com métodos de cronômetro"
+      }
+    },
+    "ctaTitle": "Pronto para Transformar seu Processo de Trabalho Padrão?",
+    "ctaDescription": "Junte-se a engenheiros industriais e equipes de melhoria contínua que economizaram 80% do tempo em padronização.",
+    "footerDescription": "Transforme observações de vídeo em Trabalho Padrão documentado - construído por engenheiros industriais, para engenheiros industriais.",
+    "footerProduct": "Produto",
+    "footerSupport": "Suporte",
+    "scheduleDemo": "Agendar Demo"
+  },
+  "contact": {
+    "heroTitle": "Entre em Contato",
+    "heroSubtitle": "Tem perguntas? Adoraríamos ouvir de você.",
+    "infoTitle": "Informações de Contato",
+    "email": "E-mail",
+    "emailGeneral": "Geral:",
+    "emailSupport": "Suporte:",
+    "website": "Website",
+    "responseTime": "Tempo de Resposta",
+    "responseTimeText": "Normalmente respondemos dentro de 24-48 horas em dias úteis",
+    "supportTitle": "Suporte",
+    "supportText": "Para suporte específico de produto, visite a seção de suporte dentro da aplicação de cada produto.",
+    "supportLink": "Ir para Suporte A3",
+    "formTitle": "Envie-nos uma Mensagem",
+    "labelName": "Nome *",
+    "labelEmail": "E-mail *",
+    "labelCompany": "Empresa",
+    "labelSubject": "Assunto *",
+    "labelMessage": "Mensagem *",
+    "placeholderName": "Seu nome",
+    "placeholderEmail": "seu@email.com",
+    "placeholderCompany": "Nome da sua empresa (opcional)",
+    "placeholderSubject": "Selecione um assunto",
+    "placeholderMessage": "Conte-nos como podemos ajudar...",
+    "subjectGeneral": "Consulta Geral",
+    "subjectSales": "Vendas",
+    "subjectSupport": "Suporte Técnico",
+    "subjectPartnership": "Oportunidade de Parceria",
+    "subjectFeedback": "Feedback",
+    "subjectOther": "Outro",
+    "submitButton": "Enviar Mensagem",
+    "privacyNote": "Ao enviar este formulário, você concorda com nossa",
+    "successMessage": "Obrigado pela sua mensagem! Entraremos em contato em breve.",
+    "errorMessage": "Houve um erro ao enviar sua mensagem. Por favor, tente nos enviar um e-mail diretamente para info@ezbelta.com"
+  },
+  "footer": {
+    "tagline": "Soluções Impulsionadas por IA para Excelência em Manufatura",
+    "products": "Produtos",
+    "company": "Empresa",
+    "legal": "Legal",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Serviço",
+    "copyright": "2025 Ezbelta LLC. Boulder, Colorado EUA. Todos os direitos reservados."
+  }
+}

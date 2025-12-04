@@ -1,0 +1,723 @@
+{
+  "navigation": {
+    "brand": "Ezbelta",
+    "tagline": "Enkle Digitale Tvillinger for Lean Operasjoner",
+    "features": "Funksjoner",
+    "howItWorks": "Hvordan det Fungerer",
+    "pricing": "Priser",
+    "admin": "Admin",
+    "signIn": "Logg Inn",
+    "getStarted": "Kom i Gang"
+  },
+  "hero": {
+    "title": "Bygg Din Enkle",
+    "titleHighlight": "Digitale Tvilling",
+    "description": "Den komplette produksjonssimulering plattformen: design med Mixed Model Line Design, visualiser med Visual Flow diagrammer, og simuler med bevist diskret-hendelse teknologi. Transformer statiske design til dynamiske digitale tvillinger på minutter.",
+    "getStarted": "Kom i Gang",
+    "startFreeTrial": "Start Gratis Prøveperiode",
+    "watchDemo": "Se Demo",
+    "benefits": "✅ Ingen kredittkort påkrevd • ✅ 14-dagers gratis prøveperiode • ✅ Avbryt når som helst"
+  },
+  "problemSolution": {
+    "problemTitle": "Slutt å Gjette om Din Produksjonsytelse",
+    "problems": [
+      "Flaskehalser skjult til produksjonen allerede er påvirket",
+      "Ressursplanlegging basert på magefølelse i stedet for data",
+      "Dyre endringer gjort uten å forstå sann påvirkning",
+      "Sløsingsmønstre usynlige til de koster millioner"
+    ],
+    "solutionTitle": "Få Prediktive Innsikter Før Problemer Oppstår",
+    "solutions": [
+      "**Identifiser flaskehalser** med 99%+ nøyaktighet ved bruk av bevist diskret-hendelse simulering",
+      "**Optimaliser ressursfordeling** med avansert analyse av blokkering/venting tilstander",
+      "**Test endringer risikofritt** i virtuelt miljø før implementering",
+      "**Oppdage sløsingsmønstre** med AI-drevne lean produksjon innsikter"
+    ]
+  },
+  "features": {
+    "title": "Bedriftsnivå Produksjonssimulering",
+    "subtitle": "Bygget på 15+ år med bevist SimJS teknologi, betrodd av Fortune 500 produsenter verden over",
+    "mmld": {
+      "title": "Mixed Model Line Design (MMLD)",
+      "description": "Komplett statisk linjedesign verktøy med guidet arbeidsflyt: produkter, flyt, prosesser, tider, og ressursberegninger med automatisk simuleringsmodell generering.",
+      "features": [
+        "• Produktmiks definisjon og volumplanlegging",
+        "• Prosessflyt design med delmontering støtte",
+        "• Takt tid og ressursberegninger",
+        "• Ett-klikk simuleringsmodell generering"
+      ]
+    },
+    "simulation": {
+      "title": "Kampprøvd Simuleringsmotor",
+      "description": "Drevet av bevist Kaplan-Simulator teknologi med 15+ år med diskret-hendelse simulering forbedring.",
+      "features": [
+        "• Under-sekund simulering utførelse",
+        "• Monte Carlo analyse med konfidensintervaller",
+        "• Sanntid tilstand sporing (OPPTATT/BLOKKERT/VENTER/INAKTIV)",
+        "• Statistisk oppvarming periode håndtering"
+      ]
+    },
+    "ai": {
+      "title": "AI-Drevne Lean Innsikter",
+      "description": "Automatisk sløsing oppdagelse og lean produksjon anbefalinger drevet av avansert mønstergjenkjenning.",
+      "features": [
+        "• Flaskehals identifisering med 99%+ nøyaktighet",
+        "• Sløsingsmønster oppdagelse (7 typer sløsing)",
+        "• Ressursoptimalisering anbefalinger",
+        "• Flyt effektivitet scoring"
+      ]
+    },
+    "visual": {
+      "title": "Visual Flow Diagrammer",
+      "description": "Interaktiv prosessflyt visualisering med sanntid simulering status, dra-og-slipp redigering, og live ressurs tilstand overvåking.",
+      "features": [
+        "• Sanntid status farger (Arbeider/Inaktiv/Blokkert/Venter)",
+        "• Dra-og-slipp flyt layout editor",
+        "• Live simulering avspilling visualisering",
+        "• Automatisk flyt ruting og tilkoblinger"
+      ]
+    },
+    "analytics": {
+      "title": "Komplett Analyse Suite",
+      "description": "Omfattende ytelse analyse med Yamazumi diagrammer, utnyttelse varmekart, steg-for-steg debug modus, og statistisk analyse.",
+      "features": [
+        "• Hendelse-for-hendelse simulering stepping",
+        "• Ressurs utnyttelse og kø analyse",
+        "• Gjennomstrømning og syklus tid sporing",
+        "• Eksporter til Excel/CSV/PDF rapporter"
+      ]
+    },
+    "videoAnalyzer": {
+      "title": "AI Video-Analysator",
+      "description": "AI-drevet automatisk bevegelsesdeteksjon, syklustid-analyse og arbeidseffektivitet-måling ved bruk av OpenCV datasyn teknologi.",
+      "features": [
+        "• Automatisk bevegelsesdeteksjon og -sporing",
+        "• AI-drevet syklustid-måling",
+        "• Arbeidseffektivitet-analyse",
+        "• Datasyn innsikter"
+      ]
+    },
+    "enterprise": {
+      "title": "Bedrift Integrasjon",
+      "description": "Bygget for bedrift skala med sikker multi-bruker støtte, versjonskontroll, og API tilgang.",
+      "features": [
+        "• Multi-leietaker sikkerhet (Supabase)",
+        "• Modell versjonering og kloning",
+        "• REST API for integrasjon",
+        "• Sky-innfødt arkitektur"
+      ]
+    }
+  },
+  "howItWorks": {
+    "title": "Fra Statisk Design til Digital Tvilling på Minutter",
+    "subtitle": "Vår integrerte MMLD-til-Simulering arbeidsflyt forvandler ditt linjedesign til en fungerende digital tvilling",
+    "steps": [
+      {
+        "title": "Design med MMLD",
+        "description": "Bruk Mixed Model Line Design til å definere produkter, flyt, prosesser, og tider. Følg den guidede arbeidsflyten med automatiske ressursberegninger."
+      },
+      {
+        "title": "Generer Simulering",
+        "description": "Ett-klikk transformasjon fra MMLD statisk design til komplett simuleringsmodell med alle ressurser, flyt, og ruting automatisk opprettet."
+      },
+      {
+        "title": "Visualiser og Kjør",
+        "description": "Bruk Visual Flow diagrammer for å se din prosess layout, deretter kjør diskret-hendelse simulering med sanntid status visualisering."
+      },
+      {
+        "title": "Analyser og Optimaliser",
+        "description": "Få omfattende analyse med utnyttelse rapporter, flaskehals identifisering, og ytelse innsikter for å optimalisere din digitale tvilling."
+      }
+    ]
+  },
+  "socialProof": {
+    "title": "Betrodd av Produksjonsledere",
+    "subtitle": "Fra bilindustri til romfart, elektronikk til farmasøytisk",
+    "testimonials": [
+      {
+        "industry": "Bilproduksjon",
+        "quote": "Reduserte linje omstilling tid med 35% og identifiserte $2M i sløsing eliminering muligheter.",
+        "company": "Fortune 500 OEM"
+      },
+      {
+        "industry": "Farmasøytisk Produksjon",
+        "quote": "Optimaliserte batch prosessering for å øke gjennomstrømning 28% mens kvalitet overholdelse opprettholdes.",
+        "company": "Global Pharma Selskap"
+      },
+      {
+        "industry": "Romfart Montering",
+        "quote": "Simulering avslørte skjult flaskehals som kostet 15% kapasitet. Fikset før produksjon påvirkning.",
+        "company": "Forsvars Entreprenør"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Enkle, Transparente Priser",
+    "subtitle": "Start gratis, skaler mens du vokser",
+    "starter": {
+      "title": "Starter",
+      "price": "Gratis",
+      "description": "Perfekt for læring og små value streams",
+      "features": [
+        "Opptil 3 simuleringsmodeller",
+        "Grunnleggende ressurs modellering",
+        "Standard simulering kjøringer",
+        "Fellesskap støtte"
+      ],
+      "cta": "Kom i Gang Gratis"
+    },
+    "professional": {
+      "title": "Profesjonell",
+      "price": "$99",
+      "period": "/måned",
+      "description": "For voksende produksjonsteam",
+      "badge": "Mest Populær",
+      "features": [
+        "Ubegrensede simuleringsmodeller",
+        "Avansert ressurs modellering",
+        "AI-drevne innsikter",
+        "Debug modus og steg-gjennom",
+        "Eksport muligheter",
+        "Prioritet støtte"
+      ],
+      "cta": "Start 14-Dagers Gratis Prøveperiode"
+    },
+    "enterprise": {
+      "title": "Bedrift",
+      "price": "Tilpasset",
+      "description": "For store organisasjoner",
+      "features": [
+        "Alt i Profesjonell",
+        "SSO og avansert sikkerhet",
+        "API tilgang og integrasjoner",
+        "Tilpassede distribusjon alternativer",
+        "Dedikert suksess manager",
+        "SLA garanti"
+      ],
+      "cta": "Kontakt Salg"
+    }
+  },
+  "finalCta": {
+    "title": "Klar til å Revolusjonere Din Produksjon?",
+    "description": "Bli med tusenvis av produsenter som har eliminert sløsing, optimalisert flyt, og økt profitt med vår beviste simulering plattform.",
+    "startTrial": "Start Din Gratis Prøveperiode",
+    "scheduleDemo": "Planlegg Demo",
+    "benefits": "🚀 Oppsett på under 5 minutter • 📊 Se resultater umiddelbart • 💰 ROI innen første måned",
+    "getStarted": "Kom i Gang"
+  },
+  "dashboard": {
+    "loading": "Laster dashbord...",
+    "welcomeBack": "Velkommen tilbake",
+    "yourProjects": "Dine Value Streams",
+    "newProject": "Ny Value Stream",
+    "noProjects": "Ingen value streams ennå",
+    "getStarted": "Kom i gang ved å opprette din første lean design value stream.",
+    "createFirstProject": "Opprett Din Første Value Stream",
+    "openProject": "Åpne Value Stream",
+    "editProject": "Rediger Value Stream",
+    "created": "Opprettet",
+    "noDescription": "Ingen beskrivelse",
+    "adminTools": "Admin Verktøy",
+    "adminDashboard": "Admin Dashbord",
+    "helpDocs": "Hjelp og Dokumenter",
+    "signOut": "Logg Ut"
+  },
+  "footer": {
+    "brand": "Ezbelta",
+    "description": "Den mest avanserte produksjonssimulering plattform, drevet av bevist diskret-hendelse simulering teknologi.",
+    "social": {
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "github": "GitHub"
+    },
+    "product": {
+      "title": "Produkt",
+      "features": "Funksjoner",
+      "pricing": "Priser",
+      "documentation": "Dokumentasjon",
+      "apiReference": "API Referanse"
+    },
+    "solutions": {
+      "title": "Løsninger",
+      "automotive": "Bilindustri",
+      "aerospace": "Romfart",
+      "pharmaceuticals": "Farmasøytisk",
+      "electronics": "Elektronikk"
+    },
+    "support": {
+      "title": "Støtte",
+      "helpCenter": "Hjelp Senter",
+      "contactUs": "Kontakt Oss",
+      "training": "Opplæring",
+      "community": "Fellesskap"
+    },
+    "copyright": "© 2025 Ezbelta. Bygget med Next.js 14, Supabase, og bevist SimJS teknologi.",
+    "languages": {
+      "title": "Språk",
+      "english": "Engelsk",
+      "spanish": "Spansk",
+      "norwegian": "Norsk",
+      "german": "Tysk"
+    }
+  },
+  "mmld": {
+    "overview": {
+      "title": "Blandet Modell Linje Design (MMLD)",
+      "description": "Flaggskipfunksjonen til Ezbelta som gjør det mulig for produsenter å designe og optimalisere produksjonslinjer for flere produktvarianter. I motsetning til tradisjonelt enkeltprodukt linjedesign, beregner MMLD de eksakte ressurkravene når man produserer forskjellige produkter på samme produksjonslinje.",
+      "whatMakesItPowerful": "Det Som Gjør MMLD Kraftig",
+      "traditionalProblems": "Tradisjonelle Tilnærmingsproblemer",
+      "mmldAdvantages": "MMLD Fordeler",
+      "problemsList": [
+        "Gjette på ressurkrav basert på enkeltstående produkter",
+        "Bruke gjennomsnittlige prosesstider som ikke reflekterer virkeligheten",
+        "Over- eller underbemanning av produksjonslinjer",
+        "Manglende evne til å håndtere endringer i produktmiks"
+      ],
+      "advantagesList": [
+        "Presise beregninger som bruker faktiske produktvolumer",
+        "Prosess-spesifikke etterspørselsberegninger",
+        "Eksakte ressurkrav for blandet produksjon",
+        "Optimalisert for variable produktmikser"
+      ],
+      "fiveStepProcess": "5-Trinns MMLD Prosess",
+      "stepTitles": [
+        "Produktmiks",
+        "Flytdesign",
+        "Prosessliste",
+        "Prosesstider",
+        "Beregninger og Resultater"
+      ],
+      "stepDescriptions": [
+        "Definer produktvariantene og målvolumene dine",
+        "Kartlegg produksjonsflyten og prosesstilkoblinger",
+        "List alle prosesser med deres krav",
+        "Sett prosesstider og variabilitet for hvert produkt",
+        "Generer ressurkrav og optimaliseringsinnsikter"
+      ],
+      "getStarted": "Kom i Gang med MMLD",
+      "startButton": "Start Trinn 1: Produktmiks →"
+    },
+    "productMix": {
+      "title": "Produktmiks Definisjon",
+      "subtitle": "Trinn 1 av 5 i MMLD Prosessen",
+      "description": "Grunnlaget for MMLD er å definere produktporteføljen din med nøyaktige volumål. Dette trinnet bestemmer etterspørselsmønstrene som driver alle nedstrøms beregninger.",
+      "keyInputs": "Nøkkelinnganger Påkrevd",
+      "partNumber": "Delnummer",
+      "productDescription": "Produktbeskrivelse",
+      "targetVolume": "Målvolum",
+      "nextStep": "Neste: Trinn 2 - Flytdesign →"
+    },
+    "flowDesign": {
+      "title": "Flytdesign og Monteringsforbindelser",
+      "subtitle": "Trinn 3 av 5 i MMLD Prosessen",
+      "description": "Koble undermonteringsflyt til hovedmonteringsprosesser og definer materialflytrelasjoner. Dette trinnet bestemmer hvordan uavhengige flyt konvergerer for å skape det endelige produktet.",
+      "understandingConnections": "Forstå Monteringsforbindelser",
+      "whatAreConnections": "Hva er Monteringsforbindelser?",
+      "connectionsDescription": "Monteringsforbindelser definerer hvor og hvordan undermonteringer mater inn i hovedproduksjonsflyt. De representerer de fysiske konvergenspunktene hvor multiple produksjonsstrømmer kombineres.",
+      "nextStep": "Neste: Trinn 4 - Prosesstider →"
+    },
+    "processList": {
+      "title": "Prosessliste Opprettelse",
+      "subtitle": "Trinn 2 av 5 i MMLD Prosessen",
+      "description": "Definer hver produksjonsprosess i verdikjeden din med riktige ressurstildelinger. Dette trinnet skaper grunnlaget for å forstå hvordan produktene dine flyter gjennom produksjonen.",
+      "nextStep": "Neste: Trinn 3 - Flytdesign →"
+    },
+    "processTimes": {
+      "title": "Prosesstider Innlegging",
+      "subtitle": "Trinn 4 av 5 i MMLD Prosessen",
+      "description": "Definer de faktiske produksjonstidene for hvert produkt ved hver prosess. Dette trinnet forvandler prosessmatrisen til presise tidsverdier som driver alle MMLD beregninger.",
+      "matrixInterfaceTitle": "Prosesstider Matrix Grensesnitt",
+      "howMatrixWorks": "Hvordan Matrisen Fungerer",
+      "matrixDescription": "Prosesstider matrisen viser alle produktene dine som rader og alle prosessene dine som kolonner. Hver celle representerer tiden (i minutter) som et spesifikt produkt bruker ved en spesifikk prosess.",
+      "clickToEdit": "📱 Klikk for å Redigere",
+      "clickToEditDesc": "Klikk på en hvilken som helst celle for å legge inn prosesstid",
+      "autoSave": "💾 Auto-Lagring",
+      "autoSaveDesc": "Tider lagres automatisk når du er ferdig med redigering",
+      "visualFeedback": "🔵 Visuell Tilbakemelding",
+      "visualFeedbackDesc": "Aktiv redigering uthevet i blått",
+      "timeUnitsTitle": "Tidsenheter: Minutter",
+      "defaultUnit": "Standard Enhet: Alle tider legges inn i minutter",
+      "commonConversions": "Vanlige Konverteringer",
+      "precision": "Presisjon: Systemet støtter desimalverdier",
+      "examples": "Eksempler",
+      "dataEntryStrategyTitle": "Datainnlegging Strategi",
+      "requiredVsOptionalTitle": "Påkrevde vs. Valgfrie Prosesser",
+      "enterTimeRequired": "✅ Legg inn Tid (Prosess Påkrevd)",
+      "processRequiredDesc": "Prosess er påkrevd for dette produktet",
+      "exampleRequired": "Eksempel: Standard Fjellsykkel → Rammesveising = 15.0 minutter",
+      "leaveBlankOptional": "⚪ La Stå Tom/Null (Prosess Ikke Nødvendig)",
+      "processNotNeededDesc": "Prosess ikke nødvendig for dette produktet",
+      "exampleOptional": "Eksempel: Økonomi Sykkel → Premium Maleprosess = (tom)",
+      "systemLogicTitle": "💡 System Logikk",
+      "systemLogicDesc": "Bare prosesser med tid > 0 er inkludert i MMLD beregninger. Tomme eller null verdier betyr at produktet hopper over den prosessen.",
+      "timeValueGuidelinesTitle": "Tidsverdi Retningslinjer",
+      "whatToInclude": "Hva å Inkludere",
+      "whatToIncludeList": [
+        "**Total Prosesstid:** All tid produktet bruker ved prosessen",
+        "**Arbeid + Maskin:** Kombinert tid hvis begge kreves",
+        "**Oppstillings Tid:** Inkluder hvis betydelig relativt til syklustid",
+        "**Inspeksjon:** Inkluder kvalitetssjekk tid",
+        "**Materialhåndtering:** Tid for å flytte inn/ut av prosess"
+      ],
+      "whatNotToInclude": "⚠️ Hva IKKE å Inkludere",
+      "whatNotToIncludeList": [
+        "Kø/vente tid (MMLD beregner dette)",
+        "Batch oppstillingstid (bruk tid per enhet)",
+        "Transport mellom prosesser",
+        "Rework tid (bruk standard god tid)"
+      ],
+      "processTimeSourcesTitle": "Prosesstid Kilder",
+      "whereToGetTimes": "Hvor få Tider",
+      "timeStudies": "Tidsstudier",
+      "timeStudiesDesc": "Industri ingeniør målinger med stoppeklokke/video analyse",
+      "historicalData": "Historiske Data",
+      "historicalDataDesc": "Faktiske produksjonsrekorder fra ERP/MES systemer",
+      "standardTimes": "Standard Tider",
+      "standardTimesDesc": "Ingeniør estimater basert på metoder-tid måling (MTM)",
+      "pilotRuns": "Pilot Kjøringer",
+      "pilotRunsDesc": "Test produksjon målinger med faktiske operatører og utstyr",
+      "timeAccuracyImpactTitle": "Tidsnøyaktighet Påvirkning",
+      "underestimateTimes": "Underestimer Tider",
+      "underestimateList": [
+        "Skaper falske flaskehalser",
+        "Over-ressursering anbefalinger",
+        "Høyere enn nødvendige lønnskostnader",
+        "Gå glipp av virkelige kapasitetsbegrensninger"
+      ],
+      "overestimateTimes": "Overestimer Tider",
+      "overestimateList": [
+        "Går glipp av virkelige flaskehalser",
+        "Under-ressursering anbefalinger",
+        "Produksjon underskudd",
+        "Kapasitetsplanlegging feil"
+      ],
+      "bestPractice": "Beste Praksis",
+      "bestPracticeDesc": "Bruk gjennomsnittlige tider for planlegging. Vurder å bruke 95. persentil for konservativ ressursplanlegging.",
+      "matrixNavigationTitle": "Matrix Navigering og Organisering",
+      "matrixStructure": "Matrix Struktur",
+      "organizedByFlow": "Organisert etter Flyt",
+      "organizedByFlowList": [
+        "**Flyt Grupper:** Prosesser gruppert etter flyt tildeling",
+        "**Prosess Detaljer:** Navn og ressurs type vist",
+        "**Visuell Struktur:** Lett å skanne og sammenligne tider",
+        "**Logisk Gruppering:** MAIN flyt først, deretter undermontasjer"
+      ],
+      "productTotals": "Produkt Totaler",
+      "productTotalsList": [
+        "**Auto-Beregning:** Total tid per produkt på tvers av alle prosesser",
+        "**Sanntid Oppdateringer:** Totaler beregnes om mens du legger inn tider",
+        "**Verifikasjons Verktøy:** Hjelper til med å oppdage datainnlegging feil",
+        "**Sammenligning Hjelp:** Sammenlign total syklus tider mellom produkter"
+      ],
+      "exampleMatrixLayout": "Eksempel Matrix Layout",
+      "timeEntryBestPracticesTitle": "Tidsinnlegging Beste Praksiser",
+      "consistentMethodologyTitle": "Konsistent Metodologi",
+      "standardConditions": "Standard Forhold",
+      "standardConditionsList": [
+        "Bruk normale driftsforhold",
+        "Gjennomsnittlig operatør kapasitet",
+        "Godt vedlikeholdt utstyr ytelse",
+        "Standard batch størrelser"
+      ],
+      "timePerUnitTitle": "Tid per Enhet",
+      "timePerUnitDesc": "Alltid legg inn tid per individuelle enhet, ikke per batch:",
+      "timePerUnitExample": "Eksempel: Hvis 10 enheter prosessert på 50 minutter → Legg inn 5.0 minutter per enhet",
+      "validationTechniquesTitle": "Validering Teknikker",
+      "crossReference": "Kryssreferanse",
+      "crossReferenceDesc": "Sammenlign lignende prosesser på tvers av produkter",
+      "sanityCheck": "Fornuftssjekk",
+      "sanityCheckDesc": "Gir totaler mening relativt til hverandre?",
+      "expertReview": "Ekspert Gjennomgang",
+      "expertReviewDesc": "Få prosess eiere til å validere tider",
+      "pilotValidation": "Pilot Validering",
+      "pilotValidationDesc": "Test tider med små produksjons kjøringer",
+      "commonScenariosTitle": "Vanlige Tidsinnlegging Scenarioer",
+      "similarProductsTitle": "Lignende Produkter",
+      "similarProductsDesc": "Produkter i samme familie har ofte lignende tider:",
+      "efficiencyStrategy": "Effektivitet Strategi",
+      "efficiencyStrategyList": [
+        "**Kopier Funksjon:** Legg inn ett produkt, kopier til lignende produkter",
+        "**Variasjon Mønster:** Forstå hvor forskjeller oppstår",
+        "**Dokumentasjon:** Merk hvorfor tider er forskjellige mellom lignende produkter"
+      ],
+      "exampleBikeFamily": "Eksempel: Sykkel Familie",
+      "baseModel": "Base Modell: Standard Fjellsykkel tider",
+      "deluxeModel": "Deluxe Modell: +20% tid (premium komponenter)",
+      "economyModel": "Økonomi Modell: -25% tid (forenklet montering)",
+      "complexProcessesTitle": "Komplekse Prosesser",
+      "complexProcessesDesc": "Noen prosesser har betydelig variasjon:",
+      "averageApproach": "Gjennomsnitt Tilnærming",
+      "averageApproachDesc": "Bruk vektet gjennomsnitt på tvers av produktvarianter",
+      "worstCase": "Verste Tilfelle",
+      "worstCaseDesc": "Bruk lengste tid for konservativ planlegging",
+      "splitProcesses": "Del Prosesser",
+      "splitProcessesDesc": "Del komplekse prosesser inn i under-prosesser",
+      "optionalProcessesTitle": "Valgfrie Prosesser",
+      "optionalProcessesDesc": "Ikke alle produkter krever alle prosesser:",
+      "skipPattern": "Hopp over Mønster",
+      "skipPatternDesc": "La celler stå tomme for ikke-anvendelige prosesser",
+      "zeroValues": "Null Verdier",
+      "zeroValuesDesc": "Systemet behandler nuller som ikke-anvendelige",
+      "flowLogic": "Flyt Logikk",
+      "flowLogicDesc": "Påvirker etterspørsel beregninger for de prosessene",
+      "timeDataQualityTitle": "Tidsdata Kvalitet Indikatorer",
+      "verificationIndicators": "Verifikasjon Indikatorer",
+      "definedTimes": "Definerte Tider",
+      "definedTimesDesc": "Antall tider lagt inn vs. total mulige kombinasjoner",
+      "totalProcesses": "Total Prosesser",
+      "totalProcessesDesc": "Antall aktive prosesser i din modell",
+      "coveragePercentage": "Deknings Prosentandel",
+      "coveragePercentageDesc": "Prosentandel av matrix fullført (ikke alle celler trenger verdier)",
+      "qualityCheckWarnings": "Kvalitetssjekk Advarsler",
+      "outliers": "Uteliggere",
+      "outliersDesc": "Tider betydelig forskjellige fra lignende prosesser",
+      "missingCritical": "Manglende Kritisk",
+      "missingCriticalDesc": "Påkrevde prosesser uten definerte tider",
+      "zeroTotals": "Null Totaler",
+      "zeroTotalsDesc": "Produkter uten definerte prosesstider",
+      "backButton": "← Tilbake: Trinn 3 - Flytdesign",
+      "nextButton": "Neste: Trinn 5 - Beregninger →"
+    },
+    "calculations": {
+      "title": "Linjedesign Beregninger og Resultater",
+      "subtitle": "Steg 5 av 5 i MMLD Prosessen",
+      "description": "Kulminasjonen av MMLD hvor dataene dine transformeres til gjennomførbare ressurkrav og optimaliseringsinnsikter. Her leverer den matematiske presisjonen til MMLD håndgripelig forretningsverdi.",
+      "engineOverview": "Beregningsmotor Oversikt",
+      "engineDescription": "MMLD utfører sofistikerte beregninger ved å bruke prosess-spesifikk etterspørsel i stedet for enkle gjennomsnitt. Denne presisjonen er det som gjør systemet kraftig for blandet-modell produksjon.",
+      "calculationSequence": "Beregningssekvens",
+      "stepByStep": "Steg-for-Steg Beregninger",
+      "step1Title": "Steg 1: Prosess Etterspørsel Beregning",
+      "step1Formula": "Prosess Etterspørsel = Σ(Produkt Volum × Prosess Multiplikator × Prosess Anvendelighet)",
+      "step2Title": "Steg 2: Prosess-Spesifikk Takt Tid",
+      "step2Formula": "Takt Tid = Tilgjengelig Arbeidstid ÷ Prosess Etterspørsel",
+      "step3Title": "Steg 3: Vektet Gjennomsnittlig Prosesstid",
+      "step3Formula": "Vektet Gj.snitt Tid = Σ(Volum × Prosesstid × Multiplikator × Anvendelighet) ÷ Prosess Etterspørsel",
+      "backButton": "← Tilbake: Steg 4 - Prosesstider",
+      "completeMessage": "🎉 MMLD Fullført!",
+      "nextButton": "Utforsk Blandet Modell Simulering →",
+      "formula": "Formel",
+      "sequences": [
+        "Prosess Etterspørsel Beregning (per prosess)",
+        "Prosess-Spesifikk Takt Tid (per prosess)",
+        "Vektet Gjennomsnittlig Prosesstid (per prosess)",
+        "Nødvendige Ressurser (teoretisk)",
+        "Faktiske Ressurser Nødvendig (praktisk, rundet opp)"
+      ]
+    }
+  },
+  "docs": {
+    "navigation": {
+      "title": "Dokumentasjon",
+      "backToDashboard": "Tilbake til Dashboard",
+      "gettingStarted": "Kom i Gang",
+      "overview": "Oversikt",
+      "introduction": "Introduksjon",
+      "quickStart": "Hurtigstart",
+      "accountSetup": "Kontooppsett",
+      "mmld": "Mixed Model Line Design",
+      "mmldOverview": "MMLD-oversikt",
+      "productMix": "Produktmiks Definisjon",
+      "processList": "Prosessliste Opprettelse",
+      "flowDesign": "Flytdesign og Forbindelser",
+      "processTimes": "Prosesstider Innlegging",
+      "calculations": "Linjedesign Beregninger",
+      "simulation": "Mixed Model Simulering",
+      "modelBuilding": "Modellbygging",
+      "resourceManagement": "Ressursstyring",
+      "runningSimulations": "Kjøre Simuleringer",
+      "analyzingResults": "Analysere Resultater",
+      "advanced": "Avanserte Funksjoner",
+      "debugMode": "Debug-modus",
+      "variabilitySettings": "Variabilitet Innstillinger",
+      "testConnection": "Test Forbindelse"
+    },
+    "home": {
+      "title": "Ezbelta Dokumentasjon",
+      "description": "Velkommen til den omfattende guiden for Ezbelta, den mest avanserte diskrete hendelsessimulerings-plattformen for lean produksjon. Denne dokumentasjonen vil hjelpe deg med å modellere komplekse produksjonssystemer, optimalisere flyter og eliminere avfall.",
+      "mmldCard": {
+        "title": "Mixed Model Line Design",
+        "description": "Vår flaggskipsfunksjon for design og optimalisering av produksjonslinjer for flere produktvarianter. Start her for maksimal effekt.",
+        "cta": "Kom i Gang →"
+      },
+      "simulationCard": {
+        "title": "Mixed Model Simulering",
+        "description": "Bygg detaljerte diskrete hendelsessimulerings-modeller for komplekse produksjonsscenarier og hva-hvis-analyse.",
+        "cta": "Lær Mer →"
+      },
+      "whatYouLearn": {
+        "title": "Hva Du Vil Lære",
+        "processCalculations": {
+          "title": "Prosess-Spesifikke Beregninger",
+          "description": "Lær hvordan MMLD beregner takttid og ressurskrav for hver prosess basert på faktisk produktetterspørsel."
+        },
+        "advancedSimulation": {
+          "title": "Avansert Simulering",
+          "description": "Mestre diskrete hendelsessimulering med blokkering/ventetilstander, ressurskonkurranse og statistisk analyse."
+        },
+        "optimizationInsights": {
+          "title": "Optimaliseringsinnsikt",
+          "description": "Oppdag flaskehalser, eliminer avfall og optimaliser ressursfordeling med AI-drevet lean produksjonsinnsikt."
+        }
+      },
+      "gettingStarted": {
+        "title": "Kom i Gang",
+        "newUserCard": {
+          "title": "Ny til Ezbelta?",
+          "description": "Start med vår omfattende introduksjon for å forstå plattformens arkitektur og muligheter.",
+          "cta": "Les Plattform Introduksjon →"
+        },
+        "step1": {
+          "title": "Sett Opp Din Konto",
+          "description": "Opprett value streams, konfigurer brukerinnstillinger og gjør deg kjent med dashboardet."
+        },
+        "step2": {
+          "title": "Velg Din Tilnærming",
+          "description": "Start med Mixed Model Line Design for øyeblikkelig ROI, eller dykk inn i mixed model simulering for komplekse scenarier."
+        },
+        "step3": {
+          "title": "Bygg og Optimaliser",
+          "description": "Modeller dine prosesser, kjør simuleringer og implementer optimaliseringsanbefalinger."
+        }
+      },
+      "platformFeatures": {
+        "title": "Plattform Funksjoner",
+        "coreCapabilities": {
+          "title": "Kjernefunksjoner",
+          "features": [
+            "Prosess-spesifikke takttidsberegninger",
+            "Vektet gjennomsnittlig prosesstidsanalyse",
+            "Diskrete hendelsessimulerings-motor",
+            "Ressursblokkering/ventetilstand sporing",
+            "Monte Carlo statistisk analyse"
+          ]
+        },
+        "advancedFeatures": {
+          "title": "Avanserte Funksjoner",
+          "features": [
+            "Steg-for-steg debug-modus",
+            "Prosesstid variabilitet modellering",
+            "Multi-flyt monteringsforbindelser",
+            "Interaktive visualiserings-dashboards",
+            "Eksport og rapportering muligheter"
+          ]
+        }
+      },
+      "helpSupport": {
+        "title": "Trenger Hjelp?",
+        "description": "Kan ikke finne det du leter etter? Prøv disse ressursene:",
+        "testConnection": "Test Database Forbindelse",
+        "debugGuide": "Debug-modus Guide",
+        "backToDashboard": "Tilbake til Dashboard"
+      }
+    },
+    "docs": {
+      "navigation": {
+        "title": "Dokumentasjon",
+        "backToDashboard": "Tilbake til Dashboard",
+        "gettingStarted": "Kom i Gang",
+        "overview": "Oversikt",
+        "introduction": "Introduksjon",
+        "quickStart": "Hurtigstart",
+        "accountSetup": "Konto-oppsett",
+        "mmld": "Mixed Model Line Design",
+        "mmldOverview": "MMLD Oversikt",
+        "productMix": "Produktmiks-definisjon",
+        "processList": "Prosessliste-oppretting",
+        "flowDesign": "Flyt-design og Tilkoblinger",
+        "processTimes": "Prosesstider-innskriving",
+        "calculations": "Linjedesign-beregninger",
+        "simulation": "Mixed Model Simulering",
+        "modelBuilding": "Modellbygging",
+        "resourceManagement": "Ressursforvaltning",
+        "runningSimulations": "Kjør Simuleringer",
+        "analyzingResults": "Analyser Resultater",
+        "advanced": "Avanserte Funksjoner",
+        "debugMode": "Debug-modus",
+        "variabilitySettings": "Variabilitets-innstillinger",
+        "testConnection": "Test Tilkobling"
+      }
+    }
+  },
+  "shopfloorModules": {
+    "title": "Kraftige Shopfloor Administrasjonsmoduler",
+    "subtitle": "Omfattende verktøy for operativ fortreffelighet og kontinuerlig forbedring",
+    "modules": [
+      {
+        "name": "Prosessanalyse",
+        "description": "Dypdykk i prosessytelse med detaljerte målinger, flaskehalsidentifisering og effektivitetsanalyse for å optimalisere dine operasjoner.",
+        "benefit": "Sanntids Ytelsesinnsikt"
+      },
+      {
+        "name": "Personaloptimalisering",
+        "description": "Intelligent arbeidsstyrkeplanlegging med kompetansetilpasning, kapasitetsanalyse og dynamisk planlegging for å maksimere produktiviteten.",
+        "benefit": "Smart Ressursallokering"
+      },
+      {
+        "name": "A3 Administrasjon",
+        "description": "Strukturert problemløsningsmetodikk med A3-rapportmaler, rotårsaksanalyse og kontinuerlig forbedrings sporing.",
+        "benefit": "Lean Metodikkintegrasjon"
+      },
+      {
+        "name": "Sekvensoptimalisering",
+        "description": "Avanserte algoritmer for produksjonssekvensering, ordreprioritet og flytoptimalisering for å minimere omstillingstid og maksimere gjennomstrømning.",
+        "benefit": "AI-Drevet Planlegging"
+      },
+      {
+        "name": "Videoanalysator",
+        "description": "Analyser produksjonsprosesstidsstemple videoer med tidsstemplede annotasjoner, aktivitetssporing og tid-bevegelse studier for lean forbedringsinnsikt.",
+        "benefit": "Prosess Video Innsikt"
+      },
+      {
+        "name": "AI Videoanalysator",
+        "description": "AI-drevet automatisk bevegelsesdeteksjon, syklustidanalyse og arbeidseffektivitetsmåling ved bruk av OpenCV datasyn teknologi.",
+        "benefit": "Automatisert AI Analyse"
+      },
+      {
+        "name": "Sensitivitetsanalyse",
+        "description": "Automatisert parametertesting for å analysere påvirkningen av volum, miks, syklustider og ressursvariasjoner med full simuleringsnøyaktighet.",
+        "benefit": "Datadrevne Beslutninger"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Kontakt Oss",
+    "subtitle": "Har du spørsmål om vår produksjonssimulering plattform? Vi vil gjerne høre fra deg.",
+    "backToHome": "← Tilbake til Hjem",
+    "getInTouch": "Ta Kontakt",
+    "email": "E-post",
+    "location": "Lokasjon",
+    "responseTime": "Responstid",
+    "responseTimeText": "Vi svarer vanligvis innen 24 timer",
+    "quickActions": "Raske Handlinger",
+    "scheduleDemo": "Planlegg Demo",
+    "sendMessage": "Send oss en Melding",
+    "form": {
+      "name": "Navn",
+      "nameRequired": "Navn *",
+      "email": "E-post",
+      "emailRequired": "E-post *",
+      "company": "Selskap",
+      "subject": "Emne",
+      "subjectRequired": "Emne *",
+      "subjectPlaceholder": "Velg et emne",
+      "subjectOptions": {
+        "general": "Generell Henvendelse",
+        "demo": "Be om Demo",
+        "pricing": "Prisinformasjon",
+        "support": "Teknisk Støtte",
+        "partnership": "Partnerskapsmuligheter",
+        "other": "Annet"
+      },
+      "message": "Melding",
+      "messageRequired": "Melding *",
+      "messagePlaceholder": "Fortell oss om dine produksjonssimuleringsbehov...",
+      "sending": "Sender...",
+      "sendMessage": "Send Melding"
+    },
+    "success": {
+      "title": "Melding Sendt!",
+      "message": "Takk for at du kontaktet oss. Vi vil svare innen 24 timer.",
+      "sendAnother": "Send Enda en Melding"
+    }
+  }
+}

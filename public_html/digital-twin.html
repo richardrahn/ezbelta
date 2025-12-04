@@ -44,19 +44,8 @@
         }
 
         .logo-img {
-            width: 180px;
-            height: 180px;
-        }
-
-        .brand-text h1 {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #2563eb;
-        }
-
-        .brand-text p {
-            font-size: 0.75rem;
-            color: #6b7280;
+            height: 40px;
+            width: auto;
         }
 
         .nav-links {
@@ -75,32 +64,18 @@
             color: #1f2937;
         }
 
-        .btn {
-            padding: 0.5rem 1rem;
-            border-radius: 0.5rem;
-            font-weight: 500;
-            text-decoration: none;
-            transition: all 0.3s;
-            display: inline-block;
+        .language-selector {
+            padding: 6px 10px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            background: white;
+            color: #4b5563;
+            font-size: 0.9rem;
+            cursor: pointer;
+            outline: none;
         }
-
-        .btn-primary {
-            background: #2563eb;
-            color: white;
-        }
-
-        .btn-primary:hover {
-            background: #1d4ed8;
-        }
-
-        .btn-secondary {
-            background: #16a34a;
-            color: white;
-        }
-
-        .btn-secondary:hover {
-            background: #15803d;
-        }
+        .language-selector:hover { border-color: #2563eb; }
+        .language-selector:focus { border-color: #2563eb; box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2); }
 
         /* Hero Section */
         .hero {
@@ -127,31 +102,6 @@
             margin: 0 auto 2rem;
         }
 
-        .hero-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .btn-hero {
-            padding: 1rem 2rem;
-            font-size: 1.125rem;
-            border-radius: 0.5rem;
-        }
-
-        .btn-hero-primary {
-            background: #2563eb;
-            color: white;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-
-        .btn-hero-secondary {
-            background: white;
-            color: #2563eb;
-            border: 2px solid #2563eb;
-        }
-
         /* Problem/Solution Section */
         .problem-solution {
             padding: 2.5rem 0;
@@ -162,7 +112,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
-            align-items: center;
+            align-items: start;
         }
 
         .section-title {
@@ -171,20 +121,28 @@
             margin-bottom: 1.5rem;
         }
 
-        .problem-item, .solution-item {
+        .problem-list, .solution-list {
+            list-style: none;
+        }
+
+        .problem-list li, .solution-list li {
             display: flex;
             align-items: flex-start;
             margin-bottom: 1rem;
+            font-size: 1rem;
         }
 
-        .icon {
-            font-size: 1.25rem;
+        .problem-list li::before {
+            content: '❌';
             margin-right: 0.75rem;
             flex-shrink: 0;
         }
 
-        .icon-red { color: #ef4444; }
-        .icon-green { color: #10b981; }
+        .solution-list li::before {
+            content: '✅';
+            margin-right: 0.75rem;
+            flex-shrink: 0;
+        }
 
         /* Features Section */
         .features {
@@ -241,7 +199,7 @@
             margin-bottom: 1rem;
         }
 
-        .feature-card p {
+        .feature-card > p {
             color: #4b5563;
             margin-bottom: 1rem;
         }
@@ -254,6 +212,11 @@
 
         .feature-list li {
             margin-bottom: 0.25rem;
+        }
+
+        .feature-list li::before {
+            content: '• ';
+            color: #2563eb;
         }
 
         /* How It Works Section */
@@ -322,30 +285,6 @@
             margin-left: auto;
             margin-right: auto;
             opacity: 0.9;
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .btn-cta {
-            padding: 1rem 2rem;
-            font-size: 1.125rem;
-            border-radius: 0.5rem;
-        }
-
-        .btn-cta-white {
-            background: white;
-            color: #2563eb;
-        }
-
-        .btn-cta-outline {
-            background: transparent;
-            color: white;
-            border: 2px solid white;
         }
 
         /* Footer */
@@ -434,9 +373,15 @@
                     </a>
                 </div>
                 <div class="nav-links">
-                    <a href="#features">Features</a>
-                    <a href="#how-it-works">How it Works</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="#features" data-i18n="nav.features">Features</a>
+                    <a href="#how-it-works" data-i18n="nav.howItWorks">How it Works</a>
+                    <a href="contact.html" data-i18n="nav.contact">Contact</a>
+                    <select id="languageSelector" class="language-selector" onchange="setLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="de">Deutsch</option>
+                        <option value="pt-BR">Português</option>
+                    </select>
                 </div>
             </div>
         </div>
@@ -446,10 +391,10 @@
     <section class="hero">
         <div class="container">
             <h1>
-                Build Your Simple
-                <span class="highlight">Digital Twin</span>
+                <span data-i18n="digitalTwin.heroTitle">Build Your Simple</span>
+                <span class="highlight" data-i18n="digitalTwin.heroHighlight">Digital Twin</span>
             </h1>
-            <p>
+            <p data-i18n="digitalTwin.heroDescription">
                 The complete manufacturing simulation platform: design with Mixed Model Line Design,
                 visualize with Visual Flow diagrams, and simulate with proven discrete-event technology.
                 Transform static designs into dynamic digital twins in minutes.
@@ -462,42 +407,22 @@
         <div class="container">
             <div class="two-col">
                 <div>
-                    <h2 class="section-title">Stop Guessing About Your Production Performance</h2>
-                    <div class="problem-item">
-                        <span class="icon icon-red">❌</span>
-                        <p>Bottlenecks hidden until production is already impacted</p>
-                    </div>
-                    <div class="problem-item">
-                        <span class="icon icon-red">❌</span>
-                        <p>Resource planning based on gut feelings rather than data</p>
-                    </div>
-                    <div class="problem-item">
-                        <span class="icon icon-red">❌</span>
-                        <p>Expensive changes made without understanding true impact</p>
-                    </div>
-                    <div class="problem-item">
-                        <span class="icon icon-red">❌</span>
-                        <p>Waste patterns invisible until they're costing millions</p>
-                    </div>
+                    <h2 class="section-title" data-i18n="digitalTwin.problemTitle">Stop Guessing About Your Production Performance</h2>
+                    <ul class="problem-list" data-i18n-list="digitalTwin.problems">
+                        <li>Bottlenecks hidden until production is already impacted</li>
+                        <li>Resource planning based on gut feelings rather than data</li>
+                        <li>Expensive changes made without understanding true impact</li>
+                        <li>Waste patterns invisible until they're costing millions</li>
+                    </ul>
                 </div>
                 <div>
-                    <h3 class="section-title" style="color: #2563eb;">Get Predictive Insights Before Problems Happen</h3>
-                    <div class="solution-item">
-                        <span class="icon icon-green">✅</span>
-                        <p><strong>Identify bottlenecks</strong> with 99%+ accuracy using proven discrete-event simulation</p>
-                    </div>
-                    <div class="solution-item">
-                        <span class="icon icon-green">✅</span>
-                        <p><strong>Optimize resource allocation</strong> with advanced blocking/waiting state analysis</p>
-                    </div>
-                    <div class="solution-item">
-                        <span class="icon icon-green">✅</span>
-                        <p><strong>Test changes risk-free</strong> in virtual environment before implementation</p>
-                    </div>
-                    <div class="solution-item">
-                        <span class="icon icon-green">✅</span>
-                        <p><strong>Detect waste patterns</strong> with AI-powered lean manufacturing insights</p>
-                    </div>
+                    <h3 class="section-title" style="color: #2563eb;" data-i18n="digitalTwin.solutionTitle">Get Predictive Insights Before Problems Happen</h3>
+                    <ul class="solution-list">
+                        <li><strong data-i18n="digitalTwin.solutions.0.bold">Identify bottlenecks</strong> <span data-i18n="digitalTwin.solutions.0.text">with 99%+ accuracy using proven discrete-event simulation</span></li>
+                        <li><strong data-i18n="digitalTwin.solutions.1.bold">Optimize resource allocation</strong> <span data-i18n="digitalTwin.solutions.1.text">with advanced blocking/waiting state analysis</span></li>
+                        <li><strong data-i18n="digitalTwin.solutions.2.bold">Test changes risk-free</strong> <span data-i18n="digitalTwin.solutions.2.text">in virtual environment before implementation</span></li>
+                        <li><strong data-i18n="digitalTwin.solutions.3.bold">Detect waste patterns</strong> <span data-i18n="digitalTwin.solutions.3.text">with AI-powered lean manufacturing insights</span></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -507,79 +432,79 @@
     <section id="features" class="features">
         <div class="container">
             <div class="features-header">
-                <h2>Enterprise-Grade Manufacturing Simulation</h2>
-                <p>Built on 15+ years of proven SimJS technology, trusted by Fortune 500 manufacturers worldwide</p>
+                <h2 data-i18n="digitalTwin.featuresTitle">Enterprise-Grade Manufacturing Simulation</h2>
+                <p data-i18n="digitalTwin.featuresSubtitle">Built on 15+ years of proven SimJS technology, trusted by Fortune 500 manufacturers worldwide</p>
             </div>
 
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">📐</div>
-                    <h3>Mixed Model Line Design (MMLD)</h3>
-                    <p>Complete static line design tool with guided workflow: products, flows, processes, times, and resource calculations with automatic simulation model generation.</p>
-                    <ul class="feature-list">
-                        <li>• Product mix definition and volume planning</li>
-                        <li>• Process flow design with subassembly support</li>
-                        <li>• Takt time and resource calculations</li>
-                        <li>• One-click simulation model generation</li>
+                    <h3 data-i18n="digitalTwin.featureCards.mmld.title">Mixed Model Line Design (MMLD)</h3>
+                    <p data-i18n="digitalTwin.featureCards.mmld.description">Complete static line design tool with guided workflow: products, flows, processes, times, and resource calculations with automatic simulation model generation.</p>
+                    <ul class="feature-list" data-i18n-list="digitalTwin.featureCards.mmld.items">
+                        <li>Product mix definition and volume planning</li>
+                        <li>Process flow design with subassembly support</li>
+                        <li>Takt time and resource calculations</li>
+                        <li>One-click simulation model generation</li>
                     </ul>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">⚡</div>
-                    <h3>Battle-Tested Simulation Engine</h3>
-                    <p>Powered by proven SimJS technology with 15+ years of discrete-event simulation refinement.</p>
-                    <ul class="feature-list">
-                        <li>• Sub-second simulation execution</li>
-                        <li>• Real-time state tracking (BUSY/BLOCKED/WAITING/IDLE)</li>
-                        <li>• Statistical warmup period handling</li>
+                    <h3 data-i18n="digitalTwin.featureCards.simulation.title">Battle-Tested Simulation Engine</h3>
+                    <p data-i18n="digitalTwin.featureCards.simulation.description">Powered by proven SimJS technology with 15+ years of discrete-event simulation refinement.</p>
+                    <ul class="feature-list" data-i18n-list="digitalTwin.featureCards.simulation.items">
+                        <li>Sub-second simulation execution</li>
+                        <li>Real-time state tracking (BUSY/BLOCKED/WAITING/IDLE)</li>
+                        <li>Statistical warmup period handling</li>
                     </ul>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">🧠</div>
-                    <h3>AI-Powered Lean Insights</h3>
-                    <p>Automated waste detection and lean manufacturing recommendations powered by advanced pattern recognition.</p>
-                    <ul class="feature-list">
-                        <li>• Bottleneck identification with 99%+ accuracy</li>
-                        <li>• Waste pattern detection (7 types of waste)</li>
-                        <li>• Resource optimization recommendations</li>
-                        <li>• Flow efficiency scoring</li>
+                    <h3 data-i18n="digitalTwin.featureCards.ai.title">AI-Powered Lean Insights</h3>
+                    <p data-i18n="digitalTwin.featureCards.ai.description">Automated waste detection and lean manufacturing recommendations powered by advanced pattern recognition.</p>
+                    <ul class="feature-list" data-i18n-list="digitalTwin.featureCards.ai.items">
+                        <li>Bottleneck identification with 99%+ accuracy</li>
+                        <li>Waste pattern detection (7 types of waste)</li>
+                        <li>Resource optimization recommendations</li>
+                        <li>Flow efficiency scoring</li>
                     </ul>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">🔄</div>
-                    <h3>Visual Flow Diagrams</h3>
-                    <p>Interactive process flow visualization with real-time simulation status, drag-and-drop editing, and live resource state monitoring.</p>
-                    <ul class="feature-list">
-                        <li>• Real-time status colors (Working/Idle/Blocked/Waiting)</li>
-                        <li>• Drag-and-drop flow layout editor</li>
-                        <li>• Live simulation playback visualization</li>
-                        <li>• Automatic flow routing and connections</li>
+                    <h3 data-i18n="digitalTwin.featureCards.visual.title">Visual Flow Diagrams</h3>
+                    <p data-i18n="digitalTwin.featureCards.visual.description">Interactive process flow visualization with real-time simulation status, drag-and-drop editing, and live resource state monitoring.</p>
+                    <ul class="feature-list" data-i18n-list="digitalTwin.featureCards.visual.items">
+                        <li>Real-time status colors (Working/Idle/Blocked/Waiting)</li>
+                        <li>Drag-and-drop flow layout editor</li>
+                        <li>Live simulation playback visualization</li>
+                        <li>Automatic flow routing and connections</li>
                     </ul>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">📊</div>
-                    <h3>Complete Analytics Suite</h3>
-                    <p>Comprehensive performance analytics with Yamazumi charts, utilization heatmaps, step-by-step debug mode, and statistical analysis.</p>
-                    <ul class="feature-list">
-                        <li>• Event-by-event simulation stepping</li>
-                        <li>• Resource utilization and queue analysis</li>
-                        <li>• Throughput & cycle time tracking</li>
-                        <li>• Export to Excel/CSV/PDF reports</li>
+                    <h3 data-i18n="digitalTwin.featureCards.analytics.title">Complete Analytics Suite</h3>
+                    <p data-i18n="digitalTwin.featureCards.analytics.description">Comprehensive performance analytics with Yamazumi charts, utilization heatmaps, step-by-step debug mode, and statistical analysis.</p>
+                    <ul class="feature-list" data-i18n-list="digitalTwin.featureCards.analytics.items">
+                        <li>Event-by-event simulation stepping</li>
+                        <li>Resource utilization and queue analysis</li>
+                        <li>Throughput & cycle time tracking</li>
+                        <li>Export to Excel/CSV/PDF reports</li>
                     </ul>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">🏢</div>
-                    <h3>Enterprise Integration</h3>
-                    <p>Built for enterprise scale with secure multi-user support, version control, and API access.</p>
-                    <ul class="feature-list">
-                        <li>• Multi-tenant security (Supabase)</li>
-                        <li>• Model versioning & cloning</li>
-                        <li>• REST API for integration</li>
-                        <li>• Cloud-native architecture</li>
+                    <h3 data-i18n="digitalTwin.featureCards.enterprise.title">Enterprise Integration</h3>
+                    <p data-i18n="digitalTwin.featureCards.enterprise.description">Built for enterprise scale with secure multi-user support, version control, and API access.</p>
+                    <ul class="feature-list" data-i18n-list="digitalTwin.featureCards.enterprise.items">
+                        <li>Multi-tenant security (Supabase)</li>
+                        <li>Model versioning & cloning</li>
+                        <li>REST API for integration</li>
+                        <li>Cloud-native architecture</li>
                     </ul>
                 </div>
             </div>
@@ -590,33 +515,33 @@
     <section id="how-it-works" class="how-it-works">
         <div class="container">
             <div class="features-header">
-                <h2>From Static Design to Digital Twin in Minutes</h2>
-                <p>Our integrated MMLD-to-Simulation workflow transforms your line design into a running digital twin</p>
+                <h2 data-i18n="digitalTwin.howItWorksTitle">From Static Design to Digital Twin in Minutes</h2>
+                <p data-i18n="digitalTwin.howItWorksSubtitle">Our integrated MMLD-to-Simulation workflow transforms your line design into a running digital twin</p>
             </div>
 
             <div class="steps-grid">
                 <div class="step">
                     <div class="step-number step-1">1</div>
-                    <h3>Design with MMLD</h3>
-                    <p>Use Mixed Model Line Design to define products, flows, processes, and times. Follow the guided workflow with automatic resource calculations.</p>
+                    <h3 data-i18n="digitalTwin.steps.step1.title">Design with MMLD</h3>
+                    <p data-i18n="digitalTwin.steps.step1.description">Use Mixed Model Line Design to define products, flows, processes, and times. Follow the guided workflow with automatic resource calculations.</p>
                 </div>
 
                 <div class="step">
                     <div class="step-number step-2">2</div>
-                    <h3>Generate Simulation</h3>
-                    <p>One-click transformation from MMLD static design to complete simulation model with all resources, flows, and routing automatically created.</p>
+                    <h3 data-i18n="digitalTwin.steps.step2.title">Generate Simulation</h3>
+                    <p data-i18n="digitalTwin.steps.step2.description">One-click transformation from MMLD static design to complete simulation model with all resources, flows, and routing automatically created.</p>
                 </div>
 
                 <div class="step">
                     <div class="step-number step-3">3</div>
-                    <h3>Visualize & Run</h3>
-                    <p>Use Visual Flow diagrams to see your process layout, then run discrete-event simulation with real-time status visualization.</p>
+                    <h3 data-i18n="digitalTwin.steps.step3.title">Visualize & Run</h3>
+                    <p data-i18n="digitalTwin.steps.step3.description">Use Visual Flow diagrams to see your process layout, then run discrete-event simulation with real-time status visualization.</p>
                 </div>
 
                 <div class="step">
                     <div class="step-number step-4">4</div>
-                    <h3>Analyze & Optimize</h3>
-                    <p>Get comprehensive analytics with utilization reports, bottleneck identification, and performance insights to optimize your digital twin.</p>
+                    <h3 data-i18n="digitalTwin.steps.step4.title">Analyze & Optimize</h3>
+                    <p data-i18n="digitalTwin.steps.step4.description">Get comprehensive analytics with utilization reports, bottleneck identification, and performance insights to optimize your digital twin.</p>
                 </div>
             </div>
         </div>
@@ -625,8 +550,8 @@
     <!-- Final CTA -->
     <section class="final-cta">
         <div class="container">
-            <h2>Ready to Revolutionize Your Manufacturing?</h2>
-            <p>Eliminate waste, optimize flow, and increase profits with our proven simulation platform. <a href="contact.html" style="color: white; text-decoration: underline;">Contact us</a> to learn more.</p>
+            <h2 data-i18n="digitalTwin.ctaTitle">Ready to Revolutionize Your Manufacturing?</h2>
+            <p><span data-i18n="digitalTwin.ctaDescription">Eliminate waste, optimize flow, and increase profits with our proven simulation platform.</span> <a href="contact.html" style="color: white; text-decoration: underline;" data-i18n="nav.contact">Contact us</a></p>
         </div>
     </section>
 
@@ -636,30 +561,29 @@
             <div class="footer-grid">
                 <div>
                     <div class="footer-brand">Ezbelta</div>
-                    <p class="footer-description">The most advanced manufacturing simulation platform, powered by proven discrete-event simulation technology.</p>
-                    <div>
-                        <a href="https://linkedin.com/in/richarddrahn" target="_blank">LinkedIn</a>
-                    </div>
+                    <p class="footer-description" data-i18n="digitalTwin.footerDescription">The most advanced manufacturing simulation platform, powered by proven discrete-event simulation technology.</p>
                 </div>
                 <div>
-                    <h4>Product</h4>
+                    <h4 data-i18n="digitalTwin.footerProduct">Product</h4>
                     <ul>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="index.html">All Products</a></li>
+                        <li><a href="#features" data-i18n="nav.features">Features</a></li>
+                        <li><a href="index.html" data-i18n="digitalTwin.allProducts">All Products</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4>Support</h4>
+                    <h4 data-i18n="digitalTwin.footerSupport">Support</h4>
                     <ul>
-                        <li><a href="https://calendly.com/rrahn/30min" target="_blank">Schedule Demo</a></li>
-                        <li><a href="mailto:support@ezbelta.com">Contact Us</a></li>
+                        <li><a href="https://calendly.com/rrahn/30min" target="_blank" data-i18n="digitalTwin.scheduleDemo">Schedule Demo</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Fairview Development LLC. Boulder, Colorado 80303 USA.</p>
+                <p>&copy; <span data-i18n="footer.copyright">2025 Ezbelta LLC. Boulder, Colorado USA. All rights reserved.</span></p>
             </div>
         </div>
     </footer>
+
+    <script src="js/i18n.js"></script>
 </body>
 </html>

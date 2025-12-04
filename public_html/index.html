@@ -6,24 +6,24 @@
     <meta name="description" content="Ezbelta Suite - AI-Powered Solutions for Manufacturing Excellence. A3 Writer, Digital Twin simulation, and Video Analyzer for lean manufacturing.">
     <meta name="keywords" content="manufacturing software, A3 problem solving, digital twin, lean manufacturing, video analysis, AI manufacturing">
     <meta name="author" content="Ezbelta LLC">
-    
+
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ezbelta.com/">
     <meta property="og:title" content="Ezbelta Suite - AI-Powered Manufacturing Solutions">
     <meta property="og:description" content="AI-Powered Solutions for Manufacturing Excellence. A3 problem solving, digital twin simulation, and video analysis.">
     <meta property="og:image" content="https://ezbelta.com/images/Ezbelta3.svg">
-    
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Ezbelta Suite - AI-Powered Manufacturing Solutions">
     <meta name="twitter:description" content="AI-Powered Solutions for Manufacturing Excellence">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="images/Ezbelta3.svg">
-    
+
     <title>Ezbelta Suite - Intelligent Business Solutions</title>
-    
+
     <style>
         * {
             margin: 0;
@@ -33,9 +33,9 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #e0e7ff 0%, #ede9fe 50%, #fae8ff 100%);
             min-height: 100vh;
             color: #333;
+            background: #f8fafc;
         }
 
         /* Navigation Styles */
@@ -107,6 +107,28 @@
             box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
         }
 
+        /* Language Selector */
+        .language-selector {
+            padding: 6px 10px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            background: white;
+            color: #4b5563;
+            font-size: 0.9rem;
+            cursor: pointer;
+            outline: none;
+            transition: border-color 0.2s ease;
+        }
+
+        .language-selector:hover {
+            border-color: #667eea;
+        }
+
+        .language-selector:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+        }
+
         /* Mobile Menu Toggle */
         .mobile-menu-toggle {
             display: none;
@@ -117,162 +139,200 @@
             color: #1f2937;
         }
 
-        .container {
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero-logo {
+            height: 100px;
+            margin-bottom: 20px;
+            filter: brightness(0) invert(1);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        .hero .tagline {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            margin-bottom: 30px;
+        }
+
+        .hero-cta {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 14px 35px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero-cta:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Product Bands */
+        .product-band {
+            padding: 80px 20px;
+        }
+
+        .product-band:nth-child(odd) {
+            background: white;
+        }
+
+        .product-band:nth-child(even) {
+            background: #f1f5f9;
+        }
+
+        .product-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 40px 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
         }
 
-        .logo {
-            height: 90px;
-            margin-bottom: 8px;
+        .product-container.reverse {
+            direction: rtl;
         }
 
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-            animation: fadeInDown 0.8s ease-out;
+        .product-container.reverse > * {
+            direction: ltr;
         }
 
-        h1 {
-            color: #1f2937;
-            font-size: 2.2rem;
-            font-weight: 700;
-            margin-bottom: 5px;
-            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+        .product-image {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
         }
 
-        .tagline {
-            color: #4b5563;
-            font-size: 0.9rem;
-            font-weight: 400;
+        .product-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .product-content {
+            padding: 20px 0;
+        }
+
+        .product-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-transform: uppercase;
             letter-spacing: 0.5px;
         }
 
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .product-card {
-            background: white;
-            border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            animation: fadeInUp 0.8s ease-out;
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .product-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 6px;
-            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
-        }
-
-        .product-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
-        }
-
-        .product-card:nth-child(1) {
-            animation-delay: 0.1s;
-        }
-
-        .product-card:nth-child(2) {
-            animation-delay: 0.2s;
-        }
-
-        .product-card:nth-child(3) {
-            animation-delay: 0.3s;
-        }
-
-        .icon-wrapper {
-            width: 50px;
-            height: 50px;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 12px;
-            font-size: 1.8rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
-        }
-
-        .product-card h2 {
-            font-size: 1.2rem;
-            color: #2d3748;
-            margin-bottom: 6px;
+        .product-content h2 {
+            font-size: 2.2rem;
+            color: #1f2937;
+            margin-bottom: 15px;
             font-weight: 700;
         }
 
-        .product-card p {
-            color: #4a5568;
-            line-height: 1.35;
-            font-size: 0.78rem;
-            margin-bottom: 8px;
+        .product-content .description {
+            font-size: 1.1rem;
+            color: #4b5563;
+            line-height: 1.7;
+            margin-bottom: 25px;
         }
 
-        .features {
+        .product-features {
             list-style: none;
-            margin-top: 6px;
-            flex: 1;
+            margin-bottom: 30px;
         }
 
-        .features li {
-            padding: 3px 0;
+        .product-features li {
+            padding: 8px 0;
             color: #4a5568;
             display: flex;
             align-items: flex-start;
-            font-size: 0.72rem;
-            line-height: 1.3;
+            font-size: 0.95rem;
+            line-height: 1.5;
         }
 
-        .features li::before {
+        .product-features li::before {
             content: '✓';
             color: #667eea;
             font-weight: bold;
-            margin-right: 6px;
-            font-size: 0.85rem;
-            margin-top: 1px;
+            margin-right: 12px;
+            font-size: 1.1rem;
+            flex-shrink: 0;
         }
 
-        .cta-button {
+        .product-cta {
             display: inline-block;
-            margin-top: 12px;
-            padding: 8px 20px;
+            padding: 14px 30px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             text-decoration: none;
             border-radius: 8px;
             font-weight: 600;
-            font-size: 0.85rem;
+            font-size: 1rem;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
             box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
-            text-align: center;
         }
 
-        .cta-button:hover {
+        .product-cta:hover {
             transform: scale(1.05);
             box-shadow: 0 6px 25px rgba(102, 126, 234, 0.6);
         }
 
+        /* About Section */
+        .about-section {
+            background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .about-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 25px;
+            color: white;
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            opacity: 0.9;
+        }
+
         /* Footer Styles */
         footer {
-            background: rgba(31, 41, 55, 0.95);
+            background: #111827;
             color: #9ca3af;
-            margin-top: 60px;
-            padding: 40px 20px 20px;
+            padding: 50px 20px 30px;
         }
 
         .footer-container {
@@ -283,14 +343,14 @@
         .footer-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-            margin-bottom: 30px;
+            gap: 40px;
+            margin-bottom: 40px;
         }
 
         .footer-section h3 {
             color: white;
             font-size: 1rem;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             font-weight: 600;
         }
 
@@ -299,13 +359,13 @@
         }
 
         .footer-section ul li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
 
         .footer-section a {
             color: #9ca3af;
             text-decoration: none;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             transition: color 0.3s ease;
         }
 
@@ -315,22 +375,12 @@
 
         .footer-bottom {
             border-top: 1px solid #374151;
-            padding-top: 20px;
+            padding-top: 25px;
             text-align: center;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
         }
 
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
+        /* Animations */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -342,16 +392,38 @@
             }
         }
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
+        .animate-in {
+            animation: fadeInUp 0.8s ease-out;
         }
 
         /* Responsive Design */
+        @media (max-width: 968px) {
+            .product-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .product-container.reverse {
+                direction: ltr;
+            }
+
+            .product-image {
+                order: -1;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero .tagline {
+                font-size: 1.1rem;
+            }
+
+            .product-content h2 {
+                font-size: 1.8rem;
+            }
+        }
+
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
@@ -381,22 +453,21 @@
                 display: block;
             }
 
-            h1 {
+            .hero {
+                padding: 60px 20px;
+            }
+
+            .hero h1 {
                 font-size: 1.8rem;
             }
 
-            .tagline {
-                font-size: 0.85rem;
-            }
-
-            .products-grid {
-                grid-template-columns: 1fr;
-                gap: 30px;
+            .product-band {
+                padding: 50px 20px;
             }
 
             .footer-grid {
-                grid-template-columns: 1fr;
-                gap: 25px;
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
             }
         }
 
@@ -409,12 +480,16 @@
                 font-size: 1.1rem;
             }
 
-            h1 {
+            .hero h1 {
                 font-size: 1.5rem;
             }
 
-            .container {
-                padding: 30px 15px;
+            .product-content h2 {
+                font-size: 1.5rem;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -428,92 +503,121 @@
                 <span class="nav-logo-text">Ezbelta</span>
             </a>
             <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle menu">
-                ☰
+                &#9776;
             </button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#products">Products</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="contact.html" class="nav-cta">Get Started</a></li>
+                <li><a href="#products" data-i18n="nav.products">Products</a></li>
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                <li>
+                    <select id="languageSelector" class="language-selector" onchange="setLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="de">Deutsch</option>
+                        <option value="pt-BR">Português</option>
+                    </select>
+                </li>
+                <li><a href="contact.html" class="nav-cta" data-i18n="nav.getStarted">Get Started</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <div class="container">
-        <header>
-            <img src="images/Ezbelta3.svg" alt="Ezbelta Suite Logo" class="logo">
-            <h1>Ezbelta Suite</h1>
-            <p class="tagline">AI-Powered Solutions for Manufacturing Excellence</p>
-        </header>
-
-        <div class="products-grid" id="products">
-            <!-- Ezbelta A3 Writer -->
-            <div class="product-card">
-                <div class="icon-wrapper">
-                    <span style="color: white;">✍️</span>
-                </div>
-                <h2>Ezbelta A3 Writer</h2>
-                <p>AI-powered A3 problem-solving platform with intelligent coaching, real-time collaboration, and automated action tracking for manufacturing teams.</p>
-                <ul class="features">
-                    <li>Classic 8-section A3 methodology with structured workflow</li>
-                    <li>AI Coach provides real-time feedback and gap identification</li>
-                    <li>AI Writer expands notes into professional content instantly</li>
-                    <li>Visual Kanban board for action plan management</li>
-                    <li>Real-time team collaboration with auto-save</li>
-                    <li>Professional PDF export in classic A3 landscape layout</li>
-                    <li>Multilingual support (English, Spanish, German)</li>
-                </ul>
-                <a href="https://a3.ezbelta.com" target="_blank" rel="noopener noreferrer" class="cta-button">Launch A3 →</a>
-            </div>
-
-            <!-- Ezbelta Digital Twin -->
-            <div class="product-card">
-                <div class="icon-wrapper">
-                    <span style="color: white;">🔄</span>
-                </div>
-                <h2>Ezbelta Digital Twin</h2>
-                <p>Complete manufacturing simulation platform powered by 15+ years of proven SimJS technology. Design, visualize, and simulate production lines with enterprise-grade accuracy.</p>
-                <ul class="features">
-                    <li>Mixed Model Line Design (MMLD) with guided workflow</li>
-                    <li>Battle-tested discrete-event simulation engine</li>
-                    <li>AI-powered bottleneck identification (99%+ accuracy)</li>
-                    <li>Visual flow diagrams with real-time status monitoring</li>
-                    <li>Complete analytics: utilization, cycle time, throughput</li>
-                    <li>Automated waste detection (7 types of waste)</li>
-                    <li>Enterprise integration with multi-tenant security</li>
-                </ul>
-                <a href="digital-twin.html" class="cta-button">Learn More →</a>
-            </div>
-
-            <!-- Ezbelta Video Analyzer -->
-            <div class="product-card">
-                <div class="icon-wrapper">
-                    <span style="color: white;">🎬</span>
-                </div>
-                <h2>Ezbelta Video Analyzer</h2>
-                <p>Transform video into Standard Work documentation. Save 80% of time on time studies with frame-precise annotation, AI motion detection, and automated document generation.</p>
-                <ul class="features">
-                    <li>Frame-by-frame video annotation with digital timestamps</li>
-                    <li>AI motion detection and activity pattern recognition</li>
-                    <li>Automated Standard Work document generation from video</li>
-                    <li>8 wastes identification (TIMWOODS) with AI insights</li>
-                    <li>Visual waste analysis with color-coded timelines</li>
-                    <li>Template system for multi-site deployment</li>
-                    <li>Multi-language support with one-click translation</li>
-                </ul>
-                <a href="video-analyzer.html" class="cta-button">Learn More →</a>
-            </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <img src="images/Ezbelta3.svg" alt="Ezbelta Suite Logo" class="hero-logo">
+            <h1 data-i18n="hero.title">Ezbelta Suite</h1>
+            <p class="tagline" data-i18n="hero.tagline">AI-Powered Solutions for Manufacturing Excellence</p>
+            <a href="#products" class="hero-cta">Explore Our Products</a>
         </div>
+    </section>
 
-        <!-- About Section -->
-        <section id="about" style="margin-top: 60px; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;">
-            <h2 style="font-size: 2rem; color: #1f2937; margin-bottom: 20px;">About Ezbelta</h2>
-            <p style="font-size: 1rem; line-height: 1.6; color: #4b5563;">
+    <!-- Products Section -->
+    <div id="products">
+
+        <!-- Digital Twin Band -->
+        <section class="product-band">
+            <div class="product-container">
+                <div class="product-image">
+                    <img src="images/DT_Image.jpg" alt="Ezbelta Digital Twin - Manufacturing Simulation Platform">
+                </div>
+                <div class="product-content">
+                    <span class="product-badge">Simulation</span>
+                    <h2 data-i18n="products.digitalTwin.title">Ezbelta Digital Twin</h2>
+                    <p class="description" data-i18n="products.digitalTwin.description">Complete manufacturing simulation platform powered by 15+ years of proven SimJS technology. Design, visualize, and simulate production lines with enterprise-grade accuracy.</p>
+                    <ul class="product-features" data-i18n-list="products.digitalTwin.features">
+                        <li>Mixed Model Line Design (MMLD) with guided workflow</li>
+                        <li>Battle-tested discrete-event simulation engine</li>
+                        <li>AI-powered bottleneck identification (99%+ accuracy)</li>
+                        <li>Visual flow diagrams with real-time status monitoring</li>
+                        <li>Complete analytics: utilization, cycle time, throughput</li>
+                        <li>Automated waste detection (7 types of waste)</li>
+                        <li>Enterprise integration with multi-tenant security</li>
+                    </ul>
+                    <a href="digital-twin.html" class="product-cta"><span data-i18n="products.digitalTwin.cta">Learn More</span> →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- A3 Writer Band -->
+        <section class="product-band">
+            <div class="product-container reverse">
+                <div class="product-image">
+                    <img src="images/A3_Image.jpg" alt="Ezbelta A3 Writer - AI-Powered Problem Solving">
+                </div>
+                <div class="product-content">
+                    <span class="product-badge">Problem Solving</span>
+                    <h2 data-i18n="products.a3.title">Ezbelta A3 Writer</h2>
+                    <p class="description" data-i18n="products.a3.description">AI-powered A3 problem-solving platform with intelligent coaching, real-time collaboration, and automated action tracking for manufacturing teams.</p>
+                    <ul class="product-features" data-i18n-list="products.a3.features">
+                        <li>Classic 8-section A3 methodology with structured workflow</li>
+                        <li>AI Coach provides real-time feedback and gap identification</li>
+                        <li>AI Writer expands notes into professional content instantly</li>
+                        <li>Visual Kanban board for action plan management</li>
+                        <li>Real-time team collaboration with auto-save</li>
+                        <li>Professional PDF export in classic A3 landscape layout</li>
+                        <li>Multilingual support (English, Spanish, German)</li>
+                    </ul>
+                    <a href="https://a3.ezbelta.com" target="_blank" rel="noopener noreferrer" class="product-cta"><span data-i18n="products.a3.cta">Launch A3</span> →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Analyzer Band -->
+        <section class="product-band">
+            <div class="product-container">
+                <div class="product-image">
+                    <img src="images/VA_Image.jpg" alt="Ezbelta Video Analyzer - Standard Work from Video">
+                </div>
+                <div class="product-content">
+                    <span class="product-badge">Video Analysis</span>
+                    <h2 data-i18n="products.videoAnalyzer.title">Ezbelta Video Analyzer</h2>
+                    <p class="description" data-i18n="products.videoAnalyzer.description">Transform video into Standard Work documentation. Save 80% of time on time studies with frame-precise annotation, AI motion detection, and automated document generation.</p>
+                    <ul class="product-features" data-i18n-list="products.videoAnalyzer.features">
+                        <li>Frame-by-frame video annotation with digital timestamps</li>
+                        <li>AI motion detection and activity pattern recognition</li>
+                        <li>Automated Standard Work document generation from video</li>
+                        <li>8 wastes identification (TIMWOODS) with AI insights</li>
+                        <li>Visual waste analysis with color-coded timelines</li>
+                        <li>Template system for multi-site deployment</li>
+                        <li>Multi-language support with one-click translation</li>
+                    </ul>
+                    <a href="video-analyzer.html" class="product-cta"><span data-i18n="products.videoAnalyzer.cta">Learn More</span> →</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <h2 data-i18n="about.title">About Ezbelta</h2>
+            <p data-i18n="about.description">
                 Ezbelta develops intelligent business solutions that empower manufacturing organizations to make data-driven decisions and achieve operational excellence. Our suite of AI-powered tools is designed to simplify complex processes while delivering powerful insights. With over 15 years of proven technology and a focus on lean manufacturing principles, we help teams solve problems faster, simulate production scenarios, and document best practices efficiently.
             </p>
-        </section>
-    </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -521,42 +625,45 @@
             <div class="footer-grid">
                 <div class="footer-section">
                     <h3>Ezbelta</h3>
-                    <p style="font-size: 0.9rem; line-height: 1.5; margin-top: 10px;">
+                    <p style="font-size: 0.95rem; line-height: 1.6; margin-top: 10px;" data-i18n="footer.tagline">
                         AI-Powered Solutions for Manufacturing Excellence
                     </p>
                 </div>
-                
+
                 <div class="footer-section">
-                    <h3>Products</h3>
+                    <h3 data-i18n="footer.products">Products</h3>
                     <ul>
                         <li><a href="https://a3.ezbelta.com" target="_blank" rel="noopener noreferrer">A3 Writer</a></li>
                         <li><a href="digital-twin.html">Digital Twin</a></li>
                         <li><a href="video-analyzer.html">Video Analyzer</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
-                    <h3>Company</h3>
+                    <h3 data-i18n="footer.company">Company</h3>
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#about" data-i18n="nav.about">About</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
-                    <h3>Legal</h3>
+                    <h3 data-i18n="footer.legal">Legal</h3>
                     <ul>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
+                        <li><a href="terms.html" data-i18n="footer.terms">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
-                <p>&copy; 2025 Ezbelta LLC. Boulder, Colorado USA. All rights reserved.</p>
+                <p>© <span data-i18n="footer.copyright">2025 Ezbelta LLC. Boulder, Colorado USA. All rights reserved.</span></p>
             </div>
         </div>
     </footer>
+
+    <!-- i18n Script -->
+    <script src="js/i18n.js"></script>
 
     <!-- JavaScript -->
     <script>
@@ -590,7 +697,7 @@
             const nav = document.querySelector('nav');
             const navLinks = document.getElementById('navLinks');
             const toggle = document.querySelector('.mobile-menu-toggle');
-            
+
             if (!nav.contains(event.target) && navLinks.classList.contains('active')) {
                 navLinks.classList.remove('active');
             }

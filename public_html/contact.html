@@ -7,6 +7,20 @@
     <title>Contact Us - Ezbelta</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .language-selector {
+            padding: 6px 10px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            background: white;
+            color: #4b5563;
+            font-size: 0.9rem;
+            cursor: pointer;
+            outline: none;
+        }
+        .language-selector:hover { border-color: #2563eb; }
+        .language-selector:focus { border-color: #2563eb; box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2); }
+    </style>
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
@@ -20,9 +34,15 @@
                     </a>
                 </div>
                 <div class="flex items-center space-x-8">
-                    <a href="index.html#products" class="text-gray-700 hover:text-blue-600 transition">Products</a>
-                    <a href="index.html#about" class="text-gray-700 hover:text-blue-600 transition">About</a>
-                    <a href="contact.html" class="text-blue-600 font-semibold">Contact</a>
+                    <a href="index.html#products" class="text-gray-700 hover:text-blue-600 transition" data-i18n="nav.products">Products</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-blue-600 transition" data-i18n="nav.about">About</a>
+                    <a href="contact.html" class="text-blue-600 font-semibold" data-i18n="nav.contact">Contact</a>
+                    <select id="languageSelector" class="language-selector" onchange="setLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="de">Deutsch</option>
+                        <option value="pt-BR">Português</option>
+                    </select>
                 </div>
             </div>
         </div>
@@ -31,8 +51,8 @@
     <!-- Hero Section -->
     <section class="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-16">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-4xl font-bold mb-4">Get in Touch</h1>
-            <p class="text-xl text-blue-100">
+            <h1 class="text-4xl font-bold mb-4" data-i18n="contact.heroTitle">Get in Touch</h1>
+            <p class="text-xl text-blue-100" data-i18n="contact.heroSubtitle">
                 Have questions? We'd love to hear from you.
             </p>
         </div>
@@ -44,8 +64,8 @@
             <div class="grid md:grid-cols-2 gap-12">
                 <!-- Contact Info -->
                 <div>
-                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Contact Information</h2>
-                    
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6" data-i18n="contact.infoTitle">Contact Information</h2>
+
                     <div class="space-y-6">
                         <div class="flex items-start">
                             <div class="flex-shrink-0">
@@ -54,9 +74,9 @@
                                 </svg>
                             </div>
                             <div class="ml-4">
-                                <h3 class="text-lg font-semibold text-gray-900">Email</h3>
-                                <p class="text-gray-600">General: <a href="mailto:info@ezbelta.com" class="text-blue-600 hover:underline">info@ezbelta.com</a></p>
-                                <p class="text-gray-600">Support: <a href="mailto:support@ezbelta.com" class="text-blue-600 hover:underline">support@ezbelta.com</a></p>
+                                <h3 class="text-lg font-semibold text-gray-900" data-i18n="contact.email">Email</h3>
+                                <p class="text-gray-600"><span data-i18n="contact.emailGeneral">General:</span> <a href="mailto:info@ezbelta.com" class="text-blue-600 hover:underline">info@ezbelta.com</a></p>
+                                <p class="text-gray-600"><span data-i18n="contact.emailSupport">Support:</span> <a href="mailto:support@ezbelta.com" class="text-blue-600 hover:underline">support@ezbelta.com</a></p>
                             </div>
                         </div>
 
@@ -67,7 +87,7 @@
                                 </svg>
                             </div>
                             <div class="ml-4">
-                                <h3 class="text-lg font-semibold text-gray-900">Website</h3>
+                                <h3 class="text-lg font-semibold text-gray-900" data-i18n="contact.website">Website</h3>
                                 <p class="text-gray-600"><a href="https://ezbelta.com" class="text-blue-600 hover:underline">www.ezbelta.com</a></p>
                             </div>
                         </div>
@@ -79,19 +99,19 @@
                                 </svg>
                             </div>
                             <div class="ml-4">
-                                <h3 class="text-lg font-semibold text-gray-900">Response Time</h3>
-                                <p class="text-gray-600">We typically respond within 24-48 hours during business days</p>
+                                <h3 class="text-lg font-semibold text-gray-900" data-i18n="contact.responseTime">Response Time</h3>
+                                <p class="text-gray-600" data-i18n="contact.responseTimeText">We typically respond within 24-48 hours during business days</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="mt-8 p-6 bg-blue-50 rounded-lg">
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Support</h3>
-                        <p class="text-gray-700 mb-4">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2" data-i18n="contact.supportTitle">Support</h3>
+                        <p class="text-gray-700 mb-4" data-i18n="contact.supportText">
                             For product-specific support, please visit the support section within each product's application.
                         </p>
                         <a href="https://a3.ezbelta.com" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold">
-                            Go to A3 Support
+                            <span data-i18n="contact.supportLink">Go to A3 Support</span>
                             <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                             </svg>
@@ -101,92 +121,97 @@
 
                 <!-- Contact Form -->
                 <div class="bg-white rounded-lg shadow-lg p-8">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h2>
-                    
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6" data-i18n="contact.formTitle">Send us a Message</h2>
+
                     <form id="contactForm" class="space-y-6">
                         <div>
-                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name *</label>
-                            <input 
-                                type="text" 
-                                id="name" 
-                                name="name" 
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2" data-i18n="contact.labelName">Name *</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
                                 required
                                 class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                data-i18n-placeholder="contact.placeholderName"
                                 placeholder="Your name"
                             >
                         </div>
 
                         <div>
-                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email *</label>
-                            <input 
-                                type="email" 
-                                id="email" 
-                                name="email" 
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2" data-i18n="contact.labelEmail">Email *</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
                                 required
                                 class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                data-i18n-placeholder="contact.placeholderEmail"
                                 placeholder="your@email.com"
                             >
                         </div>
 
                         <div>
-                            <label for="company" class="block text-sm font-medium text-gray-700 mb-2">Company</label>
-                            <input 
-                                type="text" 
-                                id="company" 
+                            <label for="company" class="block text-sm font-medium text-gray-700 mb-2" data-i18n="contact.labelCompany">Company</label>
+                            <input
+                                type="text"
+                                id="company"
                                 name="company"
                                 class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                data-i18n-placeholder="contact.placeholderCompany"
                                 placeholder="Your company name (optional)"
                             >
                         </div>
 
                         <div>
-                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subject *</label>
-                            <select 
-                                id="subject" 
-                                name="subject" 
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-2" data-i18n="contact.labelSubject">Subject *</label>
+                            <select
+                                id="subject"
+                                name="subject"
                                 required
                                 class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                             >
-                                <option value="">Select a subject</option>
-                                <option value="general">General Inquiry</option>
-                                <option value="sales">Sales</option>
-                                <option value="support">Technical Support</option>
-                                <option value="partnership">Partnership Opportunity</option>
-                                <option value="feedback">Feedback</option>
-                                <option value="other">Other</option>
+                                <option value="" data-i18n="contact.placeholderSubject">Select a subject</option>
+                                <option value="general" data-i18n="contact.subjectGeneral">General Inquiry</option>
+                                <option value="sales" data-i18n="contact.subjectSales">Sales</option>
+                                <option value="support" data-i18n="contact.subjectSupport">Technical Support</option>
+                                <option value="partnership" data-i18n="contact.subjectPartnership">Partnership Opportunity</option>
+                                <option value="feedback" data-i18n="contact.subjectFeedback">Feedback</option>
+                                <option value="other" data-i18n="contact.subjectOther">Other</option>
                             </select>
                         </div>
 
                         <div>
-                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message *</label>
-                            <textarea 
-                                id="message" 
-                                name="message" 
-                                rows="5" 
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2" data-i18n="contact.labelMessage">Message *</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
                                 required
                                 class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                data-i18n-placeholder="contact.placeholderMessage"
                                 placeholder="Tell us how we can help..."
                             ></textarea>
                         </div>
 
-                        <button 
+                        <button
                             type="submit"
                             class="w-full bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+                            data-i18n="contact.submitButton"
                         >
                             Send Message
                         </button>
 
                         <p class="text-sm text-gray-600 text-center">
-                            By submitting this form, you agree to our <a href="privacy.html" class="text-blue-600 hover:underline">Privacy Policy</a>
+                            <span data-i18n="contact.privacyNote">By submitting this form, you agree to our</span> <a href="privacy.html" class="text-blue-600 hover:underline" data-i18n="footer.privacy">Privacy Policy</a>
                         </p>
                     </form>
 
                     <!-- Success/Error Messages -->
                     <div id="formSuccess" class="hidden mt-4 p-4 bg-green-50 border border-green-200 rounded-lg">
-                        <p class="text-green-800 text-sm">Thank you for your message! We'll get back to you soon.</p>
+                        <p class="text-green-800 text-sm" data-i18n="contact.successMessage">Thank you for your message! We'll get back to you soon.</p>
                     </div>
                     <div id="formError" class="hidden mt-4 p-4 bg-red-50 border border-red-200 rounded-lg">
-                        <p class="text-red-800 text-sm">There was an error sending your message. Please try emailing us directly at info@ezbelta.com</p>
+                        <p class="text-red-800 text-sm" data-i18n="contact.errorMessage">There was an error sending your message. Please try emailing us directly at info@ezbelta.com</p>
                     </div>
                 </div>
             </div>
@@ -199,38 +224,40 @@
             <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div>
                     <h3 class="text-white font-bold mb-4">Ezbelta</h3>
-                    <p class="text-sm">
-                        Intelligent business solutions for modern enterprises
+                    <p class="text-sm" data-i18n="footer.tagline">
+                        AI-Powered Solutions for Manufacturing Excellence
                     </p>
                 </div>
                 <div>
-                    <h4 class="text-white font-semibold mb-4">Products</h4>
+                    <h4 class="text-white font-semibold mb-4" data-i18n="footer.products">Products</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="https://a3.ezbelta.com" target="_blank" class="hover:text-white transition">A3 - Affiliate Analytics</a></li>
-                        <li><span class="text-gray-600">More coming soon...</span></li>
+                        <li><a href="https://a3.ezbelta.com" target="_blank" class="hover:text-white transition">A3 Writer</a></li>
+                        <li><a href="digital-twin.html" class="hover:text-white transition">Digital Twin</a></li>
+                        <li><a href="video-analyzer.html" class="hover:text-white transition">Video Analyzer</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-white font-semibold mb-4">Company</h4>
+                    <h4 class="text-white font-semibold mb-4" data-i18n="footer.company">Company</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="index.html#about" class="hover:text-white transition">About</a></li>
-                        <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                        <li><a href="index.html#about" class="hover:text-white transition" data-i18n="nav.about">About</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition" data-i18n="nav.contact">Contact</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-white font-semibold mb-4">Legal</h4>
+                    <h4 class="text-white font-semibold mb-4" data-i18n="footer.legal">Legal</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="privacy.html" class="hover:text-white transition">Privacy Policy</a></li>
-                        <li><a href="terms.html" class="hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="privacy.html" class="hover:text-white transition" data-i18n="footer.privacy">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover:text-white transition" data-i18n="footer.terms">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>
             <div class="border-t border-gray-800 pt-8 text-center text-sm">
-                <p>&copy; 2025 Ezbelta. All rights reserved.</p>
+                <p>&copy; <span data-i18n="footer.copyright">2025 Ezbelta LLC. Boulder, Colorado USA. All rights reserved.</span></p>
             </div>
         </div>
     </footer>
 
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

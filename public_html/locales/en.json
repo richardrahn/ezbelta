@@ -1,0 +1,327 @@
+{
+  "nav": {
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact",
+    "getStarted": "Get Started",
+    "features": "Features",
+    "howItWorks": "How it Works"
+  },
+  "hero": {
+    "title": "Ezbelta Suite",
+    "tagline": "AI-Powered Solutions for Manufacturing Excellence"
+  },
+  "products": {
+    "a3": {
+      "title": "Ezbelta A3 Writer",
+      "description": "AI-powered A3 problem-solving platform with intelligent coaching, real-time collaboration, and automated action tracking for manufacturing teams.",
+      "features": [
+        "Classic 8-section A3 methodology with structured workflow",
+        "AI Coach provides real-time feedback and gap identification",
+        "AI Writer expands notes into professional content instantly",
+        "Visual Kanban board for action plan management",
+        "Real-time team collaboration with auto-save",
+        "Professional PDF export in classic A3 landscape layout",
+        "Multilingual support (English, Spanish, German)"
+      ],
+      "cta": "Launch A3"
+    },
+    "digitalTwin": {
+      "title": "Ezbelta Digital Twin",
+      "description": "Complete manufacturing simulation platform powered by 15+ years of proven SimJS technology. Design, visualize, and simulate production lines with enterprise-grade accuracy.",
+      "features": [
+        "Mixed Model Line Design (MMLD) with guided workflow",
+        "Battle-tested discrete-event simulation engine",
+        "AI-powered bottleneck identification (99%+ accuracy)",
+        "Visual flow diagrams with real-time status monitoring",
+        "Complete analytics: utilization, cycle time, throughput",
+        "Automated waste detection (7 types of waste)",
+        "Enterprise integration with multi-tenant security"
+      ],
+      "cta": "Learn More"
+    },
+    "videoAnalyzer": {
+      "title": "Ezbelta Video Analyzer",
+      "description": "Transform video into Standard Work documentation. Save 80% of time on time studies with frame-precise annotation, AI motion detection, and automated document generation.",
+      "features": [
+        "Frame-by-frame video annotation with digital timestamps",
+        "AI motion detection and activity pattern recognition",
+        "Automated Standard Work document generation from video",
+        "8 wastes identification (TIMWOODS) with AI insights",
+        "Visual waste analysis with color-coded timelines",
+        "Template system for multi-site deployment",
+        "Multi-language support with one-click translation"
+      ],
+      "cta": "Learn More"
+    }
+  },
+  "about": {
+    "title": "About Ezbelta",
+    "description": "Ezbelta develops intelligent business solutions that empower manufacturing organizations to make data-driven decisions and achieve operational excellence. Our suite of AI-powered tools is designed to simplify complex processes while delivering powerful insights. With over 15 years of proven technology and a focus on lean manufacturing principles, we help teams solve problems faster, simulate production scenarios, and document best practices efficiently."
+  },
+  "digitalTwin": {
+    "heroTitle": "Build Your Simple",
+    "heroHighlight": "Digital Twin",
+    "heroDescription": "The complete manufacturing simulation platform: design with Mixed Model Line Design, visualize with Visual Flow diagrams, and simulate with proven discrete-event technology. Transform static designs into dynamic digital twins in minutes.",
+    "problemTitle": "Stop Guessing About Your Production Performance",
+    "problems": [
+      "Bottlenecks hidden until production is already impacted",
+      "Resource planning based on gut feelings rather than data",
+      "Expensive changes made without understanding true impact",
+      "Waste patterns invisible until they're costing millions"
+    ],
+    "solutionTitle": "Get Predictive Insights Before Problems Happen",
+    "solutions": [
+      { "bold": "Identify bottlenecks", "text": "with 99%+ accuracy using proven discrete-event simulation" },
+      { "bold": "Optimize resource allocation", "text": "with advanced blocking/waiting state analysis" },
+      { "bold": "Test changes risk-free", "text": "in virtual environment before implementation" },
+      { "bold": "Detect waste patterns", "text": "with AI-powered lean manufacturing insights" }
+    ],
+    "featuresTitle": "Enterprise-Grade Manufacturing Simulation",
+    "featuresSubtitle": "Built on 15+ years of proven SimJS technology, trusted by Fortune 500 manufacturers worldwide",
+    "featureCards": {
+      "mmld": {
+        "title": "Mixed Model Line Design (MMLD)",
+        "description": "Complete static line design tool with guided workflow: products, flows, processes, times, and resource calculations with automatic simulation model generation.",
+        "items": [
+          "Product mix definition and volume planning",
+          "Process flow design with subassembly support",
+          "Takt time and resource calculations",
+          "One-click simulation model generation"
+        ]
+      },
+      "simulation": {
+        "title": "Battle-Tested Simulation Engine",
+        "description": "Powered by proven SimJS technology with 15+ years of discrete-event simulation refinement.",
+        "items": [
+          "Sub-second simulation execution",
+          "Real-time state tracking (BUSY/BLOCKED/WAITING/IDLE)",
+          "Statistical warmup period handling"
+        ]
+      },
+      "ai": {
+        "title": "AI-Powered Lean Insights",
+        "description": "Automated waste detection and lean manufacturing recommendations powered by advanced pattern recognition.",
+        "items": [
+          "Bottleneck identification with 99%+ accuracy",
+          "Waste pattern detection (7 types of waste)",
+          "Resource optimization recommendations",
+          "Flow efficiency scoring"
+        ]
+      },
+      "visual": {
+        "title": "Visual Flow Diagrams",
+        "description": "Interactive process flow visualization with real-time simulation status, drag-and-drop editing, and live resource state monitoring.",
+        "items": [
+          "Real-time status colors (Working/Idle/Blocked/Waiting)",
+          "Drag-and-drop flow layout editor",
+          "Live simulation playback visualization",
+          "Automatic flow routing and connections"
+        ]
+      },
+      "analytics": {
+        "title": "Complete Analytics Suite",
+        "description": "Comprehensive performance analytics with Yamazumi charts, utilization heatmaps, step-by-step debug mode, and statistical analysis.",
+        "items": [
+          "Event-by-event simulation stepping",
+          "Resource utilization and queue analysis",
+          "Throughput & cycle time tracking",
+          "Export to Excel/CSV/PDF reports"
+        ]
+      },
+      "enterprise": {
+        "title": "Enterprise Integration",
+        "description": "Built for enterprise scale with secure multi-user support, version control, and API access.",
+        "items": [
+          "Multi-tenant security (Supabase)",
+          "Model versioning & cloning",
+          "REST API for integration",
+          "Cloud-native architecture"
+        ]
+      }
+    },
+    "howItWorksTitle": "From Static Design to Digital Twin in Minutes",
+    "howItWorksSubtitle": "Our integrated MMLD-to-Simulation workflow transforms your line design into a running digital twin",
+    "steps": {
+      "step1": { "title": "Design with MMLD", "description": "Use Mixed Model Line Design to define products, flows, processes, and times. Follow the guided workflow with automatic resource calculations." },
+      "step2": { "title": "Generate Simulation", "description": "One-click transformation from MMLD static design to complete simulation model with all resources, flows, and routing automatically created." },
+      "step3": { "title": "Visualize & Run", "description": "Use Visual Flow diagrams to see your process layout, then run discrete-event simulation with real-time status visualization." },
+      "step4": { "title": "Analyze & Optimize", "description": "Get comprehensive analytics with utilization reports, bottleneck identification, and performance insights to optimize your digital twin." }
+    },
+    "ctaTitle": "Ready to Revolutionize Your Manufacturing?",
+    "ctaDescription": "Eliminate waste, optimize flow, and increase profits with our proven simulation platform.",
+    "footerDescription": "The most advanced manufacturing simulation platform, powered by proven discrete-event simulation technology.",
+    "footerProduct": "Product",
+    "footerSupport": "Support",
+    "scheduleDemo": "Schedule Demo",
+    "allProducts": "All Products"
+  },
+  "videoAnalyzer": {
+    "heroTitle": "Transform Video into",
+    "heroHighlight": "Standard Work",
+    "heroDescription": "Combines powerful video annotation tools, AI-powered analysis, and automated Standard Work documentation into one seamless workflow. Save 80% of time on time studies and standardization.",
+    "problemTitle": "Traditional Time Studies Are Broken",
+    "problems": [
+      "Manual video review with stopwatches takes hours or days",
+      "Writing timestamps on paper leads to transcription errors",
+      "Creating Standard Work documents from scratch is tedious",
+      "Identifying waste patterns requires expert lean knowledge"
+    ],
+    "solutionTitle": "Automated Video-to-Standard-Work Pipeline",
+    "solutions": [
+      { "bold": "Frame-precise annotation", "text": "- Digital timestamps replace stopwatches" },
+      { "bold": "AI motion detection", "text": "- Automatically identify activity patterns" },
+      { "bold": "Auto-generate Standard Work", "text": "- From video to shop-floor document" },
+      { "bold": "AI identifies 8 wastes", "text": "- Automatic lean manufacturing insights" }
+    ],
+    "featuresTitle": "One Platform, Three Powerful Tools",
+    "featuresSubtitle": "Everything you need from video observation to documented Standard Work",
+    "featureCards": {
+      "annotation": {
+        "title": "Video Annotation Made Simple",
+        "description": "Upload videos of any manufacturing process and annotate with frame-by-frame precision.",
+        "items": [
+          "Frame-by-frame navigation with keyboard shortcuts",
+          "Split/lap timer for marking work elements",
+          "Custom categories for organizing observations",
+          "Loop regions for detailed observation",
+          "Export annotations to CSV/JSON"
+        ]
+      },
+      "ai": {
+        "title": "AI-Powered Intelligence",
+        "description": "Advanced computer vision and AI analysis for automatic insights and waste identification.",
+        "items": [
+          "Motion detection using OpenCV",
+          "Automatic activity pattern recognition",
+          "Cycle time detection and analysis",
+          "8 wastes identification (TIMWOODS)",
+          "AI-generated improvement recommendations"
+        ]
+      },
+      "standardWork": {
+        "title": "Standard Work Documentation",
+        "description": "The game changer - automated pipeline from video timestamps to shop-floor-ready documents.",
+        "items": [
+          "Video-to-Standard-Work automation",
+          "Work element creation from timestamps",
+          "Value-add/waste classification",
+          "Built-in takt time calculator",
+          "Visual timeline showing work balance",
+          "PDF export (11x17\" poster or 8.5x11\" report)"
+        ]
+      },
+      "wasteAnalysis": {
+        "title": "Visual Waste Analysis",
+        "description": "Color-coded timeline shows exactly where time is being lost and improvement potential.",
+        "items": [
+          "Green = value-add activities",
+          "Red = waste (non-value-add)",
+          "Yellow = necessary waste",
+          "Instant value-add percentage calculation",
+          "Improvement opportunity scoring"
+        ]
+      },
+      "templates": {
+        "title": "Template System for Scale",
+        "description": "Document once, replicate everywhere - save templates and deploy best practices instantly.",
+        "items": [
+          "Save Standard Work as templates",
+          "Reuse across similar workstations",
+          "Version control and approval workflow",
+          "Multi-site deployment support",
+          "Before/after comparisons"
+        ]
+      },
+      "multiLang": {
+        "title": "Multi-Language Support",
+        "description": "Create Standard Work in English, translate to Spanish (or other languages) with one click.",
+        "items": [
+          "English and Spanish support",
+          "One-click translation",
+          "Perfect for diverse workforces",
+          "Custom branding options",
+          "Professional shop-floor formatting"
+        ]
+      }
+    },
+    "useCasesTitle": "Real-World Use Cases",
+    "useCasesSubtitle": "See how manufacturing teams use Ezbelta to transform their operations",
+    "useCases": {
+      "assembly": {
+        "title": "Assembly Standardization",
+        "scenario": "Document a new assembly process for training new operators",
+        "description": "Record video → Annotate steps → AI identifies waste → Generate Standard Work → Export PDF for training",
+        "result": "Result: New operators learn 50% faster with video + Standard Work"
+      },
+      "warehouse": {
+        "title": "Warehouse Picking Optimization",
+        "scenario": "Reduce walking time in warehouse picking operations",
+        "description": "Video pickers → AI motion detection → Classify walking as waste → Visualize 60% walking time → Redesign pick path",
+        "result": "Result: Reduced walking by 40%, increased picks per hour by 35%"
+      },
+      "kaizen": {
+        "title": "Kaizen Event Documentation",
+        "scenario": "Document improvements from a week-long kaizen event",
+        "description": "Record before/after → Compare cycle times → Show value-add improvement (32% → 58%) → Export for management",
+        "result": "Result: Clear ROI demonstration with data-backed improvements"
+      },
+      "timeStudy": {
+        "title": "Time Study Automation",
+        "scenario": "Conduct time studies across 20 workstations",
+        "description": "Record all 20 stations (1 hour) → Annotate at desk (2 hours) → AI analysis → Auto-generate 20 Standard Works",
+        "result": "Result: Complete in 3 hours vs. 2+ weeks with stopwatch methods"
+      }
+    },
+    "ctaTitle": "Ready to Transform Your Standard Work Process?",
+    "ctaDescription": "Join industrial engineers and continuous improvement teams who've saved 80% of time on standardization.",
+    "footerDescription": "Transform video observations into documented Standard Work - built by industrial engineers, for industrial engineers.",
+    "footerProduct": "Product",
+    "footerSupport": "Support",
+    "scheduleDemo": "Schedule Demo"
+  },
+  "contact": {
+    "heroTitle": "Get in Touch",
+    "heroSubtitle": "Have questions? We'd love to hear from you.",
+    "infoTitle": "Contact Information",
+    "email": "Email",
+    "emailGeneral": "General:",
+    "emailSupport": "Support:",
+    "website": "Website",
+    "responseTime": "Response Time",
+    "responseTimeText": "We typically respond within 24-48 hours during business days",
+    "supportTitle": "Support",
+    "supportText": "For product-specific support, please visit the support section within each product's application.",
+    "supportLink": "Go to A3 Support",
+    "formTitle": "Send us a Message",
+    "labelName": "Name *",
+    "labelEmail": "Email *",
+    "labelCompany": "Company",
+    "labelSubject": "Subject *",
+    "labelMessage": "Message *",
+    "placeholderName": "Your name",
+    "placeholderEmail": "your@email.com",
+    "placeholderCompany": "Your company name (optional)",
+    "placeholderSubject": "Select a subject",
+    "placeholderMessage": "Tell us how we can help...",
+    "subjectGeneral": "General Inquiry",
+    "subjectSales": "Sales",
+    "subjectSupport": "Technical Support",
+    "subjectPartnership": "Partnership Opportunity",
+    "subjectFeedback": "Feedback",
+    "subjectOther": "Other",
+    "submitButton": "Send Message",
+    "privacyNote": "By submitting this form, you agree to our",
+    "successMessage": "Thank you for your message! We'll get back to you soon.",
+    "errorMessage": "There was an error sending your message. Please try emailing us directly at info@ezbelta.com"
+  },
+  "footer": {
+    "tagline": "AI-Powered Solutions for Manufacturing Excellence",
+    "products": "Products",
+    "company": "Company",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "2025 Ezbelta LLC. Boulder, Colorado USA. All rights reserved."
+  }
+}

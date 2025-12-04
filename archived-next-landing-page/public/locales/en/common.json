@@ -1,0 +1,571 @@
+{
+  "navigation": {
+    "brand": "Ezbelta",
+    "tagline": "Easy Digital Twins for Lean Operations",
+    "features": "Features",
+    "howItWorks": "How it Works", 
+    "pricing": "Pricing",
+    "admin": "Admin",
+    "signIn": "Sign In",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "title": "Build Your Simple",
+    "titleHighlight": "Digital Twin",
+    "description": "The complete manufacturing simulation platform: design with Mixed Model Line Design, visualize with Visual Flow diagrams, and simulate with proven discrete-event technology. Transform static designs into dynamic digital twins in minutes.",
+    "getStarted": "Get Started",
+    "watchDemo": "Watch Demo"
+  },
+  "problemSolution": {
+    "problemTitle": "Stop Guessing About Your Production Performance",
+    "problems": [
+      "Bottlenecks hidden until production is already impacted",
+      "Resource planning based on gut feelings rather than data", 
+      "Expensive changes made without understanding true impact",
+      "Waste patterns invisible until they're costing millions"
+    ],
+    "solutionTitle": "Get Predictive Insights Before Problems Happen",
+    "solutions": [
+      "**Identify bottlenecks** with 99%+ accuracy using proven discrete-event simulation",
+      "**Optimize resource allocation** with advanced blocking/waiting state analysis",
+      "**Test changes risk-free** in virtual environment before implementation",
+      "**Detect waste patterns** with AI-powered lean manufacturing insights"
+    ]
+  },
+  "features": {
+    "title": "Enterprise-Grade Manufacturing Simulation",
+    "subtitle": "Built on 15+ years of proven SimJS technology, trusted by Fortune 500 manufacturers worldwide",
+    "mmld": {
+      "title": "Mixed Model Line Design (MMLD)",
+      "description": "Complete static line design tool with guided workflow: products, flows, processes, times, and resource calculations with automatic simulation model generation.",
+      "features": [
+        "• Product mix definition and volume planning",
+        "• Process flow design with subassembly support", 
+        "• Takt time and resource calculations",
+        "• One-click simulation model generation"
+      ]
+    },
+    "simulation": {
+      "title": "Battle-Tested Simulation Engine",
+      "description": "Powered by proven SimJS technology with 15+ years of discrete-event simulation refinement.",
+      "features": [
+        "• Sub-second simulation execution",
+        "• Real-time state tracking (BUSY/BLOCKED/WAITING/IDLE)",
+        "• Statistical warmup period handling"
+      ]
+    },
+    "ai": {
+      "title": "AI-Powered Lean Insights", 
+      "description": "Automated waste detection and lean manufacturing recommendations powered by advanced pattern recognition.",
+      "features": [
+        "• Bottleneck identification with 99%+ accuracy",
+        "• Waste pattern detection (7 types of waste)",
+        "• Resource optimization recommendations",
+        "• Flow efficiency scoring"
+      ]
+    },
+    "visual": {
+      "title": "Visual Flow Diagrams",
+      "description": "Interactive process flow visualization with real-time simulation status, drag-and-drop editing, and live resource state monitoring.",
+      "features": [
+        "• Real-time status colors (Working/Idle/Blocked/Waiting)",
+        "• Drag-and-drop flow layout editor",
+        "• Live simulation playback visualization", 
+        "• Automatic flow routing and connections"
+      ]
+    },
+    "analytics": {
+      "title": "Complete Analytics Suite",
+      "description": "Comprehensive performance analytics with Yamazumi charts, utilization heatmaps, step-by-step debug mode, and statistical analysis.",
+      "features": [
+        "• Event-by-event simulation stepping",
+        "• Resource utilization and queue analysis",
+        "• Throughput & cycle time tracking",
+        "• Export to Excel/CSV/PDF reports"
+      ]
+    },
+    "videoAnalyzer": {
+      "title": "AI Video Analyzer",
+      "description": "AI-powered automatic motion detection, cycle time analysis, and work efficiency measurement using OpenCV computer vision technology.",
+      "features": [
+        "• Automatic motion detection and tracking",
+        "• AI-powered cycle time measurement",
+        "• Work efficiency analysis",
+        "• Computer vision insights"
+      ]
+    },
+    "enterprise": {
+      "title": "Enterprise Integration",
+      "description": "Built for enterprise scale with secure multi-user support, version control, and API access.",
+      "features": [
+        "• Multi-tenant security (Supabase)",
+        "• Model versioning & cloning",
+        "• REST API for integration",
+        "• Cloud-native architecture"
+      ]
+    }
+  },
+  "howItWorks": {
+    "title": "From Static Design to Digital Twin in Minutes",
+    "subtitle": "Our integrated MMLD-to-Simulation workflow transforms your line design into a running digital twin",
+    "steps": [
+      {
+        "title": "Design with MMLD",
+        "description": "Use Mixed Model Line Design to define products, flows, processes, and times. Follow the guided workflow with automatic resource calculations."
+      },
+      {
+        "title": "Generate Simulation", 
+        "description": "One-click transformation from MMLD static design to complete simulation model with all resources, flows, and routing automatically created."
+      },
+      {
+        "title": "Visualize & Run",
+        "description": "Use Visual Flow diagrams to see your process layout, then run discrete-event simulation with real-time status visualization."
+      },
+      {
+        "title": "Analyze & Optimize",
+        "description": "Get comprehensive analytics with utilization reports, bottleneck identification, and performance insights to optimize your digital twin."
+      }
+    ]
+  },
+  "shopfloorModules": {
+    "title": "Powerful Shopfloor Management Modules",
+    "subtitle": "Comprehensive tools for operational excellence and continuous improvement",
+    "modules": [
+      {
+        "name": "Process Analysis",
+        "description": "Deep dive into process performance with detailed metrics, bottleneck identification, and efficiency analysis to optimize your operations.",
+        "benefit": "Real-time Performance Insights"
+      },
+      {
+        "name": "Staffing Optimization",
+        "description": "Intelligent workforce planning with skill matching, capacity analysis, and dynamic scheduling to maximize productivity.",
+        "benefit": "Smart Resource Allocation"
+      },
+      {
+        "name": "A3 Management",
+        "description": "Structured problem-solving methodology with A3 report templates, root cause analysis, and continuous improvement tracking.",
+        "benefit": "Lean Methodology Integration"
+      },
+      {
+        "name": "Sequence Optimization",
+        "description": "Advanced algorithms for production sequencing, order prioritization, and flow optimization to minimize changeover time and maximize throughput.",
+        "benefit": "AI-Powered Scheduling"
+      },
+      {
+        "name": "Video Analyzer",
+        "description": "Analyze manufacturing process videos with timestamped annotations, activity tracking, and time-motion studies for lean improvement insights.",
+        "benefit": "Process Video Insights"
+      },
+      {
+        "name": "AI Video Analyzer",
+        "description": "AI-powered automatic motion detection, cycle time analysis, and work efficiency measurement using OpenCV computer vision technology.",
+        "benefit": "Automated AI Analysis"
+      },
+      {
+        "name": "Sensitivity Analysis",
+        "description": "Automated parameter testing to analyze the impact of volume, mix, cycle times, and resource variations with full simulation accuracy.",
+        "benefit": "Data-Driven Decisions"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Simple, Transparent Pricing",
+    "subtitle": "Start free, scale as you grow",
+    "starter": {
+      "title": "Starter",
+      "price": "Free",
+      "description": "Perfect for learning and small projects",
+      "features": [
+        "Up to 3 simulation models",
+        "Basic resource modeling", 
+        "Standard simulation runs",
+        "Community support"
+      ],
+      "cta": "Get Started Free"
+    },
+    "professional": {
+      "title": "Professional",
+      "price": "$99",
+      "period": "/month",
+      "description": "For growing manufacturing teams",
+      "badge": "Most Popular",
+      "features": [
+        "Unlimited simulation models",
+        "Advanced resource modeling",
+        "AI-powered insights",
+        "Debug mode & step-through",
+        "Export capabilities", 
+        "Priority support"
+      ],
+      "cta": "Start 14-Day Free Trial"
+    },
+    "enterprise": {
+      "title": "Enterprise",
+      "price": "Custom",
+      "description": "For large organizations",
+      "features": [
+        "Everything in Professional",
+        "SSO & advanced security",
+        "API access & integrations", 
+        "Custom deployment options",
+        "Dedicated success manager",
+        "SLA guarantee"
+      ],
+      "cta": "Contact Sales"
+    }
+  },
+  "finalCta": {
+    "title": "Ready to Revolutionize Your Manufacturing?",
+    "description": "Join thousands of manufacturers who've eliminated waste, optimized flow, and increased profits with our proven simulation platform.",
+    "getStarted": "Get Started",
+    "scheduleDemo": "Schedule Demo"
+  },
+  "dashboard": {
+    "loading": "Loading dashboard...",
+    "welcomeBack": "Welcome back",
+    "yourProjects": "Your Value Streams",
+    "newProject": "New Value Stream",
+    "noProjects": "No value streams yet",
+    "getStarted": "Get started by creating your first lean design value stream.",
+    "createFirstProject": "Create Your First Value Stream",
+    "openProject": "Open Value Stream",
+    "editProject": "Edit Value Stream",
+    "created": "Created",
+    "noDescription": "No description",
+    "adminTools": "Admin Tools",
+    "adminDashboard": "Admin Dashboard",
+    "helpDocs": "Help & Docs",
+    "signOut": "Sign Out"
+  },
+  "footer": {
+    "brand": "Ezbelta",
+    "description": "The most advanced manufacturing simulation platform, powered by proven discrete-event simulation technology.",
+    "social": {
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter", 
+      "github": "GitHub"
+    },
+    "product": {
+      "title": "Product",
+      "features": "Features",
+      "pricing": "Pricing",
+      "documentation": "Documentation",
+      "apiReference": "API Reference"
+    },
+    "languages": {
+      "title": "Languages",
+      "english": "English",
+      "spanish": "Spanish",
+      "norwegian": "Norwegian",
+      "german": "German"
+    },
+    "support": {
+      "title": "Support",
+      "helpCenter": "Help Center",
+      "contactUs": "Contact Us",
+      "training": "Training",
+      "community": "Community"
+    },
+    "copyright": "© 2025 Fairview Development LLC. Boulder, Colorado 80303 USA."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Have questions about our manufacturing simulation platform? We'd love to hear from you.",
+    "backToHome": "← Back to Home",
+    "getInTouch": "Get in Touch",
+    "email": "Email",
+    "location": "Location",
+    "responseTime": "Response Time",
+    "responseTimeText": "We typically respond within 24 hours",
+    "quickActions": "Quick Actions",
+    "scheduleDemo": "Schedule a Demo",
+    "sendMessage": "Send us a Message",
+    "form": {
+      "name": "Name",
+      "nameRequired": "Name *",
+      "email": "Email",
+      "emailRequired": "Email *",
+      "company": "Company",
+      "subject": "Subject",
+      "subjectRequired": "Subject *",
+      "subjectPlaceholder": "Select a subject",
+      "subjectOptions": {
+        "general": "General Inquiry",
+        "demo": "Request a Demo",
+        "pricing": "Pricing Information",
+        "support": "Technical Support",
+        "partnership": "Partnership Opportunities",
+        "other": "Other"
+      },
+      "message": "Message",
+      "messageRequired": "Message *",
+      "messagePlaceholder": "Tell us about your manufacturing simulation needs...",
+      "sending": "Sending...",
+      "sendMessage": "Send Message"
+    },
+    "success": {
+      "title": "Message Sent!",
+      "message": "Thank you for contacting us. We'll get back to you within 24 hours.",
+      "sendAnother": "Send Another Message"
+    }
+  },
+  "mmld": {
+    "overview": {
+      "title": "Mixed Model Line Design (MMLD)",
+      "description": "The flagship feature of Ezbelta that enables manufacturers to design and optimize production lines for multiple product variants. Unlike traditional single-product line design, MMLD calculates the exact resource requirements when manufacturing different products on the same production line.",
+      "whatMakesItPowerful": "What Makes MMLD Powerful",
+      "traditionalProblems": "Traditional Approach Problems",
+      "mmldAdvantages": "MMLD Advantages",
+      "problemsList": [
+        "Guessing at resource requirements based on single products",
+        "Using average process times that don't reflect reality",
+        "Over or under-staffing production lines",
+        "Inability to handle product mix changes"
+      ],
+      "advantagesList": [
+        "Precise calculations using actual product volumes",
+        "Process-specific demand calculations",
+        "Exact resource requirements for mixed production",
+        "Optimized for variable product mixes"
+      ],
+      "fiveStepProcess": "5-Step MMLD Process",
+      "stepTitles": [
+        "Product Mix",
+        "Flow Design", 
+        "Process List",
+        "Process Times",
+        "Calculations & Results"
+      ],
+      "stepDescriptions": [
+        "Define your product variants and target volumes",
+        "Map the manufacturing flow and process connections",
+        "List all processes with their requirements",
+        "Set process times and variability for each product",
+        "Generate resource requirements and optimization insights"
+      ],
+      "getStarted": "Get Started with MMLD",
+      "startButton": "Start Step 1: Product Mix →"
+    },
+    "productMix": {
+      "title": "Product Mix Definition",
+      "subtitle": "Step 1 of 5 in the MMLD Process",
+      "description": "The foundation of MMLD is defining your product portfolio with accurate volume targets. This step determines the demand patterns that drive all downstream calculations.",
+      "keyInputs": "Key Inputs Required",
+      "partNumber": "Part Number",
+      "productDescription": "Product Description",
+      "targetVolume": "Target Volume",
+      "inputsList": [
+        "**Part Number**: Unique identifier for each product variant",
+        "**Product Description**: Clear description of what this variant represents",
+        "**Target Volume**: Expected production quantity over your planning horizon"
+      ],
+      "whyItMatters": "Why This Step Matters",
+      "importanceList": [
+        "**Demand Accuracy**: Incorrect volumes lead to wrong resource sizing",
+        "**Process Loading**: Higher-volume products drive resource requirements",
+        "**Mix Sensitivity**: Small changes in mix can have big resource impacts"
+      ],
+      "bestPractices": "Best Practices",
+      "practicesList": [
+        "Use realistic volume forecasts, not aspirational targets",
+        "Include seasonal variations in your planning",
+        "Account for ramp-up periods for new products",
+        "Validate volumes with sales and demand planning teams"
+      ],
+      "nextStep": "Next: Step 2 - Flow Design →"
+    },
+    "flowDesign": {
+      "title": "Flow Design & Assembly Connections",
+      "subtitle": "Step 3 of 5 in the MMLD Process",
+      "description": "Connect subassembly flows to main assembly processes and define material flow relationships. This step determines how independent flows converge to create the final product.",
+      "understandingConnections": "Understanding Assembly Connections",
+      "whatAreConnections": "What are Assembly Connections?",
+      "connectionsDescription": "Assembly connections define where and how subassemblies feed into main production flows. They represent the physical convergence points where multiple manufacturing streams combine.",
+      "typesOfConnections": "Types of Connections",
+      "connectionTypes": [
+        "**Direct Assembly**: Subassembly flows directly into main process",
+        "**Staged Assembly**: Subassemblies accumulate before feeding main line",
+        "**Just-in-Time**: Subassemblies produced on-demand for main line"
+      ],
+      "keyConsiderations": "Key Design Considerations",
+      "considerations": [
+        "**Synchronization**: Ensure subassembly and main line timing alignment",
+        "**Buffer Management**: Size buffers appropriately for flow smoothing",
+        "**Quality Control**: Position inspection points at connection interfaces",
+        "**Material Flow**: Design physical paths for efficient material movement"
+      ],
+      "bestPractices": "Flow Design Best Practices",
+      "practices": [
+        "Map all material dependencies before designing connections",
+        "Consider takt time differences between flows",
+        "Design for flexibility in product mix changes",
+        "Plan for quality holds and rework scenarios"
+      ],
+      "nextStep": "Next: Step 4 - Process Times →"
+    },
+    "processList": {
+      "title": "Process List Creation",
+      "subtitle": "Step 2 of 5 in the MMLD Process",
+      "description": "Define every manufacturing process in your value stream with proper resource assignments. This step creates the foundation for understanding how your products flow through production.",
+      "howToAccess": "How to Access Process Definition",
+      "keyInputs": "Key Process Inputs",
+      "processName": "Process Name",
+      "resourceType": "Resource Type",
+      "resourceCount": "Resource Count",
+      "inputsList": [
+        "**Process Name**: Clear, descriptive name for each manufacturing step",
+        "**Resource Type**: Primary (P), Operator (O), Secondary (S), or IPK Buffer",
+        "**Resource Count**: Number of resources required for this process"
+      ],
+      "resourceTypes": "Understanding Resource Types",
+      "primaryResources": "Primary (P) Resources",
+      "primaryDescription": "Main processing equipment like machines, workstations, or automated systems",
+      "operatorResources": "Operator (O) Resources", 
+      "operatorDescription": "Human resources required to perform manual operations",
+      "secondaryResources": "Secondary (S) Resources",
+      "secondaryDescription": "Supporting equipment like tools, fixtures, or testing equipment",
+      "ipkBuffers": "IPK Buffers",
+      "ipkDescription": "In-Process Kit storage areas between manufacturing steps",
+      "bestPractices": "Process Definition Best Practices",
+      "practices": [
+        "Use consistent naming conventions across all processes",
+        "Define processes at the appropriate level of detail",
+        "Consider both direct and indirect resource requirements",
+        "Plan for quality control and inspection points"
+      ],
+      "nextStep": "Next: Step 3 - Flow Design →"
+    },
+    "calculations": {
+      "title": "Line Design Calculations & Results",
+      "subtitle": "Step 5 of 5 in the MMLD Process",
+      "description": "The culmination of MMLD where your data transforms into actionable resource requirements and optimization insights. This is where the mathematical precision of MMLD delivers tangible business value.",
+      "engineOverview": "Calculation Engine Overview",
+      "engineDescription": "MMLD performs sophisticated calculations using process-specific demand rather than simple averages. This precision is what makes the system powerful for mixed-model manufacturing.",
+      "calculationSequence": "Calculation Sequence",
+      "stepByStep": "Step-by-Step Calculations",
+      "step1Title": "Step 1: Process Demand Calculation",
+      "step1Formula": "Process Demand = Σ(Product Volume × Process Multiplier × Process Applicability)",
+      "step2Title": "Step 2: Process-Specific Takt Time", 
+      "step2Formula": "Takt Time = Available Working Time ÷ Process Demand",
+      "step3Title": "Step 3: Weighted Average Process Time",
+      "step3Formula": "Weighted Avg Time = Σ(Volume × Process Time × Multiplier × Applicability) ÷ Process Demand",
+      "backButton": "← Back: Step 4 - Process Times",
+      "completeMessage": "🎉 MMLD Complete!",
+      "nextButton": "Explore Mixed Model Simulation →",
+      "formula": "Formula",
+      "sequences": [
+        "Process Demand Calculation (by process)",
+        "Process-Specific Takt Time (by process)", 
+        "Weighted Average Process Time (by process)",
+        "Required Resources (theoretical)",
+        "Actual Resources Needed (practical, rounded up)"
+      ]
+    }
+  },
+  "docs": {
+    "navigation": {
+      "title": "Documentation",
+      "backToDashboard": "Back to Dashboard",
+      "gettingStarted": "Getting Started",
+      "overview": "Overview",
+      "introduction": "Introduction",
+      "quickStart": "Quick Start",
+      "accountSetup": "Account Setup",
+      "mmld": "Mixed Model Line Design",
+      "mmldOverview": "MMLD Overview",
+      "productMix": "Product Mix Definition",
+      "processList": "Process List Creation", 
+      "flowDesign": "Flow Design & Connections",
+      "processTimes": "Process Times Entry",
+      "calculations": "Line Design Calculations",
+      "simulation": "Mixed Model Simulation",
+      "modelBuilding": "Model Building",
+      "resourceManagement": "Resource Management",
+      "runningSimulations": "Running Simulations",
+      "analyzingResults": "Analyzing Results",
+      "advanced": "Advanced Features",
+      "debugMode": "Debug Mode",
+      "variabilitySettings": "Variability Settings",
+      "testConnection": "Test Connection"
+    },
+    "home": {
+      "title": "Ezbelta Documentation",
+      "description": "Welcome to the comprehensive guide for Ezbelta, the most advanced discrete-event simulation platform for lean manufacturing. This documentation will help you model complex production systems, optimize flows, and eliminate waste.",
+      "mmldCard": {
+        "title": "Mixed Model Line Design",
+        "description": "Our flagship feature for designing and optimizing production lines for multiple product variants. Start here for maximum impact.",
+        "cta": "Get Started →"
+      },
+      "simulationCard": {
+        "title": "Mixed Model Simulation", 
+        "description": "Build detailed discrete-event simulation models for complex manufacturing scenarios and what-if analysis.",
+        "cta": "Learn More →"
+      },
+      "whatYouLearn": {
+        "title": "What You'll Learn",
+        "processCalculations": {
+          "title": "Process-Specific Calculations",
+          "description": "Learn how MMLD calculates takt time and resource requirements for each process based on actual product demand."
+        },
+        "advancedSimulation": {
+          "title": "Advanced Simulation",
+          "description": "Master discrete-event simulation with blocking/waiting states, resource contention, and statistical analysis."
+        },
+        "optimizationInsights": {
+          "title": "Optimization Insights", 
+          "description": "Discover bottlenecks, eliminate waste, and optimize resource allocation with AI-powered lean manufacturing insights."
+        }
+      },
+      "gettingStarted": {
+        "title": "Getting Started",
+        "newUserCard": {
+          "title": "New to Ezbelta?",
+          "description": "Start with our comprehensive introduction to understand the platform architecture and capabilities.",
+          "cta": "Read Platform Introduction →"
+        },
+        "step1": {
+          "title": "Set Up Your Account",
+          "description": "Create projects, configure user settings, and familiarize yourself with the dashboard."
+        },
+        "step2": {
+          "title": "Choose Your Approach", 
+          "description": "Start with Mixed Model Line Design for immediate ROI, or dive into mixed model simulation for complex scenarios."
+        },
+        "step3": {
+          "title": "Build and Optimize",
+          "description": "Model your processes, run simulations, and implement optimization recommendations."
+        }
+      },
+      "platformFeatures": {
+        "title": "Platform Features",
+        "coreCapabilities": {
+          "title": "Core Capabilities",
+          "features": [
+            "Process-specific takt time calculations",
+            "Weighted average process time analysis", 
+            "Discrete-event simulation engine",
+            "Resource blocking/waiting state tracking",
+            "Monte Carlo statistical analysis"
+          ]
+        },
+        "advancedFeatures": {
+          "title": "Advanced Features",
+          "features": [
+            "Step-by-step debug mode",
+            "Process time variability modeling",
+            "Multi-flow assembly connections", 
+            "Interactive visualization dashboards",
+            "Export and reporting capabilities"
+          ]
+        }
+      },
+      "helpSupport": {
+        "title": "Need Help?",
+        "description": "Can't find what you're looking for? Try these resources:",
+        "testConnection": "Test Database Connection",
+        "debugGuide": "Debug Mode Guide",
+        "backToDashboard": "Back to Dashboard"
+      }
+    }
+  }
+}
