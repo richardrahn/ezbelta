@@ -141,8 +141,8 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            color: #1f2937;
             padding: 80px 20px;
             text-align: center;
         }
@@ -153,40 +153,40 @@
         }
 
         .hero-logo {
-            height: 100px;
-            margin-bottom: 20px;
-            filter: brightness(0) invert(1);
+            height: 180px;
+            margin-bottom: 25px;
         }
 
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: white;
+        .hero-description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #4b5563;
+            max-width: 800px;
+            margin: 0 auto 30px auto;
         }
 
         .hero .tagline {
             font-size: 1.3rem;
-            opacity: 0.95;
+            color: #4b5563;
             margin-bottom: 30px;
         }
 
         .hero-cta {
             display: inline-block;
-            background: white;
-            color: #667eea;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
             padding: 14px 35px;
             border-radius: 8px;
             font-weight: 600;
             font-size: 1.1rem;
             text-decoration: none;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
         }
 
         .hero-cta:hover {
             transform: scale(1.05);
-            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 6px 25px rgba(102, 126, 234, 0.5);
         }
 
         /* Product Bands */
@@ -411,12 +411,16 @@
                 order: -1;
             }
 
-            .hero h1 {
-                font-size: 2.2rem;
+            .hero-logo {
+                height: 150px;
             }
 
             .hero .tagline {
                 font-size: 1.1rem;
+            }
+
+            .hero-description {
+                font-size: 1rem;
             }
 
             .product-content h2 {
@@ -457,8 +461,12 @@
                 padding: 60px 20px;
             }
 
-            .hero h1 {
-                font-size: 1.8rem;
+            .hero-logo {
+                height: 120px;
+            }
+
+            .hero-description {
+                font-size: 0.95rem;
             }
 
             .product-band {
@@ -476,12 +484,12 @@
                 padding: 12px 15px;
             }
 
-            .nav-logo-text {
-                font-size: 1.1rem;
+            .hero-logo {
+                height: 100px;
             }
 
-            .hero h1 {
-                font-size: 1.5rem;
+            .hero-description {
+                font-size: 0.9rem;
             }
 
             .product-content h2 {
@@ -500,7 +508,6 @@
         <div class="nav-container">
             <a href="index.html" class="nav-logo">
                 <img src="images/Ezbelta3.svg" alt="Ezbelta Logo" class="nav-logo-img">
-                <span class="nav-logo-text">Ezbelta</span>
             </a>
             <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle menu">
                 &#9776;
@@ -526,8 +533,10 @@
     <section class="hero">
         <div class="hero-container">
             <img src="images/Ezbelta3.svg" alt="Ezbelta Suite Logo" class="hero-logo">
-            <h1 data-i18n="hero.title">Ezbelta Suite</h1>
             <p class="tagline" data-i18n="hero.tagline">AI-Powered Solutions for Manufacturing Excellence</p>
+            <p class="hero-description" data-i18n="about.description">
+                Ezbelta develops intelligent business solutions that empower manufacturing organizations to make data-driven decisions and achieve operational excellence. Our suite of AI-powered tools is designed to simplify complex processes while delivering powerful insights. With over 15 years of proven technology and a focus on lean manufacturing principles, we help teams solve problems faster, simulate production scenarios, and document best practices efficiently.
+            </p>
             <a href="#products" class="hero-cta">Explore Our Products</a>
         </div>
     </section>
@@ -637,9 +646,6 @@
     <section id="about" class="about-section">
         <div class="about-container">
             <h2 data-i18n="about.title">About Ezbelta</h2>
-            <p data-i18n="about.description">
-                Ezbelta develops intelligent business solutions that empower manufacturing organizations to make data-driven decisions and achieve operational excellence. Our suite of AI-powered tools is designed to simplify complex processes while delivering powerful insights. With over 15 years of proven technology and a focus on lean manufacturing principles, we help teams solve problems faster, simulate production scenarios, and document best practices efficiently.
-            </p>
         </div>
     </section>
 
