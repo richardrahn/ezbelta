@@ -12,6 +12,20 @@
     "tagline": "Soluciones Impulsadas por IA para la Excelencia en Manufactura"
   },
   "products": {
+    "leanDesignStudio": {
+      "title": "Lean Design Studio",
+      "description": "Domine la Manufactura de Modelo Mixto con programas de certificación en línea, software de simulación y una comunidad privada—creado por veteranos de la industria con más de 25 años de coaching Lean en Toyota y empresas de clase mundial.",
+      "features": [
+        "Programas de certificación en Diseño de Línea y Flujo de Materiales",
+        "Tres pistas principales: Diseño de Línea, Gestión de Materiales y Modelado de Simulación",
+        "Simulador Lean Design con ejemplos y ejercicios de entrenamiento",
+        "Foro privado, horarios de oficina y eventos en vivo con expertos",
+        "Hojas de ruta de implementación que puede ejecutar en su sitio",
+        "Entrene equipos en una hoja de ruta común para que los sitios no \"pierdan la receta\"",
+        "Únase a una red mundial de ingenieros y líderes Lean"
+      ],
+      "cta": "Únase Ahora"
+    },
     "a3": {
       "title": "Ezbelta A3 Writer",
       "description": "Plataforma de resolución de problemas A3 impulsada por IA con coaching inteligente, colaboración en tiempo real y seguimiento automatizado de acciones para equipos de manufactura.",

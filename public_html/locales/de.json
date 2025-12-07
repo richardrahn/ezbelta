@@ -12,6 +12,20 @@
     "tagline": "KI-gestützte Lösungen für Fertigungsexzellenz"
   },
   "products": {
+    "leanDesignStudio": {
+      "title": "Lean Design Studio",
+      "description": "Meistern Sie Mixed Model Manufacturing mit Online-Zertifikatsprogrammen, Simulationssoftware und einer privaten Community—entwickelt von Branchenveteranen mit über 25 Jahren Lean-Coaching bei Toyota und Weltklasse-Unternehmen.",
+      "features": [
+        "Zertifikatsprogramme für Liniendesign & Materialfluss",
+        "Drei Kernbereiche: Liniendesign, Materialmanagement und Simulationsmodellierung",
+        "Lean Design Simulator mit Trainingsbeispielen und Übungen",
+        "Privates Forum, Sprechstunden und Live-Events mit Experten",
+        "Implementierungs-Roadmaps, die Sie an Ihrem Standort anwenden können",
+        "Schulen Sie Teams mit einer gemeinsamen Roadmap, damit Standorte das \"Rezept nicht verlieren\"",
+        "Werden Sie Teil eines weltweiten Netzwerks von Ingenieuren und Lean-Führungskräften"
+      ],
+      "cta": "Jetzt Beitreten"
+    },
     "a3": {
       "title": "Ezbelta A3 Writer",
       "description": "KI-gestützte A3-Problemlösungsplattform mit intelligentem Coaching, Echtzeit-Zusammenarbeit und automatisierter Aktionsverfolgung für Fertigungsteams.",

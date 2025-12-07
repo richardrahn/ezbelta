@@ -12,6 +12,20 @@
     "tagline": "AI-Powered Solutions for Manufacturing Excellence"
   },
   "products": {
+    "leanDesignStudio": {
+      "title": "Lean Design Studio",
+      "description": "Master Mixed Model Manufacturing with online certificate programs, simulation software, and a private community—built by industry veterans with 25+ years of Lean coaching at Toyota and world-class firms.",
+      "features": [
+        "Line Design & Material Flow certificate programs",
+        "Three core tracks: Line Design, Material Management, and Simulation Modeling",
+        "Lean Design Simulator with training examples and exercises",
+        "Private forum, office hours, and live events with experts",
+        "Implementation roadmaps you can run at your site",
+        "Train teams on a common roadmap so sites don't \"lose the recipe\"",
+        "Join a worldwide network of engineers and Lean leaders"
+      ],
+      "cta": "Join Now"
+    },
     "a3": {
       "title": "Ezbelta A3 Writer",
       "description": "AI-powered A3 problem-solving platform with intelligent coaching, real-time collaboration, and automated action tracking for manufacturing teams.",
