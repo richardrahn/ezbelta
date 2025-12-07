@@ -59,26 +59,23 @@ async function handleContactFormSubmit(e) {
     submitButton.innerHTML = '<span class="inline-block spinner mr-2"></span> Sending...';
     
     try {
-        // Send form data to PHP handler
-        const response = await fetch('contact-form.php', {
+        // Send form data to Formspree
+        const response = await fetch('https://formspree.io/f/xovgnvqo', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
             body: JSON.stringify(formData)
         });
 
-        const result = await response.json();
-
-        if (result.success) {
+        if (response.ok) {
             // Show success message
             successMessage.classList.remove('hidden');
             form.reset();
         } else {
-            // Show error with message from server
+            // Show error
             errorMessage.classList.remove('hidden');
-            const errorText = errorMessage.querySelector('p');
-            if (errorText && result.message) {
-                errorText.textContent = result.message;
-            }
         }
 
     } catch (error) {
