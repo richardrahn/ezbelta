@@ -77,7 +77,7 @@ const i18n = {
   /**
    * Get a translation by key path (e.g., "nav.products" or "solutions.0.bold")
    */
-  t(keyPath, fallback = keyPath) {
+  t(keyPath, fallback = null) {
     const keys = keyPath.split('.');
     let value = this.translations;
 
@@ -105,13 +105,15 @@ const i18n = {
 
   /**
    * Apply translations to all elements with data-i18n attributes
+   * Only replaces content if a valid translation is found, preserving HTML fallback text
    */
   applyTranslations() {
     // Translate text content
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
       const translation = this.t(key);
-      if (translation && typeof translation === 'string') {
+      // Only update if we found a valid translation (not null)
+      if (translation !== null && typeof translation === 'string') {
         el.textContent = translation;
       }
     });
@@ -119,13 +121,19 @@ const i18n = {
     // Translate placeholders
     document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
       const key = el.getAttribute('data-i18n-placeholder');
-      el.placeholder = this.t(key);
+      const translation = this.t(key);
+      if (translation !== null) {
+        el.placeholder = translation;
+      }
     });
 
     // Translate title attributes
     document.querySelectorAll('[data-i18n-title]').forEach(el => {
       const key = el.getAttribute('data-i18n-title');
-      el.title = this.t(key);
+      const translation = this.t(key);
+      if (translation !== null) {
+        el.title = translation;
+      }
     });
 
     // Translate lists (arrays in JSON become <li> elements)
@@ -141,7 +149,7 @@ const i18n = {
     document.querySelectorAll('select option[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
       const translation = this.t(key);
-      if (translation && typeof translation === 'string') {
+      if (translation !== null && typeof translation === 'string') {
         el.textContent = translation;
       }
     });
